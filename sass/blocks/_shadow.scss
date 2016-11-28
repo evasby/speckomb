@@ -1,0 +1,27 @@
+.shadow{
+	position: absolute;
+	z-index: 0;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	&:before,
+  &:after{
+  	content: "";
+    display: block;
+    bottom: 15px;
+    left: 10px;
+    width: 50%;
+    height: 20%;
+    max-width: 300px;
+    box-shadow:0 15px 10px rgba(0, 0, 0, 0.7);
+    transform:rotate(-5deg);
+    position: absolute;
+    //z-index: -1;
+  }
+  &:after{
+  	right: 10px;
+    left: auto;
+    transform:rotate(3deg);
+  }
+}

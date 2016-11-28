@@ -1,0 +1,19 @@
+.block_preim{
+	h2{
+		margin-bottom: 22px;
+	}
+	&_item{
+		float: left;
+		width: 33%;
+		padding-left: 30px;
+		&:before{
+			//margin-left: 0;
+		}
+		.premi__discr{
+			padding-left: 40px;
+		}
+		.premi__zag{
+			padding-left: 40px;
+		}
+	}
+}

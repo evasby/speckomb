@@ -1,0 +1,36 @@
+.bslider{
+	position: relative;
+	.slider__footer{
+		margin: 23px 0 0;
+	}
+	.slider__footer_prev{
+		position: absolute;
+		width: 32px;
+		height: 33px;
+		top: 50%;
+		left: 10px;
+		margin: -6px 0 0;
+		border-radius: 0; 
+		border: none;
+		background: transparent url('../img/images/bslider-left.png') left top no-repeat;
+		transition: opacity, 0.2s;
+		&:hover{
+			opacity: 0.8;
+		}
+	}
+	.slider__footer_next{
+		position: absolute;
+		width: 32px;
+		height: 33px;
+		top: 50%;
+		right: 10px;
+		margin: -6px 0 0;
+		border-radius: 0; 
+		border: none;
+		background: transparent url('../img/images/bslider-right.png') left top no-repeat;
+		transition: opacity, 0.2s;
+		&:hover{
+			opacity: 0.8;
+		}
+	}
+}
