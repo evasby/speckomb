@@ -31,4 +31,12 @@
   	background-color: #ccc;
   	height: 100%;
   }
+  &__contacts{
+    border: none;
+    height: 495px;
+    float: none;
+    &_inner{
+      height: 495px;
+    }
+  }
 }

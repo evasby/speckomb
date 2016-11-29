@@ -1,0 +1,54 @@
+.user-content{
+	font-family: OpenSans-Regular;
+	font-size: 15px;
+	line-height: 31px;
+	color: #000;
+	p{
+		font-family: OpenSans-Regular;
+		font-size: 15px;
+		line-height: 31px;
+	}	
+	i, em{
+		font-family: OpenSans-LightItalic;
+	}
+	b, strong, h3{
+		font-family: OpenSans-Semibold;
+		i, em{
+			font-family: OpenSans-SemiboldItalic;
+		}
+	}
+	h3, h4, h5{
+		font-size: 15px;
+	}
+	ul{
+		padding: 0;
+		margin: 0;
+		list-style-type: none;
+		li{
+			padding: 0 0 0 17px;
+			margin: 0;
+			font-family: OpenSans-Regular;
+			font-size: 15px;
+			line-height: 31px;
+			position: relative;
+			&:before{
+				content: '';
+				display: block;
+				position: absolute;
+				left: 3px;
+				top: 14px;
+				width: 5px;
+				height: 5px;
+				background: transparent url('../img/images/list.png') left top no-repeat;
+			}
+		}
+	}
+	ol{
+		list-style-position: inside;
+		li{
+			font-family: OpenSans-Regular;
+			font-size: 15px;
+			line-height: 31px;
+		}
+	}
+}

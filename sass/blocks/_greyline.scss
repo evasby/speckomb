@@ -1,0 +1,25 @@
+.greyline{
+	@include clearfix;
+	padding: 10px 30px;
+	background-color: rgba(0,0,0,.08);
+	position: relative;
+	&:before{
+		content: '';
+		position: absolute;
+		bottom: -19px;
+		left: 0;
+		width: 100%;
+		height: 19px;
+		background: transparent url('../img/images/line-shadow.png') 50% top no-repeat;
+	}
+	&_left{
+		float: left;
+		font-family: OpenSans-Semibold;
+		font-size: 15px;
+	}
+	&_right{
+		float: right;
+		font-family: OpenSans-Regular;
+		font-size: 15px;
+	}
+}

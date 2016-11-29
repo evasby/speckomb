@@ -1,5 +1,29 @@
 .tmenu{
+	.roza{
+		z-index: 1;
+	}
 	.bg_menu{
 		padding-left: 35px;
+	}
+	.menu__ul{
+		padding-top: 1px;
+	}
+	.menu__li{
+		position: relative;
+		transition: all 0.4s;
+		&:hover{
+			box-shadow: inset 0px 0px 20px 0px rgba(150,150,150,150.5);
+			opacity: 0.8;
+		}
+	}
+	.menu__li__active{
+		box-shadow: inset 0px 0px 20px 0px rgba(150,150,150,150.5);
+		opacity: 0.8;
+	}
+	.menu__a{
+		@include link(#fff, #fff);
+		&:hover{
+			text-decoration: none;
+		}
 	}
 }

@@ -1,0 +1,79 @@
+.mypager{
+	padding: 12px 0 70px;
+	@include clearfix;
+	ul{
+		padding: 0;
+		li{
+			position: static;
+			margin: 0;
+			padding: 0;
+			&:before{
+				display: none;
+			}
+		}
+	}
+	&_list{
+		@include clearfix;
+		text-align: center;
+	}
+	&_item{
+		box-shadow: 0px 3px 10px -1px rgba(0,0,0,0.5);
+		font-family: OpenSans-Regular!important;
+		display: inline-block!important;
+		height: 32px!important;
+		background-color: inherit!important;
+		overflow: hidden;
+		border: none!important;
+		border-radius: 5px!important;
+		margin: 0 4px!important;
+		&:hover a{
+			background-color: #047dba!important;
+		}
+		&__current{	
+			padding-top: 1px!important;
+			width: 32px;
+			font-size: 15px;
+			background-color: #047dba!important;
+			color: #fff;
+		}
+		a{
+			border: 0!important;
+			border-radius: 0!important;
+			font-family: OpenSans-Regular;
+			display: block!important;
+			padding: 0!important;
+			background: none!important;
+			width: 32px;
+			height: 32px;
+			text-align: center;
+			font-size: 15px;
+			text-decoration: none;
+			background-color: #e1dddb!important;
+			@include link(#000, #fff);
+		}
+		&.mypager-prev{
+			a{
+				
+			}
+		}
+		&.mypager-next{
+			a{
+
+			}
+		}
+		&.mypager-start{
+			width: 127px;
+			margin-right: 24px!important;
+			a{
+				width: auto;
+			}
+		}
+		&.mypager-end{
+			width: 127px;
+			margin-left: 24px!important;
+			a{
+				width: auto;
+			}
+		}
+	}
+}

@@ -10,10 +10,6 @@
 
 		<title>Ритуальные товары</title>
 		<meta name="description" content="КУП “СПЕЦИАЛИЗИРОВАННЫЙ КОМБИНАТ КОММУНАЛЬНО-БЫТОВОГО ОБСЛУЖИВАНИЯ”">
-	    <meta name="author" content="Pavel Korchago">
-	    <meta name="tel" content="+375 29 303 23 22">
-	    <meta name="email" content="pavel.korchago@mail.ru">
-		
 		<!-- Иконка сайта -->
 		<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon" />
 		<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png" />
@@ -40,6 +36,7 @@
 		<link href="libs/mobilyslider/css/default.css" rel="stylesheet" type="text/css" />
 		<link rel="stylesheet" href="css/main.css" />
 		<link rel="stylesheet" href="css/media.css" />
+		<link rel="stylesheet" href="css/all.css" />
 
 	</head>
 
@@ -50,18 +47,20 @@
 				<div class="bg_img">
 					<a href="#" class="dib"><img src="img/images/piples.png" alt="alt"></a>
 					<h1 class="zag dib">Куп “специализированный комбинат <br> коммунально-бытового обслуживания”</h1>
-					<img src="img/images/namber.png" alt="number" class="number">
+					<img src="img/images/namber.png" alt="number" class="number pulse">
 					<h3 class="discr dib"> “Мы поможем сохранить память!”</h3>
 					<div class="contact dib">
 						<p class="contact__text email">speckombinat@bk.ru</p>
 						<p class="contact__text adress">г.Минск, ул. Ольшевского, 12</p>
 					</div>
-					<form class="searc_block dib right" action="" method="get">
-							<input type="search" class="search" placeholder="Поиск...">
-							<button class="button"><img src="img/images/lupa.png" alt="lupa"></button>
-					</form>
+					<div class="searc_block dib right">
+						<form action="" method="get">
+								<input type="search" class="search" placeholder="Поиск...">
+								<button class="button"><img src="img/images/lupa.png" alt="lupa"></button>
+						</form>
+					</div>
 				</div>
-				<nav>
+				<nav class="tmenu">
 					<div class="bg_menu">
 						<div class="menu">
 							<img src="img/images/roza.png" alt="roza" class="roza">
@@ -69,8 +68,8 @@
 								<li class="menu__li dib"><a class="menu__a pl10" href="index.html">ГЛАВНАЯ</a></li>
 								<li class="menu__li dib"><a class="menu__a" href="o_predpriatii.html">О ПРЕДПРИЯТИИ</a></li>
 								<li class="menu__li dib"><a class="menu__a" href="vizov_agenta.html">ВЫЗОВ АГЕНТА</a></li>
-								<li class="menu__li dib"><a class="menu__a" href="news_perevozka.html">ДОСТАВКА</a></li>
-								<li class="menu__li dib"><a class="menu__a" href="ritual_tovari.html">ТОВАРЫ</a></li>
+								<li class="menu__li dib"><a class="menu__a" href="dostavka.html">ДОСТАВКА</a></li>
+								<li class="menu__li menu__li__active dib"><a class="menu__a" href="ritual_tovari.html">ТОВАРЫ</a></li>
 								<li class="menu__li dib"><a class="menu__a" href="statie.html">СТАТЬИ</a></li>
 								<li class="menu__li dib"><a class="menu__a" href="kontakt.html">КОНТАКТЫ</a></li>
 							</ul>
@@ -80,169 +79,236 @@
 			</div>
 		</header>
 
-		<article class="wrapper">
-			<div class="spisok_menu">
-				<ul class="spisok_menu__ul">
-					<li class="spisok_menu__li dib"><a class="spisok_menu__pasiv" href="index.html">Главная</a></li>
-					<li class="spisok_menu__li dib"><a href="ritual_tovari.html" class="spisok_menu__activ">/ Ритуальные товары</a></li>
-				</ul>
-			</div>
-			<div class="left_menu_ssilki w290 dib">
-				<nav class="left_menu">
-					<nav id="menuVertical">
-						<ul class="vipad_menu">
-							<li><a href="ritual_uslugi.html">Ритуальные услуги</a>
-								<ul>
-									<li><a href="#">Агенты, справки</a></li>
-									<li><a href="ritual_zal.html">Ритуальный зал</a></li>
-									<li><a href="#">Холодильная камера</a></li>
-									<li><a href="uslugi_zahoronenia.html">Услуги захоронения</a></li>
-									<li><a href="">Транспортные услуги</a></li>
-									<li><a href="#">Благоустройство захоронений</a></li>
-									<li><a href="#">Фото/видео услуги</a></li>
-								</ul>
-							</li>
-							<li><a href="ritual_tovari.html">Ритуальные товары</a></li>
-							<li><a href="kladbiche.html">Кладбища</a>
-								<ul>
-									<li><a href="kladbiche_vostochnoe.html">Восточное</a></li>
-									<li><a href="#">Северное</a></li>
-									<li><a href="#">Западное</a></li>
-									<li><a href="#">Колодищи</a></li>
-									<li><a href="#">Михановичи</a></li>
-									<li><a href="#">Чижовское</a></li>
-								</ul>
-							</li>
-							<li><a href="magazinu_i_filiali.html">Магазины и филиалы</a></li>
-							<li><a href="krematori.html">Крематорий</a></li>
-							<li><a href="pravovie_voprosi.html">Правовые вопросы</a></li>
-							<li><a href="admin_proceduri.html">Админ. процедуры</a></li>
-							<li><a href="uborka.html">Уборка места захоронения</a></li>
-							<li><a href="oformlenie.html">Оформление похорон</a></li>
-							<li><a href="info_term.html">Инф. терминалы</a></li>
-							<li><a href="jurnal_nekropol.html">Журнал “Некрополь”</a></li>
-							<li><a href="vakansii.html">Вакансии</a></li>
-							<li><a href="elekt_obr.html">Электронное обращение</a></li>
-						</ul>
-					</nav><!--menuVertical-->
-				</nav>
-				<div class="ssilki_bloki dib">
-					<a class="ssilki_v_blokah" href="http://www.ritual-minsk.by/" target="_blank">http://www.ritual-minsk.by/</a>
-				</div>
-				<div class="ssilki_bloki dib">
-					<a class="ssilki_v_blokah" href="http://www.ritual-minsk.by/" target="_blank">http://www.ritual-minsk.by/</a>
-				</div>
-			</div>
-			<div class="agent_block dib" style="width: 850px;">
-				<h2 class="agent__h2 mt-7 ml-20">Ритуальные товары</h2>
-				<p class="light__text italic ml-20">
-					В настоящее время ассортимент продукции УП «Спецкомбинат КБО» составляет около 300 единиц. Все изделия ритуального назначения изготавливаются в соответствии с техническими нормативно-правовыми актами. Качество выпускаемых изделий постоянно контролируется и регулярно проверяется Комитетом Госстандартов. Наше предприятие постоянно работает над расширением ассортимента выпускаемых изделий, пользующихся спросом у населения. Специалистами комбината ведутся разработки по внедрению новых видов похоронных принадлежностей и ритуальных услуг с учетом возрождения духовности в сфере похоронной деятельности и потребностей различных слоев населения. <br>
-					Опытный дизайнер производит разработку эксклюзивного дизайна ритуальных изделий, как на массовый поток, так и под индивидуальный заказ. Технические возможности нашего предприятия позволяют выполнить Ваш заказ при наличии комплектующих в полном объеме и в срок от 3-х до 5-ти часов в зависимости от сложности заказа. <br>
-					Гарантийные обязательства на группы товаров выпускаемые УП "Спецкомбинат КБО": <br>
-					<ul class="spisok__blue__ul light_italic__text ml-5">
-						<li class="spisok__blue" style="color: #1f90cd;"><span>изделия из бетона (железобетона) - 36 месяцев;</span></li>
-						<li class="spisok__blue" style="color: #1f90cd;"><span>природный камень - 60 месяцев;</span></li>
-						<li class="spisok__blue" style="color: #1f90cd;"><span>ограды металлические - 6 месяцев;</span></li>
-						<li class="spisok__blue" style="color: #1f90cd;"><span>изделия из дерева: гробы - до момента захоронения, но не более 6 месяцев;</span></li>
-						<li class="spisok__blue" style="color: #1f90cd;"><span>кресты - 12 месяцев (гарантия не распространяется на лакокрасочное покрытие);</span></li>
-						<li class="spisok__blue" style="color: #1f90cd;"><span>установка надмогильных сооружений - 36 месяцев</span></li>
+			<article class="innerpage">
+				<div class="spisok_menu">
+					<ul class="spisok_menu__ul">
+						<li class="spisok_menu__li dib"><a class="spisok_menu__pasiv" href="index.html">Главная</a></li>
+						<li class="spisok_menu__li dib"><a href="ritual_tovari.html" class="spisok_menu__activ">/ Ритуальные товары</a></li>
 					</ul>
-					</p>
-					<p class="light_italic__text ml-20" style="width: 800px;">
-					<b class="ffbold">Цена на социально значимую продукцию</b>
-					</p>
-					<p class="light_italic__text ml-20" style="width: 800px;">
-					Все товары, представленные в настоящей рубрике – производства Республики Беларусь. <br>
-					Оплата за товары, представленные в настоящем разделе, оплачиваются следующими способами: <br>
-					</p>
-					<ul class="spisok__blue__ul light_italic__text dib w750">
-					<li class="spisok__blue ml-20" style="color: #1f90cd;"><span>наличным платежом в кассу магазина (филиала магазина), кассу места погребения с выдачей кассового    <br>    чека;</span></li>
-					<li class="spisok__blue ml-20" style="color: #1f90cd;"><span>безналичным платежом с использованием банковской карточки с использованием терминалов, <br>    установленных в кассе магазина (филиалах магазина), местах погребения;</span></li>
-					<li class="spisok__blue ml-20" style="color: #1f90cd;"><span>безналичным платежом на расчетный счет нашего предприятия, указываемый в документах на оплату  <br>    (договор, счет-заказ).</span></li>
-				</ul>
-				<p class="light__text italic ml-20">
-					Условия оплаты – предоплата. <br>
-					Порядок оплаты уточняйте при обращении за приобретением ритуального товара, или по телефонам, указанным на главной странице сайта. <br>
-					Ритуальные товары можно приобрести: <br>
-				</p>
-				<ul class="spisok__blue__ul light_italic__text ml-5">
-					<li class="spisok__blue" style="color: #1f90cd;"><span>непосредственно в магазинах (филиалах магазина) нашего предприятия;</span></li>
-					<li class="spisok__blue" style="color: #1f90cd;"><span>у агента предприятия при его выезде на дом (иной адрес).</span></li>
-				</ul>
-				<p class="light__text italic ml-20">
-					При выезде агента им доводится до сведения заказчика вся необходимая информация о ритуальном товаре, предусмотренная пунктом 2 статьи 7 Закона Республики Беларусь «О защите прав потребителей». <br>
-					Срок поставки ритуальных товаров определяется заказчиком и указывается в счет-заказе <br>
-				</p>
-				<aside class="block_asort ml-20 dib">
-				<section class="asortiment left mt0">
-					<a class="asort_zag">Гробы</a>
-					<div class="asort_text">
-						<div class="asort_text">
-							<p class="asort_discr">От 20 Видов гробов</p>
-							<p class="asort_discr">От 56 видов обшивок</p>
+				</div>
+				<div class="clearfix">
+
+
+
+
+
+					<div class="innerpage_left">
+						<nav class="left_menu dib">
+							<nav id="menuVertical">
+								<ul class="vipad_menu">
+									<li><a href="ritual_uslugi.html">Ритуальные услуги</a>
+										<ul>
+											<li><a href="#">Агенты, справки</a></li>
+											<li><a href="ritual_zal.html">Ритуальный зал</a></li>
+											<li><a href="#">Холодильная камера</a></li>
+											<li><a href="uslugi_zahoronenia.html">Услуги захоронения</a></li>
+											<li><a href="">Транспортные услуги</a></li>
+											<li><a href="#">Благоустройство захоронений</a></li>
+											<li><a href="#">Фото/видео услуги</a></li>
+										</ul>
+									</li>
+									<li><a href="ritual_tovari.html">Ритуальные товары</a></li>
+									<li><a href="kladbiche.html">Кладбища</a>
+										<ul>
+											<li><a href="kladbiche_vostochnoe.html">Восточное</a></li>
+											<li><a href="#">Северное</a></li>
+											<li><a href="#">Западное</a></li>
+											<li><a href="#">Колодищи</a></li>
+											<li><a href="#">Михановичи</a></li>
+											<li><a href="#">Чижовское</a></li>
+										</ul>
+									</li>
+									<li><a href="magazinu_i_filiali.html">Магазины и филиалы</a></li>
+									<li><a href="krematori.html">Крематорий</a></li>
+									<li><a href="pravovie_voprosi.html">Правовые вопросы</a></li>
+									<li><a href="admin_proceduri.html">Админ. процедуры</a></li>
+									<li><a href="uborka.html">Уборка места захоронения</a></li>
+									<li><a href="oformlenie.html">Оформление похорон</a></li>
+									<li><a href="info_term.html">Инф. терминалы</a></li>
+									<li><a href="jurnal_nekropol.html">Журнал “Некрополь”</a></li>
+									<li><a href="vakansii.html">Вакансии</a></li>
+									<li><a href="elekt_obr.html">Электронное обращение</a></li>
+								</ul>
+							</nav><!--menuVertical-->
+						</nav>
+						<div class="ssilki">
+							<div class="ssilki_bloki dib">
+								<a class="ssilki_v_blokah" href="http://www.ritual-minsk.by/" target="_blank">http://www.ritual-minsk.by/</a>
+							</div>
+							<div class="ssilki_bloki dib">
+								<a class="ssilki_v_blokah" href="http://www.ritual-minsk.by/" target="_blank">http://www.ritual-minsk.by/</a>
+							</div>
 						</div>
 					</div>
-				</section>
-				<section class="asortiment left mt0">
-					<a class="asort_zag">Гробы</a>
-					<div class="asort_text">
-						<p class="asort_discr">От 20 Видов гробов</p>
-						<p class="asort_discr">От 56 видов обшивок</p>
+
+
+
+
+
+
+
+
+
+					<div class="agent_block user-content">
+						<h2 class="agent__h2">Ритуальные товары</h2>
+						<p>
+							В настоящее время ассортимент продукции УП «Спецкомбинат КБО» составляет около 300 единиц. Все изделия ритуального назначения изготавливаются в соответствии с техническими нормативно-правовыми актами. Качество выпускаемых изделий постоянно контролируется и регулярно проверяется Комитетом Госстандартов. Наше предприятие постоянно работает над расширением ассортимента выпускаемых изделий, пользующихся спросом у населения. Специалистами комбината ведутся разработки по внедрению новых видов похоронных принадлежностей и ритуальных услуг с учетом возрождения духовности в сфере похоронной деятельности и потребностей различных слоев населения.
+						</p>
+						<p>
+							Опытный дизайнер производит разработку эксклюзивного дизайна ритуальных изделий, как на массовый поток, так и под индивидуальный заказ. Технические возможности нашего предприятия позволяют выполнить Ваш заказ при наличии комплектующих в полном объеме и в срок от 3-х до 5-ти часов в зависимости от сложности заказа.
+						</p>
+						<p>Гарантийные обязательства на группы товаров выпускаемые УП "Спецкомбинат КБО":</p>
+						<ul>
+							<li>изделия из бетона (железобетона) - 36 месяцев;</li>
+							<li>природный камень - 60 месяцев;</li>
+							<li>ограды металлические - 6 месяцев;</li>
+							<li>изделия из дерева: гробы - до момента захоронения, но не более 6 месяцев;</li>
+							<li>кресты - 12 месяцев (гарантия не распространяется на лакокрасочное покрытие);</li>
+							<li>установка надмогильных сооружений - 36 месяцев</li>
+						</ul>
+						<h3><em>Цена на социально значимую продукцию</em></h3>
+						<p>
+							Все товары, представленные в настоящей рубрике – производства Республики Беларусь. <br>
+							Оплата за товары, представленные в настоящем разделе, оплачиваются следующими способами: <br>
+						</p>
+						<ul>
+							<li>наличным платежом в кассу магазина (филиала магазина), кассу места погребения с выдачей кассового чека;</li>
+							<li>безналичным платежом с использованием банковской карточки с использованием терминалов, установленных в кассе магазина (филиалах магазина), местах погребения;</li>
+							<li>безналичным платежом на расчетный счет нашего предприятия, указываемый в документах на оплату (договор, счет-заказ).</li>
+						</ul>
+						<p>
+							Условия оплаты – предоплата. <br>
+							Порядок оплаты уточняйте при обращении за приобретением ритуального товара, или по телефонам, указанным на главной странице сайта. <br>
+							Ритуальные товары можно приобрести:
+						</p>
+						<ul>
+							<li>непосредственно в магазинах (филиалах магазина) нашего предприятия;</li>
+							<li>у агента предприятия при его выезде на дом (иной адрес).</li>
+						</ul>
+						<p>
+							При выезде агента им доводится до сведения заказчика вся необходимая информация о ритуальном товаре, предусмотренная пунктом 2 статьи 7 Закона Республики Беларусь «О защите прав потребителей». <br>
+							Срок поставки ритуальных товаров определяется заказчиком и указывается в счет-заказе
+						</p>
+
+						<div class="block_asort dib block_asort__block">
+							<a href="#" class="asortiment">
+								<div class="asort_image"><img src="../img/item/grob1.jpg" alt=""></div>
+								<div class="asort_zag">Гробы</div>
+								<div class="asort_text">
+									<p class="asort_discr">От 20 Видов гробов</p>
+									<p class="asort_discr">От 56 видов обшивок</p>
+								</div>
+							</a>
+							<a href="#" class="asortiment">
+								<div class="asort_image"><img src="../img/item/grob2.jpg" alt=""></div>
+								<div class="asort_zag">Гробы</div>
+								<div class="asort_text">
+									<p class="asort_discr">От 20 Видов гробов</p>
+									<p class="asort_discr">От 56 видов обшивок</p>
+								</div>
+							</a>
+							<a href="#" class="asortiment">
+								<div class="asort_image"><img src="../img/item/grob3.jpg" alt=""></div>
+								<div class="asort_zag">Гробы</div>
+								<div class="asort_text">
+									<p class="asort_discr">От 20 Видов гробов</p>
+									<p class="asort_discr">От 56 видов обшивок</p>
+								</div>
+							</a>
+							<a href="#" class="asortiment">
+								<div class="asort_image"><img src="../img/item/grob1.jpg" alt=""></div>
+								<div class="asort_zag">Гробы</div>
+								<div class="asort_text">
+									<p class="asort_discr">От 20 Видов гробов</p>
+									<p class="asort_discr">От 56 видов обшивок</p>
+								</div>
+							</a>
+							<a href="#" class="asortiment">
+								<div class="asort_image"><img src="../img/item/grob2.jpg" alt=""></div>
+								<div class="asort_zag">Гробы</div>
+								<div class="asort_text">
+									<p class="asort_discr">От 20 Видов гробов</p>
+									<p class="asort_discr">От 56 видов обшивок</p>
+								</div>
+							</a>
+							<a href="#" class="asortiment">
+								<div class="asort_image"><img src="../img/item/grob3.jpg" alt=""></div>
+								<div class="asort_zag">Гробы</div>
+								<div class="asort_text">
+									<p class="asort_discr">От 20 Видов гробов</p>
+									<p class="asort_discr">От 56 видов обшивок</p>
+								</div>
+							</a>
+							<a href="#" class="asortiment">
+								<div class="asort_image"><img src="../img/item/grob1.jpg" alt=""></div>
+								<div class="asort_zag">Гробы</div>
+								<div class="asort_text">
+									<p class="asort_discr">От 20 Видов гробов</p>
+									<p class="asort_discr">От 56 видов обшивок</p>
+								</div>
+							</a>
+							<a href="#" class="asortiment">
+								<div class="asort_image"><img src="../img/item/grob2.jpg" alt=""></div>
+								<div class="asort_zag">Гробы</div>
+								<div class="asort_text">
+									<p class="asort_discr">От 20 Видов гробов</p>
+									<p class="asort_discr">От 56 видов обшивок</p>
+								</div>
+							</a>
+							<a href="#" class="asortiment">
+								<div class="asort_image"><img src="../img/item/grob3.jpg" alt=""></div>
+								<div class="asort_zag">Гробы</div>
+								<div class="asort_text">
+									<p class="asort_discr">От 20 Видов гробов</p>
+									<p class="asort_discr">От 56 видов обшивок</p>
+								</div>
+							</a>
+						</div>
+
+						<p>
+							Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов. Lorem Ipsum не только успешно пережил без заметных изменений пять веков, но и перешагнул в электронный дизайн. Его популяризации в новое время послужили публикация листов Letraset с образцами Lorem Ipsum в 60-х годах и, в более недавнее время, программы электронной вёрстки типа Aldus PageMaker, в шаблонах которых используется Lorem Ipsum. Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. “Lorem Ipsum используют потому, что тот обеспечивает более или менее стандартное заполнение шаблона, а также реальное 
+						</p>
 					</div>
-				</section>
-				<section class="asortiment left mt0 mr0">
-					<a class="asort_zag">Гробы</a>
-					<div class="asort_text">
-						<p class="asort_discr">От 20 Видов гробов</p>
-						<p class="asort_discr">От 56 видов обшивок</p>
-					</div>
-				</section>
-				<section class="asortiment left">
-					<a class="asort_zag">Гробы</a>
-					<div class="asort_text">
-						<p class="asort_discr">От 20 Видов гробов</p>
-						<p class="asort_discr">От 56 видов обшивок</p>
-					</div>
-				</section>
-				<section class="asortiment left">
-					<a class="asort_zag">Гробы</a>
-					<div class="asort_text">
-						<p class="asort_discr">От 20 Видов гробов</p>
-							<p class="asort_discr">От 56 видов обшивок</p>
-					</div>
-				</section>
-				<section class="asortiment left mr0">
-					<a class="asort_zag">Гробы</a>
-					<div class="asort_text">
-						<p class="asort_discr">От 20 Видов гробов</p>
-							<p class="asort_discr">От 56 видов обшивок</p>
-					</div>
-				</section>
-			</aside>
-				<p class="agent__text italic">
-					Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов. Lorem Ipsum не только успешно пережил без заметных изменений пять веков, но и перешагнул в электронный дизайн. Его популяризации в новое время послужили публикация листов Letraset с образцами Lorem Ipsum в 60-х годах и, в более недавнее время, программы электронной вёрстки типа Aldus PageMaker, в шаблонах которых используется Lorem Ipsum. Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. “Lorem Ipsum используют потому, что тот обеспечивает более или менее стандартное заполнение шаблона, а также реальное 
-				</p>
-			</div>
-		</article>
-			<div class="wrapper content">
-				<div class="slider_buttom">
-					<div class="slider__footer_prev"></div>
-		            <ul class="slider__footer">
-		                <li><a href="http://pravo.by" target="_blank"><img src="img/item/1.png" width="100" /></a></li>
-						<li><a href="#"><img src="img/item/2.png" width="100" /></a></li>
-						<li><a href="#"><img src="img/item/3.png" width="100" /></a></li>
-						<li><a href="#"><img src="img/item/1.png" width="100" /></a></li>
-						<li><a href="#"><img src="img/item/2.png" width="100" /></a></li>
-						<li><a href="#"><img src="img/item/3.png" width="100" /></a></li>
-						<li><a href="#"><img src="img/item/1.png" width="100" /></a></li>
-						<li><a href="#"><img src="img/item/2.png" width="100" /></a></li>
-						<li><a href="#"><img src="img/item/3.png" width="100" /></a></li>
-						<li><a href="#"><img src="img/item/1.png" width="100" /></a></li>
-						<li><a href="#"><img src="img/item/2.png" width="100" /></a></li>
-						<li><a href="#"><img src="img/item/3.png" width="100" /></a></li>
-		            <div class="slider__footer_next"></div>
+
+
+
+
+
+
+
+
+
+
+
+					
+
+
+
+
+
+
 				</div>
-			</div>
+				<div class="bslider">
+					<div class="slider_buttom">
+						<div class="slider__footer_prev"></div>
+			      <ul class="slider__footer">
+			        <li><a href="http://pravo.by" target="_blank"><img src="img/item/1.png" width="100" /></a></li>
+							<li><a href="#"><img src="img/item/2.png" width="100" /></a></li>
+							<li><a href="#"><img src="img/item/3.png" width="100" /></a></li>
+							<li><a href="#"><img src="img/item/1.png" width="100" /></a></li>
+							<li><a href="#"><img src="img/item/2.png" width="100" /></a></li>
+							<li><a href="#"><img src="img/item/3.png" width="100" /></a></li>
+							<li><a href="#"><img src="img/item/1.png" width="100" /></a></li>
+							<li><a href="#"><img src="img/item/2.png" width="100" /></a></li>
+							<li><a href="#"><img src="img/item/3.png" width="100" /></a></li>
+							<li><a href="#"><img src="img/item/1.png" width="100" /></a></li>
+							<li><a href="#"><img src="img/item/2.png" width="100" /></a></li>
+							<li><a href="#"><img src="img/item/3.png" width="100" /></a></li>
+			      </ul>
+			      <div class="slider__footer_next"></div>
+					</div>
+				</div>
+			</article>
 
 		<footer>
 			<div class="zametka">
@@ -303,9 +369,8 @@
 		<![endif]-->
 		
 		<!-- Подключаем скрипты -->
-		<!-- <script src="libs/jquery/jquery-1.11.2.min.js"></script> -->
+		<script src="libs/jquery/jquery-1.11.2.min.js"></script>
 		<!-- <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script> -->
-		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
 		<!-- <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script> -->
 		<script src="libs/modernizr/modernizr.js"></script>
 		<script src="libs/bootstrap/js/bootstrap.min.js"></script>

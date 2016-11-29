@@ -9,11 +9,7 @@
 		<meta charset="utf-8" />
 
 		<title>Контакты</title>
-		<meta name="description" content="КУП “СПЕЦИАЛИЗИРОВАННЫЙ КОМБИНАТ КОММУНАЛЬНО-БЫТОВОГО ОБСЛУЖИВАНИЯ”">
-	    <meta name="author" content="Pavel Korchago">
-	    <meta name="tel" content="+375 29 303 23 22">
-	    <meta name="email" content="pavel.korchago@mail.ru">
-		
+		<meta name="description" content="КУП “СПЕЦИАЛИЗИРОВАННЫЙ КОМБИНАТ КОММУНАЛЬНО-БЫТОВОГО ОБСЛУЖИВАНИЯ”">		
 		<!-- Иконка сайта -->
 		<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon" />
 		<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png" />
@@ -40,6 +36,7 @@
 		<link href="libs/mobilyslider/css/default.css" rel="stylesheet" type="text/css" />
 		<link rel="stylesheet" href="css/main.css" />
 		<link rel="stylesheet" href="css/media.css" />
+		<link rel="stylesheet" href="css/all.css" />
 
 	</head>
 
@@ -50,18 +47,20 @@
 				<div class="bg_img">
 					<a href="#" class="dib"><img src="img/images/piples.png" alt="alt"></a>
 					<h1 class="zag dib">Куп “специализированный комбинат <br> коммунально-бытового обслуживания”</h1>
-					<img src="img/images/namber.png" alt="number" class="number">
+					<img src="img/images/namber.png" alt="number" class="number pulse">
 					<h3 class="discr dib"> “Мы поможем сохранить память!”</h3>
 					<div class="contact dib">
 						<p class="contact__text email">speckombinat@bk.ru</p>
 						<p class="contact__text adress">г.Минск, ул. Ольшевского, 12</p>
 					</div>
-					<form class="searc_block dib right" action="" method="get">
-							<input type="search" class="search" placeholder="Поиск...">
-							<button class="button"><img src="img/images/lupa.png" alt="lupa"></button>
-					</form>
+					<div class="searc_block dib right">
+						<form action="" method="get">
+								<input type="search" class="search" placeholder="Поиск...">
+								<button class="button"><img src="img/images/lupa.png" alt="lupa"></button>
+						</form>
+					</div>
 				</div>
-				<nav>
+				<nav class="tmenu">
 					<div class="bg_menu">
 						<div class="menu">
 							<img src="img/images/roza.png" alt="roza" class="roza">
@@ -69,10 +68,10 @@
 								<li class="menu__li dib"><a class="menu__a pl10" href="index.html">ГЛАВНАЯ</a></li>
 								<li class="menu__li dib"><a class="menu__a" href="o_predpriatii.html">О ПРЕДПРИЯТИИ</a></li>
 								<li class="menu__li dib"><a class="menu__a" href="vizov_agenta.html">ВЫЗОВ АГЕНТА</a></li>
-								<li class="menu__li dib"><a class="menu__a" href="news_perevozka.html">ДОСТАВКА</a></li>
+								<li class="menu__li dib"><a class="menu__a" href="dostavka.html">ДОСТАВКА</a></li>
 								<li class="menu__li dib"><a class="menu__a" href="ritual_tovari.html">ТОВАРЫ</a></li>
 								<li class="menu__li dib"><a class="menu__a" href="statie.html">СТАТЬИ</a></li>
-								<li class="menu__li dib"><a class="menu__a" href="kontakt.html">КОНТАКТЫ</a></li>
+								<li class="menu__li menu__li__active dib"><a class="menu__a" href="kontakt.html">КОНТАКТЫ</a></li>
 							</ul>
 						</div>
 					</div>
@@ -80,94 +79,110 @@
 			</div>
 		</header>
 
-		<article class="wrapper">
-			<div class="spisok_menu">
-				<ul class="spisok_menu__ul">
-					<li class="spisok_menu__li dib"><a class="spisok_menu__pasiv" href="index.html">Главная</a></li>
-					<li class="spisok_menu__li dib"><a href="kontakt.html" class="spisok_menu__activ">/ Контакты</a></li>
-				</ul>
-			</div>
-			<div class="left_menu_ssilki dib">
-				<nav class="left_menu">
-					<nav id="menuVertical">
-						<ul class="vipad_menu">
-							<li><a href="ritual_uslugi.html">Ритуальные услуги</a>
-								<ul>
-									<li><a href="#">Агенты, справки</a></li>
-									<li><a href="ritual_zal.html">Ритуальный зал</a></li>
-									<li><a href="#">Холодильная камера</a></li>
-									<li><a href="uslugi_zahoronenia.html">Услуги захоронения</a></li>
-									<li><a href="">Транспортные услуги</a></li>
-									<li><a href="#">Благоустройство захоронений</a></li>
-									<li><a href="#">Фото/видео услуги</a></li>
-								</ul>
-							</li>
-							<li><a href="ritual_tovari.html">Ритуальные товары</a></li>
-							<li><a href="kladbiche.html">Кладбища</a>
-								<ul>
-									<li><a href="kladbiche_vostochnoe.html">Восточное</a></li>
-									<li><a href="#">Северное</a></li>
-									<li><a href="#">Западное</a></li>
-									<li><a href="#">Колодищи</a></li>
-									<li><a href="#">Михановичи</a></li>
-									<li><a href="#">Чижовское</a></li>
-								</ul>
-							</li>
-							<li><a href="magazinu_i_filiali.html">Магазины и филиалы</a></li>
-							<li><a href="krematori.html">Крематорий</a></li>
-							<li><a href="pravovie_voprosi.html">Правовые вопросы</a></li>
-							<li><a href="admin_proceduri.html">Админ. процедуры</a></li>
-							<li><a href="uborka.html">Уборка места захоронения</a></li>
-							<li><a href="oformlenie.html">Оформление похорон</a></li>
-							<li><a href="info_term.html">Инф. терминалы</a></li>
-							<li><a href="jurnal_nekropol.html">Журнал “Некрополь”</a></li>
-							<li><a href="vakansii.html">Вакансии</a></li>
-							<li><a href="elekt_obr.html">Электронное обращение</a></li>
-						</ul>
-					</nav><!--menuVertical-->
-				</nav>
-				<div class="ssilki_bloki dib">
-					<a class="ssilki_v_blokah" href="http://www.ritual-minsk.by/" target="_blank">http://www.ritual-minsk.by/</a>
+		<article class="innerpage">
+			<div class="clearfix">
+				<div class="spisok_menu">
+					<ul class="spisok_menu__ul">
+						<li class="spisok_menu__li dib"><a class="spisok_menu__pasiv" href="index.html">Главная</a></li>
+						<li class="spisok_menu__li dib"><a href="kontakt.html" class="spisok_menu__activ">/ Контакты</a></li>
+					</ul>
 				</div>
-				<div class="ssilki_bloki dib">
-					<a class="ssilki_v_blokah" href="http://www.ritual-minsk.by/" target="_blank">http://www.ritual-minsk.by/</a>
+				<div class="innerpage_left">
+					<nav class="left_menu dib">
+						<nav id="menuVertical">
+							<ul class="vipad_menu">
+								<li><a href="ritual_uslugi.html">Ритуальные услуги</a>
+									<ul>
+										<li><a href="#">Агенты, справки</a></li>
+										<li><a href="ritual_zal.html">Ритуальный зал</a></li>
+										<li><a href="#">Холодильная камера</a></li>
+										<li><a href="uslugi_zahoronenia.html">Услуги захоронения</a></li>
+										<li><a href="">Транспортные услуги</a></li>
+										<li><a href="#">Благоустройство захоронений</a></li>
+										<li><a href="#">Фото/видео услуги</a></li>
+									</ul>
+								</li>
+								<li><a href="ritual_tovari.html">Ритуальные товары</a></li>
+								<li><a href="kladbiche.html">Кладбища</a>
+									<ul>
+										<li><a href="kladbiche_vostochnoe.html">Восточное</a></li>
+										<li><a href="#">Северное</a></li>
+										<li><a href="#">Западное</a></li>
+										<li><a href="#">Колодищи</a></li>
+										<li><a href="#">Михановичи</a></li>
+										<li><a href="#">Чижовское</a></li>
+									</ul>
+								</li>
+								<li><a href="magazinu_i_filiali.html">Магазины и филиалы</a></li>
+								<li><a href="krematori.html">Крематорий</a></li>
+								<li><a href="pravovie_voprosi.html">Правовые вопросы</a></li>
+								<li><a href="admin_proceduri.html">Админ. процедуры</a></li>
+								<li><a href="uborka.html">Уборка места захоронения</a></li>
+								<li><a href="oformlenie.html">Оформление похорон</a></li>
+								<li><a href="info_term.html">Инф. терминалы</a></li>
+								<li><a href="jurnal_nekropol.html">Журнал “Некрополь”</a></li>
+								<li><a href="vakansii.html">Вакансии</a></li>
+								<li><a href="elekt_obr.html">Электронное обращение</a></li>
+							</ul>
+						</nav><!--menuVertical-->
+					</nav>
+					<div class="ssilki">
+						<div class="ssilki_bloki dib">
+							<a class="ssilki_v_blokah" href="http://www.ritual-minsk.by/" target="_blank">http://www.ritual-minsk.by/</a>
+						</div>
+						<div class="ssilki_bloki dib">
+							<a class="ssilki_v_blokah" href="http://www.ritual-minsk.by/" target="_blank">http://www.ritual-minsk.by/</a>
+						</div>
+					</div>
 				</div>
-			</div>
-			<div class="agent_block dib">
-				<h2 class="agent__h2 mt-7">Контакты</h2>
-				<div class="poloska" style="background-color: #ebebeb; height: 50px; width: 100%;">
-					<p class="poloska_left dib"><b class="ffbold">Контакты / Ф.И.О / Телефон</b></p>
-					<p class="poloska_right right dib">Горячая телефонная линия (справочная): <b class="ffbold">173</b></p>
+				<div class="agent_block user-content">
+					<h2 class="agent__h2">Контакты</h2>
+					<div class="contacts">
+						<div class="greyline">
+							<div class="greyline_left">Контакты / Ф.И.О / Телефон</div>
+							<div class="greyline_right">Горячая телефонная линия (справочная): <b>173</b></div>
+						</div>
+						<div class="contacts_inner">
+							<div class="contacts_item">
+								<p>
+									<b><em>Директор:</em></b> <br>
+									<b><em>Ракевич Николай Петрович</em></b> <br>
+									<b><em>Приёмные часы</em></b> <br>
+									1-я среда месяца – <b><em>с 17.00 до 20.00</em></b> <br>
+									2-я и последующие среды месяца <b><em>с 8.00 до 14.00</em></b> <br>
+									1-я суббота месяца ‑ <b><em>с 8.00 до 14.00</em></b> <br>
+									Приёмная: <br>
+									Тел.: <b><em>(+375-17) 204-11-43</em></b> <br>
+									Факс: <b><em>(+375-17) 204-31-98</em></b> <br>
+								</p>
+							</div>
+							<div class="contacts_item">
+								<p>
+									<b><em>Первый заместитель директора – главный инженер:</em></b> <br>
+									<b><em>Карунос Владимир Сергеевич</em></b> <br>
+									<b><em>Приёмные часы</em></b> <br>
+									1-й вторник месяца ‑ <b><em>с 17.00 до 20.00;</em></b> <br>
+									2-й и последующие вторники месяца <b><em>с 8.00 до 14.00;</em></b> <br>
+									3-я суббота месяца ‑ <b><em>с 8.00 до 14.00;</em></b> <br>
+									Тел.: <b><em>(+375-17) 204-11-47</em></b> <br>
+								</p>
+							</div>
+						</div>
+						<div class="map dib map__contacts">
+							<div class="map_inner">
+								<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2349.906370554208!2d27.502960915515583!3d53.91563968010227!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46dbc543ae693615%3A0x250b7aae6ad6abfe!2z0YPQuy4g0J7Qu9GM0YjQtdCy0YHQutC-0LPQviAxMiwg0JzQuNC90YHQug!5e0!3m2!1sru!2sby!4v1477051330917" width="825" height="495" frameborder="0" allowfullscreen></iframe>
+								<!-- <div class="shadow"></div> -->
+							</div>
+						</div>
+					</div>
 				</div>
-				<img class="ml55 mt-28" src="img/images/shadow-10.png" alt="shadow">
-				<p class="light__text">
-					<b class="ffbold italic">Директор:</b> <br>
-					<b class="ffbold italic">Ракевич Николай Петрович</b> <br>
-					<b class="ffbold italic">Приёмные часы</b> <br>
-					1-я среда месяца – <b class="ffbold italic">с 17.00 до 20.00</b> <br>
-					2-я и последующие среды месяца <b class="ffbold italic">с 8.00 до 14.00</b> <br>
-					1-я суббота месяца ‑ <b class="ffbold italic">с 8.00 до 14.00</b> <br>
-					Приёмная: <br>
-					Тел.: <b class="ffbold italic">(+375-17) 204-11-43</b> <br>
-					Факс: <b class="ffbold italic">(+375-17) 204-31-98</b> <br>
-					<img class="ml55" src="img/images/shadow-10.png" alt="shadow">
-					<br>
-					<b class="ffbold italic">Первый заместитель директора – главный инженер:</b> <br>
-					<b class="ffbold italic">Карунос Владимир Сергеевич</b> <br>
-					<b class="ffbold italic">Приёмные часы</b> <br>
-					1-й вторник месяца ‑ <b class="ffbold italic">с 17.00 до 20.00;</b> <br>
-					2-й и последующие вторники месяца <b class="ffbold italic">с 8.00 до 14.00;</b> <br>
-					3-я суббота месяца ‑ <b class="ffbold italic">с 8.00 до 14.00;</b> <br>
-					Тел.: <b class="ffbold italic">(+375-17) 204-11-47</b> <br>
-				</p>
-				<img class="tac ml20 mt20" src="img/images/maps_cont.png" alt="map">
+
 			</div>
-			
-			<div class="wrapper content">
+			<div class="bslider">
 				<div class="slider_buttom">
 					<div class="slider__footer_prev"></div>
-		            <ul class="slider__footer">
-		                <li><a href="http://pravo.by" target="_blank"><img src="img/item/1.png" width="100" /></a></li>
+		      <ul class="slider__footer">
+		        <li><a href="http://pravo.by" target="_blank"><img src="img/item/1.png" width="100" /></a></li>
 						<li><a href="#"><img src="img/item/2.png" width="100" /></a></li>
 						<li><a href="#"><img src="img/item/3.png" width="100" /></a></li>
 						<li><a href="#"><img src="img/item/1.png" width="100" /></a></li>
@@ -179,8 +194,8 @@
 						<li><a href="#"><img src="img/item/1.png" width="100" /></a></li>
 						<li><a href="#"><img src="img/item/2.png" width="100" /></a></li>
 						<li><a href="#"><img src="img/item/3.png" width="100" /></a></li>
-		            </ul>
-		            <div class="slider__footer_next"></div>
+		      </ul>
+		      <div class="slider__footer_next"></div>
 				</div>
 			</div>
 		</article>
@@ -250,9 +265,8 @@
 		<![endif]-->
 		
 		<!-- Подключаем скрипты -->
-		<!-- <script src="libs/jquery/jquery-1.11.2.min.js"></script> -->
+		<script src="libs/jquery/jquery-1.11.2.min.js"></script>
 		<!-- <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script> -->
-		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
 		<!-- <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script> -->
 		<script src="libs/modernizr/modernizr.js"></script>
 		<script src="libs/bootstrap/js/bootstrap.min.js"></script>

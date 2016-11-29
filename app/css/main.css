@@ -84,7 +84,7 @@ body textarea:required:valid {
 
 .number {
     float: right;
-    padding-right: 85px;
+    margin-right: 85px;
 }
 
 .contact {

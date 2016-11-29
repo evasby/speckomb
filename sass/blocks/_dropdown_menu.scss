@@ -5,4 +5,14 @@
 	.wrap{
 		margin: 20px 0 0;
 	}
+
+	.list{
+		margin-bottom: 0;
+		li ul{
+			margin-bottom: 0;
+		}
+	}
+	.list li:hover ul{
+		height: 268px;
+	}
 }

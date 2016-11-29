@@ -8,12 +8,22 @@
 		padding-left: 30px;
 		&:before{
 			//margin-left: 0;
+			transform: translateZ(0);
 		}
 		.premi__discr{
 			padding-left: 40px;
 		}
 		.premi__zag{
 			padding-left: 40px;
+		}
+		&:hover{
+			&:before{
+				animation-name: pulse;
+				animation-delay: 0s;
+				animation-duration: 4000ms;
+				animation-timing-function: ease-in-out;
+				animation-iteration-count: infinite;
+			}
 		}
 	}
 }
