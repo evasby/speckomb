@@ -14,6 +14,7 @@
 		position:relative;
 		z-index: 0;
 		transition: opacity, 0.5s;
+		
 		&:before,
 	  &:after {
 	    content: "";
@@ -35,6 +36,22 @@
 	  }
 	  &:hover{
 	  	opacity: 0.8;
+	  }
+	  .slider_head{
+	  	overflow: hidden;
+	  }
+	  .sliderContent{
+	  	background-color: #fff;
+	  	width: 800px;
+	  	.item{
+	  		width: 800px;
+	  		margin: 0;
+	  		padding: 0;
+	  		img{
+	  			width: 100%;
+	  			height: auto;
+	  		}
+	  	}
 	  }
 	}
 	.slider__header_next{

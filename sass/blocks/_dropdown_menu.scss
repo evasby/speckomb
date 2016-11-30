@@ -5,14 +5,37 @@
 	.wrap{
 		margin: 20px 0 0;
 	}
-
+	ul{
+		li:before{
+			display: none!important;
+		}
+	}
 	.list{
+		background-color: transparent;
 		margin-bottom: 0;
+		li{
+			padding: 0!important;
+			margin: 0!important;
+		}
 		li ul{
 			margin-bottom: 0;
 		}
 	}
 	.list li:hover ul{
 		height: 268px;
+	}
+	&__block{
+		.wrap{
+			margin: 0;
+		}
+		.list{
+			background-color: #6EBDE8;
+			li ul{
+				height: 344px;
+			}
+		}
+		.list li:hover ul{
+			height: 344px;
+		}
 	}
 }

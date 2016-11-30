@@ -10,10 +10,6 @@
 
 		<title>Магазины и филиалы</title>
 		<meta name="description" content="КУП “СПЕЦИАЛИЗИРОВАННЫЙ КОМБИНАТ КОММУНАЛЬНО-БЫТОВОГО ОБСЛУЖИВАНИЯ”">
-	    <meta name="author" content="Pavel Korchago">
-	    <meta name="tel" content="+375 29 303 23 22">
-	    <meta name="email" content="pavel.korchago@mail.ru">
-		
 		<!-- Иконка сайта -->
 		<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon" />
 		<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png" />
@@ -40,6 +36,7 @@
 		<link href="libs/mobilyslider/css/default.css" rel="stylesheet" type="text/css" />
 		<link rel="stylesheet" href="css/main.css" />
 		<link rel="stylesheet" href="css/media.css" />
+		<link rel="stylesheet" href="css/all.css" />
 
 	</head>
 
@@ -50,18 +47,20 @@
 				<div class="bg_img">
 					<a href="#" class="dib"><img src="img/images/piples.png" alt="alt"></a>
 					<h1 class="zag dib">Куп “специализированный комбинат <br> коммунально-бытового обслуживания”</h1>
-					<img src="img/images/namber.png" alt="number" class="number">
+					<img src="img/images/namber.png" alt="number" class="number pulse">
 					<h3 class="discr dib"> “Мы поможем сохранить память!”</h3>
 					<div class="contact dib">
 						<p class="contact__text email">speckombinat@bk.ru</p>
 						<p class="contact__text adress">г.Минск, ул. Ольшевского, 12</p>
 					</div>
-					<form class="searc_block dib right" action="" method="get">
-							<input type="search" class="search" placeholder="Поиск...">
-							<button class="button"><img src="img/images/lupa.png" alt="lupa"></button>
-					</form>
+					<div class="searc_block dib right">
+						<form action="" method="get">
+								<input type="search" class="search" placeholder="Поиск...">
+								<button class="button"><img src="img/images/lupa.png" alt="lupa"></button>
+						</form>
+					</div>
 				</div>
-				<nav>
+				<nav class="tmenu">
 					<div class="bg_menu">
 						<div class="menu">
 							<img src="img/images/roza.png" alt="roza" class="roza">
@@ -69,7 +68,7 @@
 								<li class="menu__li dib"><a class="menu__a pl10" href="index.html">ГЛАВНАЯ</a></li>
 								<li class="menu__li dib"><a class="menu__a" href="o_predpriatii.html">О ПРЕДПРИЯТИИ</a></li>
 								<li class="menu__li dib"><a class="menu__a" href="vizov_agenta.html">ВЫЗОВ АГЕНТА</a></li>
-								<li class="menu__li dib"><a class="menu__a" href="news_perevozka.html">ДОСТАВКА</a></li>
+								<li class="menu__li dib"><a class="menu__a" href="dostavka.html">ДОСТАВКА</a></li>
 								<li class="menu__li dib"><a class="menu__a" href="ritual_tovari.html">ТОВАРЫ</a></li>
 								<li class="menu__li dib"><a class="menu__a" href="statie.html">СТАТЬИ</a></li>
 								<li class="menu__li dib"><a class="menu__a" href="kontakt.html">КОНТАКТЫ</a></li>
@@ -79,158 +78,154 @@
 				</nav>
 			</div>
 		</header>
-
-		<article class="wrapper">
-			<div class="spisok_menu">
-				<ul class="spisok_menu__ul">
-					<li class="spisok_menu__li dib"><a class="spisok_menu__pasiv" href="index.html">Главная</a></li>
-					<li class="spisok_menu__li dib"><a href="magazinu_i_filiali.html" class="spisok_menu__activ">/ Магазины и филиалы</a></li>
-				</ul>
-			</div>
-			<div class="left_menu_ssilki dib">
-				<nav class="left_menu">
-					<nav id="menuVertical">
-						<ul class="vipad_menu">
-							<li><a href="ritual_uslugi.html">Ритуальные услуги</a>
-								<ul>
-									<li><a href="#">Агенты, справки</a></li>
-									<li><a href="ritual_zal.html">Ритуальный зал</a></li>
-									<li><a href="#">Холодильная камера</a></li>
-									<li><a href="uslugi_zahoronenia.html">Услуги захоронения</a></li>
-									<li><a href="">Транспортные услуги</a></li>
-									<li><a href="#">Благоустройство захоронений</a></li>
-									<li><a href="#">Фото/видео услуги</a></li>
+		<main class="main">
+			<article class="innerpage">
+				<div class="spisok_menu">
+					<ul class="spisok_menu__ul">
+						<li class="spisok_menu__li dib"><a class="spisok_menu__pasiv" href="index.html">Главная</a></li>
+						<li class="spisok_menu__li dib"><a href="magazinu_i_filiali.html" class="spisok_menu__activ">/ Магазины и филиалы</a>	</li>
+					</ul>
+				</div>
+				<div class="clearfix">
+					<div class="innerpage_left">
+						<nav class="left_menu dib">
+							<nav id="menuVertical">
+								<ul class="vipad_menu">
+									<li><a href="ritual_uslugi.html">Ритуальные услуги</a>
+										<ul>
+											<li><a href="#">Агенты, справки</a></li>
+											<li><a href="ritual_zal.html">Ритуальный зал</a></li>
+											<li><a href="#">Холодильная камера</a></li>
+											<li><a href="uslugi_zahoronenia.html">Услуги захоронения</a></li>
+											<li><a href="">Транспортные услуги</a></li>
+											<li><a href="#">Благоустройство захоронений</a></li>
+											<li><a href="#">Фото/видео услуги</a></li>
+										</ul>
+									</li>
+									<li><a href="ritual_tovari.html">Ритуальные товары</a></li>
+									<li><a href="kladbiche.html">Кладбища</a>
+										<ul>
+											<li><a href="kladbiche_vostochnoe.html">Восточное</a></li>
+											<li><a href="#">Северное</a></li>
+											<li><a href="#">Западное</a></li>
+											<li><a href="#">Колодищи</a></li>
+											<li><a href="#">Михановичи</a></li>
+											<li><a href="#">Чижовское</a></li>
+										</ul>
+									</li>
+									<li><a href="magazinu_i_filiali.html">Магазины и филиалы</a></li>
+									<li><a href="krematori.html">Крематорий</a></li>
+									<li><a href="pravovie_voprosi.html">Правовые вопросы</a></li>
+									<li><a href="admin_proceduri.html">Админ. процедуры</a></li>
+									<li><a href="uborka.html">Уборка места захоронения</a></li>
+									<li><a href="oformlenie.html">Оформление похорон</a></li>
+									<li><a href="info_term.html">Инф. терминалы</a></li>
+									<li><a href="jurnal_nekropol.html">Журнал “Некрополь”</a></li>
+									<li><a href="vakansii.html">Вакансии</a></li>
+									<li><a href="elekt_obr.html">Электронное обращение</a></li>
 								</ul>
-							</li>
-							<li><a href="ritual_tovari.html">Ритуальные товары</a></li>
-							<li><a href="kladbiche.html">Кладбища</a>
-								<ul>
-									<li><a href="kladbiche_vostochnoe.html">Восточное</a></li>
-									<li><a href="#">Северное</a></li>
-									<li><a href="#">Западное</a></li>
-									<li><a href="#">Колодищи</a></li>
-									<li><a href="#">Михановичи</a></li>
-									<li><a href="#">Чижовское</a></li>
-								</ul>
-							</li>
-							<li><a href="magazinu_i_filiali.html">Магазины и филиалы</a></li>
-							<li><a href="krematori.html">Крематорий</a></li>
-							<li><a href="pravovie_voprosi.html">Правовые вопросы</a></li>
-							<li><a href="admin_proceduri.html">Админ. процедуры</a></li>
-							<li><a href="uborka.html">Уборка места захоронения</a></li>
-							<li><a href="oformlenie.html">Оформление похорон</a></li>
-							<li><a href="info_term.html">Инф. терминалы</a></li>
-							<li><a href="jurnal_nekropol.html">Журнал “Некрополь”</a></li>
-							<li><a href="vakansii.html">Вакансии</a></li>
-							<li><a href="elekt_obr.html">Электронное обращение</a></li>
-						</ul>
-					</nav><!--menuVertical-->
-				</nav>
-				<div class="ssilki_bloki dib">
-					<a class="ssilki_v_blokah" href="http://www.ritual-minsk.by/" target="_blank">http://www.ritual-minsk.by/</a>
-				</div>
-				<div class="ssilki_bloki dib">
-					<a class="ssilki_v_blokah" href="http://www.ritual-minsk.by/" target="_blank">http://www.ritual-minsk.by/</a>
-				</div>
-			</div>
-			<div class="agent_block dib" style="width: 850px;">
-				<h2 class="agent__h2 mt-7">Магазины и филиалы</h2>
-				<p class="light_italic__text">
-					В наших магазинах Вы можете приобрести широкий ассортимент продукции похоронных принадлежностей. Вас могут проконсультировать и предложить весь необходимый перечень принадлежностей для похорон, а также решить за Вас в трудную минуту организационные вопросы. В магазине разнообразная продукция на траурную тематику. Возможно заказать доставку.
-				</p>
-				<div class="img_text_block">
-					<a href="magazinu_i_filiali__olshevskogo.html"><img src="img/images/magazini/1.png" alt="kartinki" class="img_block"></a>
-					<div class="text_block dib ml20" style="width: 580px; margin-top: 10px;">
-						<h4 class="opisanie text_block__h4"><a href="magazinu_i_filiali__olshevskogo.html" class="black">Магазин ул.Ольшевского,12</a></h4>
-						<p class="light__text italic">График работы: <b class="ffbold">круглосуточно без обеда и без выходных.</b></p>
-						<p class="light__text italic">Телефон: <b class="ffbold">204-31-36 (ритуал. товары), 204-30-32 (секц. памятников), <br> 204-31-32 (ритуал. услуги)</b></p>
+							</nav><!--menuVertical-->
+						</nav>
+						<div class="ssilki">
+							<div class="ssilki_bloki">
+								<a class="ssilki_v_blokah" href="http://www.ritual-minsk.by/" target="_blank">http://www.ritual-minsk.by/</a>
+							</div>
+							<div class="ssilki_bloki">
+								<a class="ssilki_v_blokah" href="http://www.ritual-minsk.by/" target="_blank">http://www.ritual-minsk.by/</a>
+							</div>
+						</div>
 					</div>
-				</div>
-				<div class="img_text_block">
-					<a href="#"><img src="img/images/magazini/2.png" alt="kartinki" class="img_block"></a>
-					<div class="text_block dib ml20" style="width: 580px; margin-top: 10px;">
-						<h4 class="opisanie text_block__h4"><a href="#" class="black">Филиал магазина в крематории</a></h4>
-						<p class="light__text italic">График работы с клиентами: <b class="ffbold">пн.-пт. 9.30-16.00 без обеда, сб.-вс. 9.30-15.00 <br> без обеда.</b></p>
-						<p class="light__text italic">Телефон: <b class="ffbold">512-61-98</b></p>
-					</div>
-				</div>
-				<div class="img_text_block">
-					<a href="#"><img src="img/images/magazini/3.png" alt="kartinki" class="img_block"></a>
-					<div class="text_block dib ml20" style="width: 580px; margin-top: 10px;">
-						<h4 class="opisanie text_block__h4"><a href="#" class="black">Филиал магазина на ул.Уборевича,56</a></h4>
-						<p class="light__text italic">График работы: <b class="ffbold">пн.-пт. 9.00-17.00 без обеда, сб.-вс. 9.00-16.00.</b></p>
-						<p class="light__text italic">Телефон: <b class="ffbold">340-40-94, 340-23-16</b></p>
-					</div>
-				</div>
-				<div class="img_text_block">
-					<a href="#"><img src="img/images/magazini/4.png" alt="kartinki" class="img_block"></a>
-					<div class="text_block dib ml20" style="width: 580px; margin-top: 10px;">
-						<h4 class="opisanie text_block__h4"><a href="#" class="black">Филиал магазина кл."Восточное" (Московское)</a></h4>
-						<p class="light__text italic">График работы: <b class="ffbold">пн.-пт. 9.00-17.00 без обеда, сб.-вс. 9.00-16.00.  </b></p>
-						<p class="light__text italic">Телефон: <b class="ffbold">369 78 32</b></p>
-					</div>
-				</div>
-				<div class="img_text_block">
-					<a href="#"><img src="img/images/magazini/5.png" alt="kartinki" class="img_block"></a>
-					<div class="text_block dib ml20" style="width: 580px; margin-top: 10px;">
-						<h4 class="opisanie text_block__h4"><a href="#" class="black">Филиал магазина кл."Западное"</a></h4>
-						<p class="light__text italic">График работы: <b class="ffbold">пн.-вс. 10.00-16.00 без обеда и без выходных. </b></p>
-						<p class="light__text italic">Телефон: <b class="ffbold">(017)542-10-03</b></p>
-					</div>
-				</div>
-				<img src="img/images/maps.png" alt="map" class="dib ml-25">
-				<nav class="dropdown_menu dib">
-					<div class="wrap">
-					  <ul class="list list_kladb">
-					    <li> <a href="#">Кладбище</a>
-					      <ul class="item item_kladb">
-					        <li><a href="#">Восточное</a></li>
-					        <li> <a href="#">Северное</a></li>
-					        <li> <a href="#">Западное</a></li>
-					        <li> <a href="#">Колодищи</a></li>
-					        <li> <a href="#">Михановичи</a></li>
-					        <li> <a href="#">Чижовское</a></li>
-					        <li> <a href="#">Запасное поле</a></li>
-					        <li> <a href="#">Запасное поле</a></li>
-							<li> <a href="#">Запасное поле</a></li>
-							<li> <a href="#">Запасное поле</a></li>
-							<li> <a href="#">Запасное поле</a></li>
-							<li> <a href="#">Запасное поле</a></li>
-							<li> <a href="#">Запасное поле</a></li>
-							<li> <a href="#">Запасное поле</a></li>
-					      </ul>
-					    </li>
-					  </ul>
-					</div>
-				</nav>
-				<p class="agent__text italic">
-					Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов. Lorem Ipsum не только успешно пережил без заметных изменений пять веков, но и перешагнул в электронный <a class="ssilka_v_texte" href="#">дизайн. Его популяризации в новое время послужили публикация листов Letraset с образцами Lorem Ipsum в 60-х годах и, в более недавнее время</a>, программы электронной вёрстки типа Aldus PageMaker, в шаблонах которых используется Lorem Ipsum. Давно
-				</p>
+					<div class="agent_block user-content">
+						<h2 class="agent__h2">Магазины и филиалы</h2>
+						<div class="services-block">
+							<div class="services_topdescr">
+								<p>
+									<em>В наших магазинах Вы можете приобрести широкий ассортимент продукции похоронных принадлежностей. Вас могут проконсультировать и предложить весь необходимый перечень принадлежностей для похорон, а также решить за Вас в трудную минуту организационные вопросы. В магазине разнообразная продукция на траурную тематику. Возможно заказать доставку.</em>
+								</p>
+							</div>
+							<div class="img_text_block">
+								<a class="img_text_block_image" href="#"><img src="img/item/shops1.jpg" alt="kartinki"></a>
+								<div class="text_block dib">
+									<h4 class="opisanie text_block__h4"><a href="#" class="black">Магазин ул.Ольшевского,12</a></h4>
+									<div class="img_text_block_text">
+										<p><em>График работы:</em> <b><em>круглосуточно без обеда и без выходных.</em></b></p>
+										<p><em>Телефон:</em> <b><em>204-31-36 (ритуал. товары), 204-30-32 (секц. памятников), 204-31-32 (ритуал. услуги)</em></b></p>
+									</div>
+								</div>
+							</div>
+							<div class="img_text_block">
+								<a class="img_text_block_image" href="#"><img src="img/item/shops2.jpg" alt="kartinki"></a>
+								<div class="text_block dib">
+									<h4 class="opisanie text_block__h4"><a href="ritual_zal.html" class="black">Филиал магазина в крематории</a></h4>
+									<div class="img_text_block_text">
+										<p><em>График работы с клиентами:</em> <b><em>пн.-пт. 9.30-16.00 без обеда, сб.-вс. 9.30-15.00 без обеда.</em></b></p>
+										<p><em>Телефон:</em> <b><em>512-61-98</em></b></p>
+									</div>
+								</div>
+							</div>
+							<div class="clearfix">
+								<div class="map dib map__block">
+									<div class="map_inner">
+										<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2349.906370554208!2d27.502960915515583!3d53.91563968010227!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46dbc543ae693615%3A0x250b7aae6ad6abfe!2z0YPQuy4g0J7Qu9GM0YjQtdCy0YHQutC-0LPQviAxMiwg0JzQuNC90YHQug!5e0!3m2!1sru!2sby!4v1477051330917" width="540" height="394" frameborder="0" allowfullscreen></iframe>
+										<!-- <div class="shadow"></div> -->
+									</div>
+								</div>
+								<nav class="dropdown_menu dropdown_menu__block dib">
+									<div class="wrap">
+									  <ul class="list list_kladb">
+									    <li> <a href="#">Магазины</a>
+									      <ul class="item item_kladb">
+									        <li><a href="kladbiche_vostochnoe.html">Восточное</a></li>
+									        <li> <a href="#">Северное</a></li>
+									        <li> <a href="#">Западное</a></li>
+									        <li> <a href="#">Колодищи</a></li>
+									        <li> <a href="#">Михановичи</a></li>
+									        <li> <a href="#">Чижовское</a></li>
+									        <li> <a href="#">Запасное поле</a></li>
+									        <li> <a href="#">Запасное поле</a></li>
+													<li> <a href="#">Запасное поле</a></li>
+													<li> <a href="#">Запасное поле</a></li>
+													<li> <a href="#">Запасное поле</a></li>
+													<li> <a href="#">Запасное поле</a></li>
+													<li> <a href="#">Запасное поле</a></li>
+													<li> <a href="#">Запасное поле</a></li>
+									      </ul>
+									    </li>
+									  </ul>
+									</div>
+								</nav>
+							</div>
+							<div class="services_descr">
+								<p>
+									<em>Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов. Lorem Ipsum не только успешно пережил без заметных изменений пять веков, но и перешагнул в электронный дизайн. Его популяризации в новое время послужили публикация листов Letraset с образцами Lorem Ipsum в 60-х годах и, в более недавнее время, программы электронной вёрстки типа Aldus PageMaker, в шаблонах которых используется Lorem Ipsum. Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. “Lorem Ipsum</em>
+								</p>
+							</div>
+						</div>
 
-			</div>
-			
-			<div class="wrapper content">
-				<div class="slider_buttom">
-					<div class="slider__footer_prev"></div>
-		            <ul class="slider__footer">
-		                <li><a href="http://pravo.by" target="_blank"><img src="img/item/1.png" width="100" /></a></li>
-						<li><a href="#"><img src="img/item/2.png" width="100" /></a></li>
-						<li><a href="#"><img src="img/item/3.png" width="100" /></a></li>
-						<li><a href="#"><img src="img/item/1.png" width="100" /></a></li>
-						<li><a href="#"><img src="img/item/2.png" width="100" /></a></li>
-						<li><a href="#"><img src="img/item/3.png" width="100" /></a></li>
-						<li><a href="#"><img src="img/item/1.png" width="100" /></a></li>
-						<li><a href="#"><img src="img/item/2.png" width="100" /></a></li>
-						<li><a href="#"><img src="img/item/3.png" width="100" /></a></li>
-						<li><a href="#"><img src="img/item/1.png" width="100" /></a></li>
-						<li><a href="#"><img src="img/item/2.png" width="100" /></a></li>
-						<li><a href="#"><img src="img/item/3.png" width="100" /></a></li>
-		            </ul>
-		            <div class="slider__footer_next"></div>
+					</div>
 				</div>
-			</div>
-		</article>
-
+				<div class="bslider">
+					<div class="slider_buttom">
+						<div class="slider__footer_prev"></div>
+			      <ul class="slider__footer">
+			        <li><a href="http://pravo.by" target="_blank"><img src="img/item/1.png" width="100" /></a></li>
+							<li><a href="#"><img src="img/item/2.png" width="100" /></a></li>
+							<li><a href="#"><img src="img/item/3.png" width="100" /></a></li>
+							<li><a href="#"><img src="img/item/1.png" width="100" /></a></li>
+							<li><a href="#"><img src="img/item/2.png" width="100" /></a></li>
+							<li><a href="#"><img src="img/item/3.png" width="100" /></a></li>
+							<li><a href="#"><img src="img/item/1.png" width="100" /></a></li>
+							<li><a href="#"><img src="img/item/2.png" width="100" /></a></li>
+							<li><a href="#"><img src="img/item/3.png" width="100" /></a></li>
+							<li><a href="#"><img src="img/item/1.png" width="100" /></a></li>
+							<li><a href="#"><img src="img/item/2.png" width="100" /></a></li>
+							<li><a href="#"><img src="img/item/3.png" width="100" /></a></li>
+			      </ul>
+			      <div class="slider__footer_next"></div>
+					</div>
+				</div>
+			</article>
+		</main>
 		<footer>
 			<div class="zametka">
 				<div class="wrapper">

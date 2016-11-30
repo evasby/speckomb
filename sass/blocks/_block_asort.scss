@@ -10,6 +10,9 @@
 	&__block{
 		padding: 27px 0 0;
 	}
+	&__4{
+		padding: 13px 0 0;
+	}
 	.asortiment{
 		position: relative;
 		z-index: 1;
@@ -47,11 +50,12 @@
 		}
 		.asort_image{
 			overflow: hidden;
+			background-color: #B6C4D0;
 			img{
 				display: block;
 				width: 100%;
 				height: auto;
-				transition: all 1s ease-out;
+				transition: transform 1s ease-out;
 			}
 
 		}
@@ -62,5 +66,54 @@
 		&:hover .asort_image img{
 			transform: scale(1.1);
 		}
+
+
+
+		&__4{
+			width: 192px;
+			height: auto;
+			margin: 0 19px 30px 0;
+			&:nth-child(3n){
+				margin-right: 19px;
+			}
+			&:nth-child(4n){
+				margin-right: 0;
+			}
+			.asort_zag{
+				line-height: 27px;
+				text-transform: uppercase;
+				font-size: 17px;
+			}
+			.asort_text{
+				height: 37px;
+				padding: 0;
+				font-size: 15px;
+				line-height: 17px;
+				display: table;
+				width: 100%;
+				.asort_discr{
+					height: 37px;
+					margin: 0;
+					font-size: 15px;
+					line-height: 17px;
+					display: table-cell;
+					vertical-align: middle;
+				}
+			}
+		}
 	}
+
+	&__effect{
+		.asortiment{
+			.asort_image{
+				img{
+					transition: transform 0.35s;
+				}
+			}
+			&:hover .asort_image img{
+				transform: scale3d(0.95,0.95,1);
+			}
+		}
+	}
+
 }

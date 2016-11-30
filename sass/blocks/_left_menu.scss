@@ -15,8 +15,16 @@
       ul li:hover a{
         background-color: lighten(#e1e1e1, 10%);
       }
+      ul li ul li{
+        background-color: #fff;
+      }
       ul li ul li a{
-        @include link(#000, lighten(#000000, 60%));
+        //@include link(#000, lighten(#000000, 60%));
+        @include link(#000, #fff);
+        
+      }
+      ul li ul li a:hover{
+        background: #67a9e3;
       }
 	}	
 	&:before,

@@ -20,10 +20,14 @@
 }
 
 @font-face {
-	font-family: 'OpenSans-Italic';
-	src: url('../fonts/Open_Sans/OpenSans-Italic.ttf') format('truetype');
-	font-style: normal;
-	font-weight: normal;
+  font-family: 'OpenSans-Italic';
+  src: url('../fonts/Open_Sans/OpenSans-Italic.eot');
+  src: url('../fonts/Open_Sans/OpenSans-Italic.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/Open_Sans/OpenSans-Italic.woff') format('woff'),
+       url('../fonts/Open_Sans/OpenSans-Italic.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+
 }
 
 @font-face {

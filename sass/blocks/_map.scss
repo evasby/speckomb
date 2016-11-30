@@ -7,6 +7,10 @@
 	border: 2px solid #b2b2b2;
 	position:relative;
 	z-index: 10;
+  &__block{
+    width: 540px;
+    margin: 0 0 37px;
+  }
   &:before,
   &:after {
     content: "";
