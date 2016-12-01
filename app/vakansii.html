@@ -40,6 +40,7 @@
 		<link href="libs/mobilyslider/css/default.css" rel="stylesheet" type="text/css" />
 		<link rel="stylesheet" href="css/main.css" />
 		<link rel="stylesheet" href="css/media.css" />
+		<link rel="stylesheet" href="css/all.css" />
 
 	</head>
 
@@ -50,26 +51,28 @@
 				<div class="bg_img">
 					<a href="#" class="dib"><img src="img/images/piples.png" alt="alt"></a>
 					<h1 class="zag dib">Куп “специализированный комбинат <br> коммунально-бытового обслуживания”</h1>
-					<img src="img/images/namber.png" alt="number" class="number">
+					<img src="img/images/namber.png" alt="number" class="number pulse">
 					<h3 class="discr dib"> “Мы поможем сохранить память!”</h3>
 					<div class="contact dib">
 						<p class="contact__text email">speckombinat@bk.ru</p>
 						<p class="contact__text adress">г.Минск, ул. Ольшевского, 12</p>
 					</div>
-					<form class="searc_block dib right" action="" method="get">
-							<input type="search" class="search" placeholder="Поиск...">
-							<button class="button"><img src="img/images/lupa.png" alt="lupa"></button>
-					</form>
+					<div class="searc_block dib right">
+						<form action="" method="get">
+								<input type="search" class="search" placeholder="Поиск...">
+								<button class="button"><img src="img/images/lupa.png" alt="lupa"></button>
+						</form>
+					</div>
 				</div>
-				<nav>
+				<nav class="tmenu">
 					<div class="bg_menu">
 						<div class="menu">
 							<img src="img/images/roza.png" alt="roza" class="roza">
 							<ul class="menu__ul">
 								<li class="menu__li dib"><a class="menu__a pl10" href="index.html">ГЛАВНАЯ</a></li>
-								<li class="menu__li dib"><a class="menu__a" href="o_predpriatii.html">О ПРЕДПРИЯТИИ</a></li>
+								<li class="menu__li menu__li__active dib"><a class="menu__a" href="o_predpriatii.html">О ПРЕДПРИЯТИИ</a></li>
 								<li class="menu__li dib"><a class="menu__a" href="vizov_agenta.html">ВЫЗОВ АГЕНТА</a></li>
-								<li class="menu__li dib"><a class="menu__a" href="news_perevozka.html">ДОСТАВКА</a></li>
+								<li class="menu__li dib"><a class="menu__a" href="dostavka.html">ДОСТАВКА</a></li>
 								<li class="menu__li dib"><a class="menu__a" href="ritual_tovari.html">ТОВАРЫ</a></li>
 								<li class="menu__li dib"><a class="menu__a" href="statie.html">СТАТЬИ</a></li>
 								<li class="menu__li dib"><a class="menu__a" href="kontakt.html">КОНТАКТЫ</a></li>
@@ -79,98 +82,170 @@
 				</nav>
 			</div>
 		</header>
-
-		<article class="wrapper">
-			<div class="spisok_menu">
-				<ul class="spisok_menu__ul">
-					<li class="spisok_menu__li dib"><a class="spisok_menu__pasiv" href="index.html">Главная</a></li>
-					<li class="spisok_menu__li dib"><a href="vakansii.html" class="spisok_menu__activ">/ Вакансии</a></li>
-				</ul>
-			</div>
-			<div class="left_menu_ssilki dib">
-				<nav class="left_menu">
-					<nav id="menuVertical">
-						<ul class="vipad_menu">
-							<li><a href="ritual_uslugi.html">Ритуальные услуги</a>
-								<ul>
-									<li><a href="#">Агенты, справки</a></li>
-									<li><a href="ritual_zal.html">Ритуальный зал</a></li>
-									<li><a href="#">Холодильная камера</a></li>
-									<li><a href="uslugi_zahoronenia.html">Услуги захоронения</a></li>
-									<li><a href="">Транспортные услуги</a></li>
-									<li><a href="#">Благоустройство захоронений</a></li>
-									<li><a href="#">Фото/видео услуги</a></li>
+		<main class="main">
+			<article class="innerpage">
+				<div class="spisok_menu">
+					<ul class="spisok_menu__ul">
+						<li class="spisok_menu__li dib"><a class="spisok_menu__pasiv" href="index.html">Главная</a></li>
+						<li class="spisok_menu__li dib"><a href="vakansii.html" class="spisok_menu__activ">/ Вакансии</a></li>
+					</ul>
+				</div>
+				<div class="clearfix">
+					<div class="innerpage_left">
+						<nav class="left_menu dib">
+							<nav id="menuVertical">
+								<ul class="vipad_menu">
+									<li><a href="ritual_uslugi.html">Ритуальные услуги</a>
+										<ul>
+											<li><a href="#">Агенты, справки</a></li>
+											<li><a href="ritual_zal.html">Ритуальный зал</a></li>
+											<li><a href="#">Холодильная камера</a></li>
+											<li><a href="uslugi_zahoronenia.html">Услуги захоронения</a></li>
+											<li><a href="">Транспортные услуги</a></li>
+											<li><a href="#">Благоустройство захоронений</a></li>
+											<li><a href="#">Фото/видео услуги</a></li>
+										</ul>
+									</li>
+									<li><a href="ritual_tovari.html">Ритуальные товары</a></li>
+									<li><a href="kladbiche.html">Кладбища</a>
+										<ul>
+											<li><a href="kladbiche_vostochnoe.html">Восточное</a></li>
+											<li><a href="#">Северное</a></li>
+											<li><a href="#">Западное</a></li>
+											<li><a href="#">Колодищи</a></li>
+											<li><a href="#">Михановичи</a></li>
+											<li><a href="#">Чижовское</a></li>
+										</ul>
+									</li>
+									<li><a href="magazinu_i_filiali.html">Магазины и филиалы</a></li>
+									<li><a href="krematori.html">Крематорий</a></li>
+									<li><a href="pravovie_voprosi.html">Правовые вопросы</a></li>
+									<li><a href="admin_proceduri.html">Админ. процедуры</a></li>
+									<li><a href="uborka.html">Уборка места захоронения</a></li>
+									<li><a href="oformlenie.html">Оформление похорон</a></li>
+									<li><a href="info_term.html">Инф. терминалы</a></li>
+									<li><a href="jurnal_nekropol.html">Журнал “Некрополь”</a></li>
+									<li><a href="vakansii.html">Вакансии</a></li>
+									<li><a href="elekt_obr.html">Электронное обращение</a></li>
 								</ul>
-							</li>
-							<li><a href="ritual_tovari.html">Ритуальные товары</a></li>
-							<li><a href="kladbiche.html">Кладбища</a>
-								<ul>
-									<li><a href="kladbiche_vostochnoe.html">Восточное</a></li>
-									<li><a href="#">Северное</a></li>
-									<li><a href="#">Западное</a></li>
-									<li><a href="#">Колодищи</a></li>
-									<li><a href="#">Михановичи</a></li>
-									<li><a href="#">Чижовское</a></li>
-								</ul>
-							</li>
-							<li><a href="magazinu_i_filiali.html">Магазины и филиалы</a></li>
-							<li><a href="krematori.html">Крематорий</a></li>
-							<li><a href="pravovie_voprosi.html">Правовые вопросы</a></li>
-							<li><a href="admin_proceduri.html">Админ. процедуры</a></li>
-							<li><a href="uborka.html">Уборка места захоронения</a></li>
-							<li><a href="oformlenie.html">Оформление похорон</a></li>
-							<li><a href="info_term.html">Инф. терминалы</a></li>
-							<li><a href="jurnal_nekropol.html">Журнал “Некрополь”</a></li>
-							<li><a href="vakansii.html">Вакансии</a></li>
-							<li><a href="elekt_obr.html">Электронное обращение</a></li>
-						</ul>
-					</nav><!--menuVertical-->
-				<div class="ssilki_bloki dib">
-					<a class="ssilki_v_blokah" href="http://www.ritual-minsk.by/" target="_blank">http://www.ritual-minsk.by/</a>
+							</nav><!--menuVertical-->				
+						</nav>
+						<div class="ssilki">
+							<div class="ssilki_bloki">
+								<a class="ssilki_v_blokah" href="http://www.ritual-minsk.by/" target="_blank">http://www.ritual-minsk.by/</a>
+							</div>
+							<div class="ssilki_bloki">
+								<a class="ssilki_v_blokah" href="http://www.ritual-minsk.by/" target="_blank">http://www.ritual-minsk.by/</a>
+							</div>
+						</div>
+					</div>
+					<div class="agent_block user-content">
+						<h2 class="agent__h2">Вакансии</h2>
+						<p style="text-align: center;">УП “Спецкомбинат КБО” требуются работники:</p>
+						<table>
+							<tr>
+								<th>№ п/п</th>
+								<th>Профессия, должность</th>
+								<th>Разряд/Категория</th>
+								<th>Зарплата</th>
+								<th>Кол. Вакансий</th>
+							</tr>
+							<tr>
+								<td style="text-align: center;">1</td>
+								<td style="text-align: center;">Гравер</td>
+								<td style="text-align: center;">4 разряд</td>
+								<td style="text-align: center;">500</td>
+								<td style="text-align: center;">1</td>
+							</tr>
+							<tr>
+								<td style="text-align: center;">2</td>
+								<td style="text-align: center;">Плотник</td>
+								<td style="text-align: center;">4 разряд</td>
+								<td style="text-align: center;">500</td>
+								<td style="text-align: center;">1</td>
+							</tr>
+							<tr>
+								<td style="text-align: center;">3</td>
+								<td style="text-align: center;">Штукатур</td>
+								<td style="text-align: center;">4 разряд</td>
+								<td style="text-align: center;">500</td>
+								<td style="text-align: center;">1</td>
+							</tr>
+							<tr>
+								<td style="text-align: center;">4</td>
+								<td style="text-align: center;">Уборщик территории</td>
+								<td></td>
+								<td style="text-align: center;">200-400</td>
+								<td style="text-align: center;">1</td>
+							</tr>
+							<tr>
+								<td style="text-align: center;">5</td>
+								<td style="text-align: center;">Работчий зеленого строительства</td>
+								<td style="text-align: center;">6 разряд</td>
+								<td style="text-align: center;">150</td>
+								<td style="text-align: center;">0,5</td>
+							</tr>
+							<tr>
+								<td style="text-align: center;">6</td>
+								<td style="text-align: center;">Санитар</td>
+								<td></td>
+								<td style="text-align: center;">300-400</td>
+								<td style="text-align: center;">1</td>
+							</tr>
+							<tr>
+								<td style="text-align: center;" style="text-align: center;">7</td>
+								<td style="text-align: center;" style="text-align: center;">Организатор ритуала</td>
+								<td></td>
+								<td style="text-align: center;" style="text-align: center;">400-500</td>
+								<td style="text-align: center;" style="text-align: center;">1</td>
+							</tr>
+							<tr>
+								<td style="text-align: center;">8</td>
+								<td style="text-align: center;">Слесарь по ремонту автомобилей</td>
+								<td style="text-align: center;">4 разряд</td>
+								<td style="text-align: center;">400-600</td>
+								<td style="text-align: center;">1</td>
+							</tr>
+							<tr>
+								<td style="text-align: center;">9</td>
+								<td style="text-align: center;">Рабочий ритуальных услуг</td>
+								<td></td>
+								<td style="text-align: center;">600-750</td>
+								<td style="text-align: center;">1</td>
+							</tr>
+						</table>
+						<p>&nbsp;&nbsp;&nbsp;&nbsp;Телефон: <b>204 30 57</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>11 июля 2016</b></p>
+					</div>
 				</div>
-				<div class="ssilki_bloki dib">
-					<a class="ssilki_v_blokah" href="http://www.ritual-minsk.by/" target="_blank">http://www.ritual-minsk.by/</a>
-				</div>
-			</div>
-
-
-			<aside class="vakansii_table dib">
-				<h2 class="vakansii_table__h2">Вакансии</h2>
-				<p class="vakansii_table__p">УП “Спецкомбинат КБО” требуются работники:</p>
-				<div class="vakansii_table">
-					
-				</div>
-				<p class="vakansii-tel dib">
-					Телефон: <b>204 30 57</b>
-				</p>
-				<p class="vakansii_data dib right">
-					<b>11 июля 2016</b>
-				</p>
-
-			</aside>
+				
 			
-			<div class="wrapper content">
-				<div class="slider_buttom">
-					<div class="slider__footer_prev"></div>
-		            <ul class="slider__footer">
-		                <li><a href="http://pravo.by" target="_blank"><img src="img/item/1.png" width="100" /></a></li>
-						<li><a href="#"><img src="img/item/2.png" width="100" /></a></li>
-						<li><a href="#"><img src="img/item/3.png" width="100" /></a></li>
-						<li><a href="#"><img src="img/item/1.png" width="100" /></a></li>
-						<li><a href="#"><img src="img/item/2.png" width="100" /></a></li>
-						<li><a href="#"><img src="img/item/3.png" width="100" /></a></li>
-						<li><a href="#"><img src="img/item/1.png" width="100" /></a></li>
-						<li><a href="#"><img src="img/item/2.png" width="100" /></a></li>
-						<li><a href="#"><img src="img/item/3.png" width="100" /></a></li>
-						<li><a href="#"><img src="img/item/1.png" width="100" /></a></li>
-						<li><a href="#"><img src="img/item/2.png" width="100" /></a></li>
-						<li><a href="#"><img src="img/item/3.png" width="100" /></a></li>
-		            </ul>
-		            <div class="slider__footer_next"></div>
-				</div>
-			</div>
-		</article>
 
+
+
+
+				
+				<div class="bslider">
+					<div class="slider_buttom">
+						<div class="slider__footer_prev"></div>
+			      <ul class="slider__footer">
+			        <li><a href="http://pravo.by" target="_blank"><img src="img/item/1.png" width="100" /></a></li>
+							<li><a href="#"><img src="img/item/2.png" width="100" /></a></li>
+							<li><a href="#"><img src="img/item/3.png" width="100" /></a></li>
+							<li><a href="#"><img src="img/item/1.png" width="100" /></a></li>
+							<li><a href="#"><img src="img/item/2.png" width="100" /></a></li>
+							<li><a href="#"><img src="img/item/3.png" width="100" /></a></li>
+							<li><a href="#"><img src="img/item/1.png" width="100" /></a></li>
+							<li><a href="#"><img src="img/item/2.png" width="100" /></a></li>
+							<li><a href="#"><img src="img/item/3.png" width="100" /></a></li>
+							<li><a href="#"><img src="img/item/1.png" width="100" /></a></li>
+							<li><a href="#"><img src="img/item/2.png" width="100" /></a></li>
+							<li><a href="#"><img src="img/item/3.png" width="100" /></a></li>
+			      </ul>
+			      <div class="slider__footer_next"></div>
+					</div>
+				</div>
+			</article>
+		</main>
 		<footer>
 			<div class="zametka">
 				<div class="wrapper">
@@ -230,9 +305,9 @@
 		<![endif]-->
 		
 		<!-- Подключаем скрипты -->
-		<!-- <script src="libs/jquery/jquery-1.11.2.min.js"></script> -->
+		<script src="libs/jquery/jquery-1.11.2.min.js"></script>
 		<!-- <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script> -->
-		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+		<!-- <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script> -->
 		<!-- <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script> -->
 		<script src="libs/modernizr/modernizr.js"></script>
 		<script src="libs/bootstrap/js/bootstrap.min.js"></script>

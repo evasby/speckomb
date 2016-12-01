@@ -1,7 +1,8 @@
 .user-content{
 	& > a,
 	& > ul li a,
-	& > ol li a{
+	& > ol li a,
+	& > p a{
 		@include link(#000, #000);
 		text-decoration: none;
 	  display: inline-block;
@@ -16,7 +17,8 @@
 	}
 	& > a:hover,
 	& > ul li a:hover,
-	& > ol li a:hover{
+	& > ol li a:hover,
+	& > p a:hover{
 		background-size: 100% 2px, 100% 2px; 
   	background-position: left bottom;
 	}
@@ -28,7 +30,14 @@
 		font-family: OpenSans-Regular;
 		font-size: 15px;
 		line-height: 31px;
-	}	
+	}
+	& > p img{
+		box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75);
+		border: 2px solid #878787;
+	}
+	& > p span[data-picture-align="left"] img {
+		margin: 10px 50px 10px 0;
+	}
 	i, em{
 		font-family: OpenSans-Italic;
 	}
@@ -38,12 +47,17 @@
 			font-family: OpenSans-SemiboldItalic;
 		}
 	}
+	i, em{
+		b, strong{
+			font-family: OpenSans-SemiboldItalic;
+		}
+	}
 	h3, h4, h5{
 		font-size: 15px;
 	}
 	ul{
 		padding: 0;
-		margin: 0;
+		margin: 0 0 10px;
 		list-style-type: none;
 		li{
 			padding: 0 0 0 17px;
@@ -66,10 +80,50 @@
 	}
 	ol{
 		list-style-position: inside;
+		margin: 0 0 10px;
 		li{
 			font-family: OpenSans-Regular;
 			font-size: 15px;
 			line-height: 31px;
+		}
+	}
+	table{
+		margin-top: 29px;
+		margin-bottom: 20px;
+		font-family: OpenSans-Regular;
+		font-size: 14px;
+		line-height: 22px;
+		width: 100%;
+		box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.5);
+		border-collapse: collapse;
+		td, th {
+	    border: 1px solid black;
+	    padding: 16px;
+	    vertical-align: top;
+   	}
+   	th{
+   		background-color: #6fbee8;
+   		text-align: center;
+   	}
+   	tr:first-child th {
+		  border-top: 0;
+		}
+		tr:last-child td {
+		  border-bottom: 0;
+		}
+		tr td:first-child,
+		tr th:first-child {
+  		border-left: 0;
+  	}
+  	tr td:last-child,
+  	tr th:last-child {
+		  border-right: 0;
+		}
+		tr:nth-child(odd) td{
+			background-color: #f2f2f2;
+		}
+		tr:nth-child(even) td{
+			background-color: #fff;
 		}
 	}
 }

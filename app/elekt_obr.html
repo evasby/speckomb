@@ -40,6 +40,7 @@
 		<link href="libs/mobilyslider/css/default.css" rel="stylesheet" type="text/css" />
 		<link rel="stylesheet" href="css/main.css" />
 		<link rel="stylesheet" href="css/media.css" />
+		<link rel="stylesheet" href="css/all.css" />
 
 	</head>
 
@@ -50,26 +51,28 @@
 				<div class="bg_img">
 					<a href="#" class="dib"><img src="img/images/piples.png" alt="alt"></a>
 					<h1 class="zag dib">Куп “специализированный комбинат <br> коммунально-бытового обслуживания”</h1>
-					<img src="img/images/namber.png" alt="number" class="number">
+					<img src="img/images/namber.png" alt="number" class="number pulse">
 					<h3 class="discr dib"> “Мы поможем сохранить память!”</h3>
 					<div class="contact dib">
 						<p class="contact__text email">speckombinat@bk.ru</p>
 						<p class="contact__text adress">г.Минск, ул. Ольшевского, 12</p>
 					</div>
-					<form class="searc_block dib right" action="" method="get">
-							<input type="search" class="search" placeholder="Поиск...">
-							<button class="button"><img src="img/images/lupa.png" alt="lupa"></button>
-					</form>
+					<div class="searc_block dib right">
+						<form action="" method="get">
+								<input type="search" class="search" placeholder="Поиск...">
+								<button class="button"><img src="img/images/lupa.png" alt="lupa"></button>
+						</form>
+					</div>
 				</div>
-				<nav>
+				<nav class="tmenu">
 					<div class="bg_menu">
 						<div class="menu">
 							<img src="img/images/roza.png" alt="roza" class="roza">
 							<ul class="menu__ul">
 								<li class="menu__li dib"><a class="menu__a pl10" href="index.html">ГЛАВНАЯ</a></li>
-								<li class="menu__li dib"><a class="menu__a" href="o_predpriatii.html">О ПРЕДПРИЯТИИ</a></li>
+								<li class="menu__li menu__li__active dib"><a class="menu__a" href="o_predpriatii.html">О ПРЕДПРИЯТИИ</a></li>
 								<li class="menu__li dib"><a class="menu__a" href="vizov_agenta.html">ВЫЗОВ АГЕНТА</a></li>
-								<li class="menu__li dib"><a class="menu__a" href="news_perevozka.html">ДОСТАВКА</a></li>
+								<li class="menu__li dib"><a class="menu__a" href="dostavka.html">ДОСТАВКА</a></li>
 								<li class="menu__li dib"><a class="menu__a" href="ritual_tovari.html">ТОВАРЫ</a></li>
 								<li class="menu__li dib"><a class="menu__a" href="statie.html">СТАТЬИ</a></li>
 								<li class="menu__li dib"><a class="menu__a" href="kontakt.html">КОНТАКТЫ</a></li>
@@ -79,123 +82,151 @@
 				</nav>
 			</div>
 		</header>
-
-		<article class="wrapper">
-			<div class="spisok_menu">
-				<ul class="spisok_menu__ul">
-					<li class="spisok_menu__li dib"><a class="spisok_menu__pasiv" href="index.html">Главная</a></li>
-					<li class="spisok_menu__li dib"><a href="elekt_obr.html" class="spisok_menu__activ">/ Электронное обращение</a></li>
-				</ul>
-			</div>
-			<div class="left_menu_ssilki dib">
-				<nav class="left_menu">
-					<nav id="menuVertical">
-						<ul class="vipad_menu">
-							<li><a href="ritual_uslugi.html">Ритуальные услуги</a>
-								<ul>
-									<li><a href="#">Агенты, справки</a></li>
-									<li><a href="ritual_zal.html">Ритуальный зал</a></li>
-									<li><a href="#">Холодильная камера</a></li>
-									<li><a href="uslugi_zahoronenia.html">Услуги захоронения</a></li>
-									<li><a href="">Транспортные услуги</a></li>
-									<li><a href="#">Благоустройство захоронений</a></li>
-									<li><a href="#">Фото/видео услуги</a></li>
+		<main class="main">
+			<article class="innerpage">
+				<div class="spisok_menu">
+					<ul class="spisok_menu__ul">
+						<li class="spisok_menu__li dib"><a class="spisok_menu__pasiv" href="index.html">Главная</a></li>
+						<li class="spisok_menu__li dib"><a href="elekt_obr.html" class="spisok_menu__activ">/ Электронное обращение</a></li>
+					</ul>
+				</div>
+				<div class="clearfix">
+					<div class="innerpage_left">
+						<nav class="left_menu dib">
+							<nav id="menuVertical">
+								<ul class="vipad_menu">
+									<li><a href="ritual_uslugi.html">Ритуальные услуги</a>
+										<ul>
+											<li><a href="#">Агенты, справки</a></li>
+											<li><a href="ritual_zal.html">Ритуальный зал</a></li>
+											<li><a href="#">Холодильная камера</a></li>
+											<li><a href="uslugi_zahoronenia.html">Услуги захоронения</a></li>
+											<li><a href="">Транспортные услуги</a></li>
+											<li><a href="#">Благоустройство захоронений</a></li>
+											<li><a href="#">Фото/видео услуги</a></li>
+										</ul>
+									</li>
+									<li><a href="ritual_tovari.html">Ритуальные товары</a></li>
+									<li><a href="kladbiche.html">Кладбища</a>
+										<ul>
+											<li><a href="kladbiche_vostochnoe.html">Восточное</a></li>
+											<li><a href="#">Северное</a></li>
+											<li><a href="#">Западное</a></li>
+											<li><a href="#">Колодищи</a></li>
+											<li><a href="#">Михановичи</a></li>
+											<li><a href="#">Чижовское</a></li>
+										</ul>
+									</li>
+									<li><a href="magazinu_i_filiali.html">Магазины и филиалы</a></li>
+									<li><a href="krematori.html">Крематорий</a></li>
+									<li><a href="pravovie_voprosi.html">Правовые вопросы</a></li>
+									<li><a href="admin_proceduri.html">Админ. процедуры</a></li>
+									<li><a href="uborka.html">Уборка места захоронения</a></li>
+									<li><a href="oformlenie.html">Оформление похорон</a></li>
+									<li><a href="info_term.html">Инф. терминалы</a></li>
+									<li><a href="jurnal_nekropol.html">Журнал “Некрополь”</a></li>
+									<li><a href="vakansii.html">Вакансии</a></li>
+									<li><a href="elekt_obr.html">Электронное обращение</a></li>
 								</ul>
-							</li>
-							<li><a href="ritual_tovari.html">Ритуальные товары</a></li>
-							<li><a href="kladbiche.html">Кладбища</a>
-								<ul>
-									<li><a href="kladbiche_vostochnoe.html">Восточное</a></li>
-									<li><a href="#">Северное</a></li>
-									<li><a href="#">Западное</a></li>
-									<li><a href="#">Колодищи</a></li>
-									<li><a href="#">Михановичи</a></li>
-									<li><a href="#">Чижовское</a></li>
-								</ul>
-							</li>
-							<li><a href="magazinu_i_filiali.html">Магазины и филиалы</a></li>
-							<li><a href="krematori.html">Крематорий</a></li>
-							<li><a href="pravovie_voprosi.html">Правовые вопросы</a></li>
-							<li><a href="admin_proceduri.html">Админ. процедуры</a></li>
-							<li><a href="uborka.html">Уборка места захоронения</a></li>
-							<li><a href="oformlenie.html">Оформление похорон</a></li>
-							<li><a href="info_term.html">Инф. терминалы</a></li>
-							<li><a href="jurnal_nekropol.html">Журнал “Некрополь”</a></li>
-							<li><a href="vakansii.html">Вакансии</a></li>
-							<li><a href="elekt_obr.html">Электронное обращение</a></li>
+							</nav><!--menuVertical-->				
+						</nav>
+						<div class="ssilki">
+							<div class="ssilki_bloki">
+								<a class="ssilki_v_blokah" href="http://www.ritual-minsk.by/" target="_blank">http://www.ritual-minsk.by/</a>
+							</div>
+							<div class="ssilki_bloki">
+								<a class="ssilki_v_blokah" href="http://www.ritual-minsk.by/" target="_blank">http://www.ritual-minsk.by/</a>
+							</div>
+						</div>
+					</div>
+					<div class="agent_block user-content">
+						<h2 class="agent__h2">Электронное обращение</h2>
+						<p>
+							<b><em>Электронные обращения граждан, в том числе индивидуальных предпринимателей (далее – граждан), и юридических лиц адресатом рассматриваются в соответствии с требованиями Закона Республики Беларусь от 18 июля 2011 года «Об обращениях граждан и юридических лиц».</em></b>
+						</p>
+						<p>
+						<p>
+							<em>В соответствии с Законом Республики Беларусь от 18 июля 2011 года «Об обращениях граждан и юридических лиц» электронное обращение излагается на белорусском или русском языках.</em>
+						</p>
+						<p>
+							<em>Электронное обращение гражданина в обязательном порядке должно содержать:</em>
+						</p>
+						<ul>
+							<li><em>фамилию, собственное имя, отчество либо инициалы гражданина; адрес места жительства (места пребывания) гражданина;</em></li>
+							<li><em>изложение сути обращения;</em></li>
+							<li><em>адрес электронной почты гражданина.</em></li>
+							<li><em>адрес электронной почты гражданина.</em></li>
 						</ul>
-					</nav><!--menuVertical-->
-				</nav>
-				<div class="ssilki_bloki dib">
-					<a class="ssilki_v_blokah" href="http://www.ritual-minsk.by/" target="_blank">http://www.ritual-minsk.by/</a>
+						<p>	
+							<b><em>Электронное обращение юридического лица в обязательном порядке должно содержать:</em></b>
+						</p>
+						<ul>
+							<li><em>наименование и (или) адрес организации либо должность лица, которым направляется обращение;</em></li>
+							<li><em>полное наименование юридического лица и его место нахождения;</em></li>
+							<li><em>изложение сути обращения;</em></li>
+							<li><em>фамилию, собственное имя, отчество лица либо инициалы руководителя или лица, уполномоченного в установленном порядке подписывать обращения;</em></li>
+							<li><em>адрес электронной почты юридического лица.</em></li>
+						</ul>
+						<p>
+							<b><em>Электронные обращения должны быть рассмотрены не позднее 15 дней со дня регистрации, а требующие дополнительного изучения и проверки – не позднее 1 месяца.</em></b>
+						</p>
+						<p>
+							<em>Ответы на электронные обращения направляются в электронном виде на адрес электронной почты, указанный в электронном обращении, либо в письменном виде на адрес места жительства (места пребывания) гражданина или места нахождения юридического лица в случаях, установленных Законом Республики Беларусь от 18 июля 2011 года ”Об обращениях граждан и юридических лиц“.</em>
+						</p>
+						<p>
+							<em>Оставляются без рассмотрения по существу обращения, которые (по которым):</em>
+						</p>
+						<ul>
+							<li><em>изложены не на белорусском или русском языке;</em></li>
+							<li><em>не содержат фамилии, собственного имени, отчества, адреса места жительства (места пребывания) гражданина;</em></li>
+							<li><em>не содержат полного наименования юридического лица и адреса его места нахождения, фамилии, собственного имени, отчества руководителя или лица, уполномоченного в установленном порядке подписывать обращения (для юридических лиц);</em></li>
+							<li><em>содержат текст, не поддающийся прочтению;</em></li>
+							<li><em>содержат нецензурные либо оскорбительные слова или выражения;</em></li>
+							<li><em>подлежат рассмотрению в соответствии с законодательством о конституционном судопроизводстве, гражданским, гражданским процессуальным, хозяйственным процессуальным, уголовно-процессуальным законодательством, законодательством, определяющим порядок административного процесса, законодательством об административных процедурах либо в соответствии с законодательными актами установлен иной порядок подачи и рассмотрения таких обращений;</em></li>
+							<li><em>содержат вопросы, не относящиеся к компетенции адресата;</em></li>
+							<li><em>пропущен без уважительной причины срок подачи жалобы;</em></li>
+							<li><em>подано повторное обращение и в нем не содержатся новые обстоятельства;</em></li>
+							<li><em>с заявителем прекращена переписка.</em></li>
+						</ul>
+						<p>
+							<em>Отзыв электронного обращения осуществляется путем подачи письменного заявления либо направления заявления в электронной форме тем же способом, которым было направлено электронное обращение.</em>
+						</p>
+						<p>
+							<em>Электронное обращение на КУП «Спецкомбинат КБО» можно направить следующими способами:</em>
+						</p>
+						<ul>
+							<li><em>на адрес электронной почты <a href="mailto:speckombinat@bk.ru" target="_blank">speckombinat@bk.ru</a></em></li>
+							<li><em>а также с помощью специальной формы на сайте Минского горисполкома</em></li>
+						</ul>
+						<div class="elbuttons">
+							<div class="dib ritual_spisok obraschenia_lic"><a href="http://minsk.gov.by/ru/feedback/6687/" class="obraschenia_lic__a">Электронное обращение для физического лица</a></div>
+							<div class="dib ritual_spisok obraschenia_lic"><a href="http://minsk.gov.by/ru/feedback/6687/1/" class="obraschenia_lic__a">Электронное обращение для юридического лица</a></div>
+						</div>
+					</div>	
+				</div>		
+				<div class="bslider">
+					<div class="slider_buttom">
+						<div class="slider__footer_prev"></div>
+			      <ul class="slider__footer">
+			        <li><a href="http://pravo.by" target="_blank"><img src="img/item/1.png" width="100" /></a></li>
+							<li><a href="#"><img src="img/item/2.png" width="100" /></a></li>
+							<li><a href="#"><img src="img/item/3.png" width="100" /></a></li>
+							<li><a href="#"><img src="img/item/1.png" width="100" /></a></li>
+							<li><a href="#"><img src="img/item/2.png" width="100" /></a></li>
+							<li><a href="#"><img src="img/item/3.png" width="100" /></a></li>
+							<li><a href="#"><img src="img/item/1.png" width="100" /></a></li>
+							<li><a href="#"><img src="img/item/2.png" width="100" /></a></li>
+							<li><a href="#"><img src="img/item/3.png" width="100" /></a></li>
+							<li><a href="#"><img src="img/item/1.png" width="100" /></a></li>
+							<li><a href="#"><img src="img/item/2.png" width="100" /></a></li>
+							<li><a href="#"><img src="img/item/3.png" width="100" /></a></li>
+			      </ul>
+			      <div class="slider__footer_next"></div>
+					</div>
 				</div>
-				<div class="ssilki_bloki dib">
-					<a class="ssilki_v_blokah" href="http://www.ritual-minsk.by/" target="_blank">http://www.ritual-minsk.by/</a>
-				</div>
-			</div>
-			<div class="agent_block dib">
-				<h2 class="agent__h2 mt-7">Электронное обращение</h2>
-				<p class="light_italic__text">
-					<b class="ffbold italic">Электронные обращения граждан, в том числе индивидуальных предпринимателей (далее – граждан), и юридических лиц адресатом рассматриваются в соответствии с требованиями Закона Республики Беларусь от 18 июля 2011 года «Об обращениях граждан и юридических лиц».</b> <br>
-					В соответствии с Законом Республики Беларусь от 18 июля 2011 года «Об обращениях граждан и юридических лиц» электронное обращение излагается на белорусском или русском языках. <br>
-					Электронное обращение гражданина в обязательном порядке должно содержать: <br>
-					&nbsp;&nbsp;&nbsp;&nbsp;фамилию, собственное имя, отчество либо инициалы гражданина; <br>
-					&nbsp;&nbsp;&nbsp;&nbsp;адрес места жительства (места пребывания) гражданина; <br>
-					&nbsp;&nbsp;&nbsp;&nbsp;изложение сути обращения; <br>
-					&nbsp;&nbsp;&nbsp;&nbsp;адрес электронной почты гражданина. <br>
-					<b class="ffbold italic">Электронное обращение юридического лица в обязательном порядке должно содержать:</b> <br>
-					&nbsp;&nbsp;&nbsp;&nbsp;наименование и (или) адрес организации либо должность лица, которым направляется обращение; <br>
-					&nbsp;&nbsp;&nbsp;&nbsp;полное наименование юридического лица и его место нахождения; <br>
-					&nbsp;&nbsp;&nbsp;&nbsp;изложение сути обращения; <br>
-					&nbsp;&nbsp;&nbsp;&nbsp;фамилию, собственное имя, отчество лица либо инициалы руководителя или лица, уполномоченного в установленном порядке подписывать обращения; <br>
-					&nbsp;&nbsp;&nbsp;&nbsp;адрес электронной почты юридического лица. <br>
-					<b class="ffbold italic">Электронные обращения должны быть рассмотрены не позднее 15 дней со дня регистрации, а требующие дополнительного изучения и проверки – не позднее 1 месяца.</b> <br>
-					Ответы на электронные обращения направляются в электронном виде на адрес электронной почты, указанный в электронном обращении, либо в письменном виде на адрес места жительства (места пребывания) гражданина или места нахождения юридического лица в случаях, установленных Законом Республики Беларусь от 18 июля 2011 года ”Об обращениях граждан и юридических лиц“. <br>
-					Оставляются без рассмотрения по существу обращения, которые (по которым): <br>
-					&nbsp;&nbsp;&nbsp;&nbsp;изложены не на белорусском или русском языке; <br>
-					&nbsp;&nbsp;&nbsp;&nbsp;не содержат фамилии, собственного имени, отчества, адреса места жительства (места пребывания) гражданина; <br>
-					&nbsp;&nbsp;&nbsp;&nbsp;не содержат полного наименования юридического лица и адреса его места нахождения, фамилии, собственного имени, отчества руководителя или лица, уполномоченного в установленном порядке подписывать обращения (для юридических лиц); <br>
-					&nbsp;&nbsp;&nbsp;&nbsp;содержат текст, не поддающийся прочтению; <br>
-					&nbsp;&nbsp;&nbsp;&nbsp;содержат нецензурные либо оскорбительные слова или выражения; <br>
-					&nbsp;&nbsp;&nbsp;&nbsp;подлежат рассмотрению в соответствии с законодательством о конституционном судопроизводстве, гражданским, гражданским процессуальным, хозяйственным процессуальным, уголовно-процессуальным законодательством, законодательством, определяющим порядок административного процесса, законодательством об административных процедурах либо в соответствии с законодательными актами установлен иной порядок подачи и рассмотрения таких обращений; <br>
-					&nbsp;&nbsp;&nbsp;&nbsp;содержат вопросы, не относящиеся к компетенции адресата; <br>
-					&nbsp;&nbsp;&nbsp;&nbsp;пропущен без уважительной причины срок подачи жалобы; <br>
-					&nbsp;&nbsp;&nbsp;&nbsp;подано повторное обращение и в нем не содержатся новые обстоятельства; <br>
-					&nbsp;&nbsp;&nbsp;&nbsp;с заявителем прекращена переписка. <br>
-					Отзыв электронного обращения осуществляется путем подачи письменного заявления либо направления заявления в электронной форме тем же способом, которым было направлено электронное обращение. <br>
-					Электронное обращение на КУП «Спецкомбинат КБО» можно направить следующими способами: <br>
-					на адрес электронной почты <a class="ssilka_v_texte" href="mailto:speckombinat@bk.ru" target="_blank">speckombinat@bk.ru</a> <br>
-					а также с помощью специальной формы на сайте Минского горисполкома <br>
-				</p> <br>
-				<ul>
-					<li class="dib ritual_spisok obraschenia_lic"><a href="http://minsk.gov.by/ru/feedback/6687/" class="obraschenia_lic__a">Электронное обращение для физического лица</a></li>
-					<li class="dib ritual_spisok obraschenia_lic"><a href="http://minsk.gov.by/ru/feedback/6687/1/" class="obraschenia_lic__a">Электронное обращение для юридического лица</a></li>
-				</ul>
-			</div>
-			
-			<div class="wrapper content">
-				<div class="slider_buttom">
-					<div class="slider__footer_prev"></div>
-		            <ul class="slider__footer">
-		                <li><a href="http://pravo.by" target="_blank"><img src="img/item/1.png" width="100" /></a></li>
-						<li><a href="#"><img src="img/item/2.png" width="100" /></a></li>
-						<li><a href="#"><img src="img/item/3.png" width="100" /></a></li>
-						<li><a href="#"><img src="img/item/1.png" width="100" /></a></li>
-						<li><a href="#"><img src="img/item/2.png" width="100" /></a></li>
-						<li><a href="#"><img src="img/item/3.png" width="100" /></a></li>
-						<li><a href="#"><img src="img/item/1.png" width="100" /></a></li>
-						<li><a href="#"><img src="img/item/2.png" width="100" /></a></li>
-						<li><a href="#"><img src="img/item/3.png" width="100" /></a></li>
-						<li><a href="#"><img src="img/item/1.png" width="100" /></a></li>
-						<li><a href="#"><img src="img/item/2.png" width="100" /></a></li>
-						<li><a href="#"><img src="img/item/3.png" width="100" /></a></li>
-		            </ul>
-		            <div class="slider__footer_next"></div>
-				</div>
-			</div>
-		</article>
-
-<footer>
+			</article>
+		</main>
+		<footer>
 			<div class="zametka">
 				<div class="wrapper">
 					<p class="zametka__text right">Обновление произведено: 14.10.2016 года</p>
@@ -254,9 +285,9 @@
 		<![endif]-->
 		
 		<!-- Подключаем скрипты -->
-		<!-- <script src="libs/jquery/jquery-1.11.2.min.js"></script> -->
+		<script src="libs/jquery/jquery-1.11.2.min.js"></script>
 		<!-- <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script> -->
-		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+		<!-- <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script> -->
 		<!-- <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script> -->
 		<script src="libs/modernizr/modernizr.js"></script>
 		<script src="libs/bootstrap/js/bootstrap.min.js"></script>
