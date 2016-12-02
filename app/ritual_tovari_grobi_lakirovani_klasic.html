@@ -10,10 +10,6 @@
 
 		<title>Гроб классический М-1-1</title>
 		<meta name="description" content="КУП “СПЕЦИАЛИЗИРОВАННЫЙ КОМБИНАТ КОММУНАЛЬНО-БЫТОВОГО ОБСЛУЖИВАНИЯ”">
-	    <meta name="author" content="Pavel Korchago">
-	    <meta name="tel" content="+375 29 303 23 22">
-	    <meta name="email" content="pavel.korchago@mail.ru">
-		
 		<!-- Иконка сайта -->
 		<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon" />
 		<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png" />
@@ -40,6 +36,7 @@
 		<link href="libs/mobilyslider/css/default.css" rel="stylesheet" type="text/css" />
 		<link rel="stylesheet" href="css/main.css" />
 		<link rel="stylesheet" href="css/media.css" />
+		<link rel="stylesheet" href="css/all.css" />
 
 	</head>
 
@@ -50,18 +47,20 @@
 				<div class="bg_img">
 					<a href="#" class="dib"><img src="img/images/piples.png" alt="alt"></a>
 					<h1 class="zag dib">Куп “специализированный комбинат <br> коммунально-бытового обслуживания”</h1>
-					<img src="img/images/namber.png" alt="number" class="number">
+					<img src="img/images/namber.png" alt="number" class="number pulse">
 					<h3 class="discr dib"> “Мы поможем сохранить память!”</h3>
 					<div class="contact dib">
 						<p class="contact__text email">speckombinat@bk.ru</p>
 						<p class="contact__text adress">г.Минск, ул. Ольшевского, 12</p>
 					</div>
-					<form class="searc_block dib right" action="" method="get">
-							<input type="search" class="search" placeholder="Поиск...">
-							<button class="button"><img src="img/images/lupa.png" alt="lupa"></button>
-					</form>
+					<div class="searc_block dib right">
+						<form action="" method="get">
+								<input type="search" class="search" placeholder="Поиск...">
+								<button class="button"><img src="img/images/lupa.png" alt="lupa"></button>
+						</form>
+					</div>
 				</div>
-				<nav>
+				<nav class="tmenu">
 					<div class="bg_menu">
 						<div class="menu">
 							<img src="img/images/roza.png" alt="roza" class="roza">
@@ -69,7 +68,7 @@
 								<li class="menu__li dib"><a class="menu__a pl10" href="index.html">ГЛАВНАЯ</a></li>
 								<li class="menu__li dib"><a class="menu__a" href="o_predpriatii.html">О ПРЕДПРИЯТИИ</a></li>
 								<li class="menu__li dib"><a class="menu__a" href="vizov_agenta.html">ВЫЗОВ АГЕНТА</a></li>
-								<li class="menu__li dib"><a class="menu__a" href="news_perevozka.html">ДОСТАВКА</a></li>
+								<li class="menu__li dib"><a class="menu__a" href="dostavka.html">ДОСТАВКА</a></li>
 								<li class="menu__li dib"><a class="menu__a" href="ritual_tovari.html">ТОВАРЫ</a></li>
 								<li class="menu__li dib"><a class="menu__a" href="statie.html">СТАТЬИ</a></li>
 								<li class="menu__li dib"><a class="menu__a" href="kontakt.html">КОНТАКТЫ</a></li>
@@ -80,110 +79,158 @@
 			</div>
 		</header>
 
-		<article class="wrapper">
-			<div class="spisok_menu">
-				<ul class="spisok_menu__ul">
-					<li class="spisok_menu__li dib"><a class="spisok_menu__pasiv" href="index.html">Главная</a></li>
-					<li class="spisok_menu__li dib"><a href="ritual_tovari.html" class="spisok_menu__pasiv">/ Ритуальные товары</a></li>
-					<li class="spisok_menu__li dib"><a href="ritual_tovari_grobi.html" class="spisok_menu__pasiv">/ Гробы</a></li>
-					<li class="spisok_menu__li dib"><a href="ritual_tovari_grobi_lakirovani.html" class="spisok_menu__pasiv">/ Гроб лакированный</a></li>
-					<li class="spisok_menu__li dib"><a href="ritual_tovari_grobi_lakirovani_klasic.html" class="spisok_menu__activ">/ Гроб классический М-1-1</a></li>
-				</ul>
-			</div>
-			<div class="left_menu_ssilki w290 dib">
-				<nav class="left_menu">
-					<nav id="menuVertical">
-						<ul class="vipad_menu">
-							<li><a href="ritual_uslugi.html">Ритуальные услуги</a>
-								<ul>
-									<li><a href="#">Агенты, справки</a></li>
-									<li><a href="ritual_zal.html">Ритуальный зал</a></li>
-									<li><a href="#">Холодильная камера</a></li>
-									<li><a href="uslugi_zahoronenia.html">Услуги захоронения</a></li>
-									<li><a href="">Транспортные услуги</a></li>
-									<li><a href="#">Благоустройство захоронений</a></li>
-									<li><a href="#">Фото/видео услуги</a></li>
+			<article class="innerpage">
+				<div class="spisok_menu">
+					<ul class="spisok_menu__ul">
+						<li class="spisok_menu__li dib"><a class="spisok_menu__pasiv" href="index.html">Главная</a></li>
+						<li class="spisok_menu__li dib"><a href="ritual_tovari.html" class="spisok_menu__pasiv">/ Ритуальные товары</a></li>
+						<li class="spisok_menu__li dib"><a href="ritual_tovari_grobi.html" class="spisok_menu__pasiv">/ Гробы</a></li>
+						<li class="spisok_menu__li dib"><a href="ritual_tovari_grobi_lakirovani.html" class="spisok_menu__pasiv">/ Гроб лакированный</a></li>
+						<li class="spisok_menu__li dib"><a href="ritual_tovari_grobi_lakirovani_klasic.html" class="spisok_menu__activ">/ Гроб классический М-1-1</a></li>
+					</ul>
+				</div>
+				<div class="clearfix">
+
+
+
+
+
+					<div class="innerpage_left">
+						<nav class="left_menu dib">
+							<nav id="menuVertical">
+								<ul class="vipad_menu">
+									<li class="left_menu_parent"><a href="ritual_uslugi.html">Ритуальные услуги</a>
+										<ul>
+											<li><a href="#">Агенты, справки</a></li>
+											<li><a href="ritual_zal.html">Ритуальный зал</a></li>
+											<li><a href="#">Холодильная камера</a></li>
+											<li><a href="uslugi_zahoronenia.html">Услуги захоронения</a></li>
+											<li><a href="">Транспортные услуги</a></li>
+											<li><a href="#">Благоустройство захоронений</a></li>
+											<li><a href="#">Фото/видео услуги</a></li>
+										</ul>
+									</li>
+									<li><a href="ritual_tovari.html">Ритуальные товары</a></li>
+									<li><a href="kladbiche.html">Кладбища</a>
+										<ul>
+											<li><a href="kladbiche_vostochnoe.html">Восточное</a></li>
+											<li><a href="#">Северное</a></li>
+											<li><a href="#">Западное</a></li>
+											<li><a href="#">Колодищи</a></li>
+											<li><a href="#">Михановичи</a></li>
+											<li><a href="#">Чижовское</a></li>
+										</ul>
+									</li>
+									<li><a href="magazinu_i_filiali.html">Магазины и филиалы</a></li>
+									<li><a href="krematori.html">Крематорий</a></li>
+									<li><a href="pravovie_voprosi.html">Правовые вопросы</a></li>
+									<li><a href="admin_proceduri.html">Админ. процедуры</a></li>
+									<li><a href="uborka.html">Уборка места захоронения</a></li>
+									<li><a href="oformlenie.html">Оформление похорон</a></li>
+									<li><a href="info_term.html">Инф. терминалы</a></li>
+									<li><a href="jurnal_nekropol.html">Журнал “Некрополь”</a></li>
+									<li><a href="vakansii.html">Вакансии</a></li>
+									<li><a href="elekt_obr.html">Электронное обращение</a></li>
 								</ul>
-							</li>
-							<li><a href="ritual_tovari.html">Ритуальные товары</a></li>
-							<li><a href="kladbiche.html">Кладбища</a>
-								<ul>
-									<li><a href="kladbiche_vostochnoe.html">Восточное</a></li>
-									<li><a href="#">Северное</a></li>
-									<li><a href="#">Западное</a></li>
-									<li><a href="#">Колодищи</a></li>
-									<li><a href="#">Михановичи</a></li>
-									<li><a href="#">Чижовское</a></li>
-								</ul>
-							</li>
-							<li><a href="magazinu_i_filiali.html">Магазины и филиалы</a></li>
-							<li><a href="krematori.html">Крематорий</a></li>
-							<li><a href="pravovie_voprosi.html">Правовые вопросы</a></li>
-							<li><a href="admin_proceduri.html">Админ. процедуры</a></li>
-							<li><a href="uborka.html">Уборка места захоронения</a></li>
-							<li><a href="oformlenie.html">Оформление похорон</a></li>
-							<li><a href="info_term.html">Инф. терминалы</a></li>
-							<li><a href="jurnal_nekropol.html">Журнал “Некрополь”</a></li>
-							<li><a href="vakansii.html">Вакансии</a></li>
-							<li><a href="elekt_obr.html">Электронное обращение</a></li>
-						</ul>
-					</nav><!--menuVertical-->
-				</nav>
-				<div class="ssilki_bloki dib">
-					<a class="ssilki_v_blokah" href="http://www.ritual-minsk.by/" target="_blank">http://www.ritual-minsk.by/</a>
+							</nav><!--menuVertical-->
+						</nav>
+						<div class="ssilki">
+							<div class="ssilki_bloki dib">
+								<a class="ssilki_v_blokah" href="http://www.ritual-minsk.by/" target="_blank">http://www.ritual-minsk.by/</a>
+							</div>
+							<div class="ssilki_bloki dib">
+								<a class="ssilki_v_blokah" href="http://www.ritual-minsk.by/" target="_blank">http://www.ritual-minsk.by/</a>
+							</div>
+						</div>
+					</div>
+
+
+
+
+
+
+
+
+
+					<div class="agent_block user-content">
+						<h2 class="agent__h2">Гроб классический М-1-1</h2>
+						<div class="newproduct">
+							<div class="newproduct_inner">
+								<div class="newproduct_left">
+									<ul class="bxslider">
+									  <li><img src="img/item/slider.jpg" /></li>
+									  <li><img src="img/item/slider.jpg" /></li>
+									  <li><img src="img/item/slider.jpg" /></li>
+									</ul>
+									<div id="bx-pager">
+									  <a data-slide-index="0" href=""><img src="img/images/grob_clasic/1.jpg" /></a>
+									  <a data-slide-index="1" href=""><img src="img/images/grob_clasic/2.jpg" /></a>
+									  <a data-slide-index="2" href=""><img src="img/images/grob_clasic/3.jpg" /></a>
+									</div>
+								</div>
+								<div class="newproduct_right">
+									<p class="light_italic__text dib w450">
+										<em>Размер:</em> <b><em>1950 х 650</em></b> <br>
+										<em>Производятся из:</em> <b><em>клеенового щита</em></b> <br>
+										<em>Отделка:</em> <b><em>лаковый гроб</em></b> <br>
+										<em>Модель:</em> <b><em>классической формы</em></b> <br>
+										<em>Ручки:</em> <b><em>4 шт.</em></b> <br>
+										<em>Накладки:</em> <b><em>2шт. на крышке, 4 шт. на нижней части гроба</em></b> <br>
+										<em>Крышка:</em> <b><em>открывающаяся</em></b> <br>
+										<em>Варианты цветов:</em> <b><em>белый, красный, черный, оттенки ореха светлых и темных тонов, оттенки бордового цвета светлых и темных тонов</em></b> <br>
+										<em>Вид покрытия:</em> <b><em>глянцевое, матовое</em></b> <br>
+										<em>Уточняйте наличие и цвет по тел.</em> <b><em>204-31-36</em></b> <br>
+										<em>Обивка:</em> <b><em>Атлас - <span class="newproduct_orange">560</span> рублей</em></b> <br>
+										<em>Обивка:</em> <b><em>Комрад - <span class="newproduct_orange">760</span> рублей</em></b> <br>
+									</p>
+								</div>
+							</div>
+							<ul class="newpager">
+								<li><a href="#" class="obraschenia_lic__a"><span class="newpager_arrow"><&nbsp;&nbsp;&nbsp;</span>Шестигранник М-2 б.</a></li>
+								<li><a href="#" class="obraschenia_lic__a">Шестигранник М-2 ч.<span class="newpager_arrow">&nbsp;&nbsp;&nbsp;></span></a></li>
+							</ul>
+						</div>
+					</div>
+
+
+
+
+
+
+
+
+
+
+
+					
+
+
+
+
+
+
 				</div>
-				<div class="ssilki_bloki dib">
-					<a class="ssilki_v_blokah" href="http://www.ritual-minsk.by/" target="_blank">http://www.ritual-minsk.by/</a>
+				<div class="bslider">
+					<div class="slider_buttom">
+						<div class="slider__footer_prev"></div>
+			      <ul class="slider__footer">
+			        <li><a href="http://pravo.by" target="_blank"><img src="img/item/1.png" width="100" /></a></li>
+							<li><a href="#"><img src="img/item/2.png" width="100" /></a></li>
+							<li><a href="#"><img src="img/item/3.png" width="100" /></a></li>
+							<li><a href="#"><img src="img/item/1.png" width="100" /></a></li>
+							<li><a href="#"><img src="img/item/2.png" width="100" /></a></li>
+							<li><a href="#"><img src="img/item/3.png" width="100" /></a></li>
+							<li><a href="#"><img src="img/item/1.png" width="100" /></a></li>
+							<li><a href="#"><img src="img/item/2.png" width="100" /></a></li>
+							<li><a href="#"><img src="img/item/3.png" width="100" /></a></li>
+							<li><a href="#"><img src="img/item/1.png" width="100" /></a></li>
+							<li><a href="#"><img src="img/item/2.png" width="100" /></a></li>
+							<li><a href="#"><img src="img/item/3.png" width="100" /></a></li>
+			      </ul>
+			      <div class="slider__footer_next"></div>
+					</div>
 				</div>
-			</div>
-			<div class="agent_block dib" style="width: 850px;">
-				<h2 class="agent__h2 mt-7">Гроб классический М-1-1</h2>
-				<div class="image_grob dib">
-					<img class="info_img" src="img/images/grob_clasic/big.png" alt="grob"> <br>
-					<img class="ml-20" src="img/images/grob_clasic/1.png" alt="mini">
-					<img class="ml-10" src="img/images/grob_clasic/2.png" alt="mini">
-					<img class="ml-10" src="img/images/grob_clasic/3.png" alt="mini">
-				</div>
-				<p class="light_italic__text dib w450">
-					Размер: <b class="ffbold">1950 х 650</b> <br>
-					Производятся из: <b class="ffbold">клеенового щита</b> <br>
-					Отделка: <b class="ffbold">лаковый гроб</b> <br>
-					Модель: <b class="ffbold">классической формы</b> <br>
-					Ручки: <b class="ffbold">4 шт.</b> <br>
-					Накладки: <b class="ffbold">2шт. на крышке, 4 шт. на нижней части гроба</b> <br>
-					Крышка: <b class="ffbold">открывающаяся</b> <br>
-					Варианты цветов: <b class="ffbold">белый, красный, черный, оттенки ореха светлых и темных тонов, оттенки бордового цвета светлых и темных тонов</b> <br>
-					Вид покрытия: <b class="ffbold">глянцевое, матовое</b> <br>
-					Уточняйте наличие и цвет по тел. <b class="ffbold">204-31-36</b> <br>
-					Обивка: <b class="ffbold">Атлас - <span class="b exbold">560</span> рублей</b> <br>
-					Обивка: <b class="ffbold">Комрад - <span class="b exbold">760</span> рублей</b> <br>
-				</p>
-				<ul class="tac mt20">
-					<li class="dib ritual_spisok obraschenia_lic active_knopka"><a href="#" class="obraschenia_lic__a">&lt;&nbsp;&nbsp;Шестигранник М-2 б.</a></li>
-					<li class="dib ritual_spisok obraschenia_lic" style="margin-left: 80px;"><a href="#" class="obraschenia_lic__a"> Шестигранник М-2 ч.&nbsp;&nbsp;&gt;</a></li>
-				</ul>
-			</div>
-			<div class="wrapper content">
-				<div class="slider_buttom">
-					<div class="slider__footer_prev"></div>
-		            <ul class="slider__footer">
-		                <li><a href="http://pravo.by" target="_blank"><img src="img/item/1.png" width="100" /></a></li>
-						<li><a href="#"><img src="img/item/2.png" width="100" /></a></li>
-						<li><a href="#"><img src="img/item/3.png" width="100" /></a></li>
-						<li><a href="#"><img src="img/item/1.png" width="100" /></a></li>
-						<li><a href="#"><img src="img/item/2.png" width="100" /></a></li>
-						<li><a href="#"><img src="img/item/3.png" width="100" /></a></li>
-						<li><a href="#"><img src="img/item/1.png" width="100" /></a></li>
-						<li><a href="#"><img src="img/item/2.png" width="100" /></a></li>
-						<li><a href="#"><img src="img/item/3.png" width="100" /></a></li>
-						<li><a href="#"><img src="img/item/1.png" width="100" /></a></li>
-						<li><a href="#"><img src="img/item/2.png" width="100" /></a></li>
-						<li><a href="#"><img src="img/item/3.png" width="100" /></a></li>
-		            </ul>
-		            <div class="slider__footer_next"></div>
-				</div>
-			</div>
-		</article>
+			</article>
 
 		<footer>
 			<div class="zametka">
@@ -244,9 +291,8 @@
 		<![endif]-->
 		
 		<!-- Подключаем скрипты -->
-		<!-- <script src="libs/jquery/jquery-1.11.2.min.js"></script> -->
+		<script src="libs/jquery/jquery-1.11.2.min.js"></script>
 		<!-- <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script> -->
-		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
 		<!-- <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script> -->
 		<script src="libs/modernizr/modernizr.js"></script>
 		<script src="libs/bootstrap/js/bootstrap.min.js"></script>
@@ -255,8 +301,10 @@
 		<script src="libs/lazyload/jquery.lazyload.min.js"></script> <!-- Плавная загрузка фото -->
 		<script src="libs/mobilyslider/js/mobilyslider.js" type="text/javascript"></script>
 		<script src="libs/mobilyslider/js/init.js" type="text/javascript"></script>
-		<script src="js/slider-footer.js" ></script>
+		<script src="libs/jquery.bxslider.min.js" type="text/javascript"></script>
 
+		<script src="js/slider-footer.js" ></script>
+		<script src="libs/jquery.bxslider.min.js" type="text/javascript"></script>
 		<script src="js/common.js"></script> <!-- Основной файл скриптов -->
 	</body>
 </html>

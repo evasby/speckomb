@@ -8,7 +8,28 @@ $(document).ready(function() {
 		arrowsHide: false
 	});
 
+	$('.asortiment-drop_show').each(function(){
+		$(this).click(function(){
+			$('.asortiment-drop_drop').each(function(){
+				$(this).hide();
+			});
+			$(this).parent('.asortiment-drop').find('.asortiment-drop_drop').show();
+		});
+	});
+	$('.asortiment-drop_close').click(function(e){
+		e.preventDefault();
+		$(this).parents('.asortiment-drop_drop').hide();
+	});
+	$('.asortiment-drop_drop li').click(function(e){
+		e.preventDefault();
+		$(this).parents('.asortiment-drop_drop').hide();
+	});
 
+	$('.bxslider').bxSlider({
+		controls: false,
+	  pagerCustom: '#bx-pager'
+	});
+	
 });
 
 	//Цели для Яндекс.Метрики и Google Analytics
