@@ -14,11 +14,13 @@
 		&:hover{
 			//box-shadow: inset 0px 0px 20px 0px rgba(150,150,150,150.5);
 			opacity: 0.8;
-			background: linear-gradient(to right, rgba(0,0,0,1) 0%, rgba(68,68,68,1) 26%, rgba(0,0,0,1) 100%);
+			background: linear-gradient(to right, #000000 0%, #444444 40%, #444444 60%, #000000 100%);
 		}
 	}
 	.menu__li__active{
-		background: linear-gradient(to right, rgba(0,0,0,1) 0%, rgba(68,68,68,1) 26%, rgba(0,0,0,1) 100%);
+		background: #000000;
+		//background: linear-gradient(to right, rgba(0,0,0,1) 0%, rgba(68,68,68,1) 26%, rgba(0,0,0,1) 100%);
+		background: linear-gradient(to right, #000000 0%, #444444 40%, #444444 60%, #000000 100%);
 		opacity: 0.8;
 	}
 	.menu__a{

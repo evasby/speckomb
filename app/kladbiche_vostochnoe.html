@@ -10,10 +10,6 @@
 
 		<title>Кладбище</title>
 		<meta name="description" content="КУП “СПЕЦИАЛИЗИРОВАННЫЙ КОМБИНАТ КОММУНАЛЬНО-БЫТОВОГО ОБСЛУЖИВАНИЯ”">
-	    <meta name="author" content="Pavel Korchago">
-	    <meta name="tel" content="+375 29 303 23 22">
-	    <meta name="email" content="pavel.korchago@mail.ru">
-		
 		<!-- Иконка сайта -->
 		<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon" />
 		<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png" />
@@ -40,6 +36,8 @@
 		<link href="libs/mobilyslider/css/default.css" rel="stylesheet" type="text/css" />
 		<link rel="stylesheet" href="css/main.css" />
 		<link rel="stylesheet" href="css/media.css" />
+		<link rel="stylesheet" href="css/all.css" />
+
 
 	</head>
 
@@ -50,18 +48,20 @@
 				<div class="bg_img">
 					<a href="#" class="dib"><img src="img/images/piples.png" alt="alt"></a>
 					<h1 class="zag dib">Куп “специализированный комбинат <br> коммунально-бытового обслуживания”</h1>
-					<img src="img/images/namber.png" alt="number" class="number">
+					<img src="img/images/namber.png" alt="number" class="number pulse">
 					<h3 class="discr dib"> “Мы поможем сохранить память!”</h3>
 					<div class="contact dib">
 						<p class="contact__text email">speckombinat@bk.ru</p>
 						<p class="contact__text adress">г.Минск, ул. Ольшевского, 12</p>
 					</div>
-					<form class="searc_block dib right" action="" method="get">
-							<input type="search" class="search" placeholder="Поиск...">
-							<button class="button"><img src="img/images/lupa.png" alt="lupa"></button>
-					</form>
+					<div class="searc_block dib right">
+						<form action="" method="get">
+								<input type="search" class="search" placeholder="Поиск...">
+								<button class="button"><img src="img/images/lupa.png" alt="lupa"></button>
+						</form>
+					</div>
 				</div>
-				<nav>
+				<nav class="tmenu">
 					<div class="bg_menu">
 						<div class="menu">
 							<img src="img/images/roza.png" alt="roza" class="roza">
@@ -69,9 +69,9 @@
 								<li class="menu__li dib"><a class="menu__a pl10" href="index.html">ГЛАВНАЯ</a></li>
 								<li class="menu__li dib"><a class="menu__a" href="o_predpriatii.html">О ПРЕДПРИЯТИИ</a></li>
 								<li class="menu__li dib"><a class="menu__a" href="vizov_agenta.html">ВЫЗОВ АГЕНТА</a></li>
-								<li class="menu__li dib"><a class="menu__a" href="news_perevozka.html">ДОСТАВКА</a></li>
+								<li class="menu__li dib"><a class="menu__a" href="dostavka.html">ДОСТАВКА</a></li>
 								<li class="menu__li dib"><a class="menu__a" href="ritual_tovari.html">ТОВАРЫ</a></li>
-								<li class="menu__li dib"><a class="menu__a" href="statie.html">СТАТЬИ</a></li>
+								<li class="menu__li menu__li__active dib"><a class="menu__a" href="statie.html">СТАТЬИ</a></li>
 								<li class="menu__li dib"><a class="menu__a" href="kontakt.html">КОНТАКТЫ</a></li>
 							</ul>
 						</div>
@@ -79,133 +79,139 @@
 				</nav>
 			</div>
 		</header>
+		<main class="main">
 
-		<article class="wrapper">
-			<div class="spisok_menu">
-				<ul class="spisok_menu__ul">
-					<li class="spisok_menu__li dib"><a class="spisok_menu__pasiv" href="index.html">Главная</a></li>
-					<li class="spisok_menu__li dib"><a href="kladbiche.html" class="spisok_menu__pasiv">/ Кладбища</a></li>
-					<li class="spisok_menu__li dib"><a href="kladbiche_vostochnoe.html" class="spisok_menu__activ">/ Восточное</a></li>
-				</ul>
-			</div>
-			<div class="left_menu_ssilki w290 dib">
-				<nav class="left_menu">
-					<nav id="menuVertical">
-						<ul class="vipad_menu">
-							<li><a href="ritual_uslugi.html">Ритуальные услуги</a>
-								<ul>
-									<li><a href="#">Агенты, справки</a></li>
-									<li><a href="ritual_zal.html">Ритуальный зал</a></li>
-									<li><a href="#">Холодильная камера</a></li>
-									<li><a href="uslugi_zahoronenia.html">Услуги захоронения</a></li>
-									<li><a href="">Транспортные услуги</a></li>
-									<li><a href="#">Благоустройство захоронений</a></li>
-									<li><a href="#">Фото/видео услуги</a></li>
-								</ul>
-							</li>
-							<li><a href="ritual_tovari.html">Ритуальные товары</a></li>
-							<li><a href="kladbiche.html">Кладбища</a>
-								<ul>
-									<li><a href="kladbiche_vostochnoe.html">Восточное</a></li>
-									<li><a href="#">Северное</a></li>
-									<li><a href="#">Западное</a></li>
-									<li><a href="#">Колодищи</a></li>
-									<li><a href="#">Михановичи</a></li>
-									<li><a href="#">Чижовское</a></li>
-								</ul>
-							</li>
-							<li><a href="magazinu_i_filiali.html">Магазины и филиалы</a></li>
-							<li><a href="krematori.html">Крематорий</a></li>
-							<li><a href="pravovie_voprosi.html">Правовые вопросы</a></li>
-							<li><a href="admin_proceduri.html">Админ. процедуры</a></li>
-							<li><a href="uborka.html">Уборка места захоронения</a></li>
-							<li><a href="oformlenie.html">Оформление похорон</a></li>
-							<li><a href="info_term.html">Инф. терминалы</a></li>
-							<li><a href="jurnal_nekropol.html">Журнал “Некрополь”</a></li>
-							<li><a href="vakansii.html">Вакансии</a></li>
-							<li><a href="elekt_obr.html">Электронное обращение</a></li>
-						</ul>
-					</nav><!--menuVertical-->
-				</nav>
-				<div class="ssilki_bloki dib">
-					<a class="ssilki_v_blokah" href="http://www.ritual-minsk.by/" target="_blank">http://www.ritual-minsk.by/</a>
-				</div>
-				<div class="ssilki_bloki dib">
-					<a class="ssilki_v_blokah" href="http://www.ritual-minsk.by/" target="_blank">http://www.ritual-minsk.by/</a>
-				</div>
-			</div>
-			<div class="agent_block dib" style="width: 850px;">
-				<h2 class="agent__h2 mt-7">Кладбище Восточное</h2>
-				<div class="info_img_text">
-					<img class="info_img" src="img/images/kladbicha/1.png" alt="vostochnoe">
-					<div class="right_block w570 right">
-						<p class="agent__text right mt12 w570">
-						Ограниченно действующее, производятся подзахоронения близких родственников к ранее усопшим родственникам, а также по решению Мингорисполкома;
-						</p>
-						<ul class="spisok__blue__ul light_italic__text ml20">
-							<li class="spisok__blue" style="color: #1f90cd;"><span>Год открытия: <b class="ffbold">1952</b>;</span></li>
-							<li class="spisok__blue" style="color: #1f90cd;"><span>Количество захороненных: <b class="ffbold">28 000 человек</b>;</span></li>
-							<li class="spisok__blue" style="color: #1f90cd;"><span>Площадь: <b class="ffbold">23,1 га.</b>;</span></li>
-							<li class="spisok__blue" style="color: #1f90cd;"><span>Контакты:</span></li>
-						</ul>
-						<ul class="cont_ul">
-							<li class="cont_li dib">
-								<p class="cont_p call" style="margin-left: 10px;"><b class="ffbold italic">8 (017) 267 53 04</b></p>
-							</li>
-							<li class="cont_li dib">
-								<p class="cont_p mail" style="margin-left: 40px;"><b class="ffbold italic">kl_vostochnoe@tut.by</b></p>
-							</li>
-							<li class="cont_li dib">
-								<p class="cont_p skype" style="margin-left: 40px;"><b class="ffbold italic">l_vostochnoe</b></p>
-							</li>
-						</ul>
-					</div>
-					<ul class="spisok__blue__ul light_italic__text mt20">
-						<li class="spisok__blue" style="color: #1f90cd;"><span>Местоположение: в черте города Минска, пр. Независимости, 161 Б;</span></li>
-						<li class="spisok__blue" style="color: #1f90cd;"><span>График работы администрации: пн.-пт. 8.00-17.00 обед 13.00-13.48&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;сб.-вс. 8.00-16.00 обед 13.00-13.48;</span></li>
-						<li class="spisok__blue" style="color: #1f90cd;"><span>Режими посещения кладбища посетителями:</span>
-							<ul class="vlozh_spisok__ul">
-								<li>
-									<p class="vlozh_spisok">в летний период <b class="ffbold">(с 01 апреля до 01 октября) 9.00-21.00</b> ежедневно</p>
-								</li>
-								<li>
-									<p class="vlozh_spisok">в зимний период <b class="ffbold">(с 01 октября до 01 апреля) 9.00-19.00</b> ежедневно; </p>
-								</li>
 
-							</ul>
-						</li>
-						<li class="spisok__blue" style="color: #1f90cd;"><span>На территории расположен наш магазин, в котором вы можете <br>  заказать услуги по захоронению, и приобрести ритуальные товары.</span></li>
-						<li class="spisok__blue" style="color: #1f90cd;"><span>Координаты: <b class="ffbold">53.940388, 27.660664</b></span></li>
+
+			<article class="innerpage">
+				<div class="spisok_menu">
+					<ul class="spisok_menu__ul">
+						<li class="spisok_menu__li dib"><a class="spisok_menu__pasiv" href="index.html">Главная</a></li>
+						<li class="spisok_menu__li dib"><a href="kladbiche.html" class="spisok_menu__pasiv">/ Кладбища</a></li>
+						<li class="spisok_menu__li dib"><a href="kladbiche_vostochnoe.html" class="spisok_menu__activ">/ Восточное</a></li>
 					</ul>
-					<h3 class="shema_h3 tac">Схема кладбища №1</h3>
-					<img class="shema_img" src="img/images/shema1.png" alt="shema">
-					<h3 class="shema_h3 tac">Схема кладбища №2</h3>
-					<img class="shema_img" src="img/images/shema2.png" alt="shema">
 				</div>
-			</div>
-		</article>
+				<div class="clearfix">
+					<div class="innerpage_left">
+						<nav class="left_menu dib">
+							<nav id="menuVertical">
+								<ul class="vipad_menu">
+									<li class="left_menu_parent"><a href="ritual_uslugi.html">Ритуальные услуги</a>
+										<ul>
+											<li><a href="#">Агенты, справки</a></li>
+											<li><a href="ritual_zal.html">Ритуальный зал</a></li>
+											<li><a href="#">Холодильная камера</a></li>
+											<li><a href="uslugi_zahoronenia.html">Услуги захоронения</a></li>
+											<li><a href="">Транспортные услуги</a></li>
+											<li><a href="#">Благоустройство захоронений</a></li>
+											<li><a href="#">Фото/видео услуги</a></li>
+										</ul>
+									</li>
+									<li><a href="ritual_tovari.html">Ритуальные товары</a></li>
+									<li><a href="kladbiche.html">Кладбища</a>
+										<ul>
+											<li><a href="kladbiche_vostochnoe.html">Восточное</a></li>
+											<li><a href="#">Северное</a></li>
+											<li><a href="#">Западное</a></li>
+											<li><a href="#">Колодищи</a></li>
+											<li><a href="#">Михановичи</a></li>
+											<li><a href="#">Чижовское</a></li>
+										</ul>
+									</li>
+									<li><a href="magazinu_i_filiali.html">Магазины и филиалы</a></li>
+									<li><a href="krematori.html">Крематорий</a></li>
+									<li><a href="pravovie_voprosi.html">Правовые вопросы</a></li>
+									<li><a href="admin_proceduri.html">Админ. процедуры</a></li>
+									<li><a href="uborka.html">Уборка места захоронения</a></li>
+									<li><a href="oformlenie.html">Оформление похорон</a></li>
+									<li><a href="info_term.html">Инф. терминалы</a></li>
+									<li><a href="jurnal_nekropol.html">Журнал “Некрополь”</a></li>
+									<li><a href="vakansii.html">Вакансии</a></li>
+									<li><a href="elekt_obr.html">Электронное обращение</a></li>
+								</ul>
+							</nav><!--menuVertical-->
+						</nav>
+						<div class="ssilki">
+							<div class="ssilki_bloki">
+								<a class="ssilki_v_blokah" href="http://www.ritual-minsk.by/" target="_blank">http://www.ritual-minsk.by/</a>
+							</div>
+							<div class="ssilki_bloki">
+								<a class="ssilki_v_blokah" href="http://www.ritual-minsk.by/" target="_blank">http://www.ritual-minsk.by/</a>
+							</div>
+						</div>
+					</div>
+					<div class="agent_block user-content">
+						<h2 class="agent__h2">Кладбище</h2>
+						<div class="cem-item">
+							<div class="cem-item_image">
+								<div class="cem-item_wrapimage">
+									<img src="img/item/cem21.jpg" alt="kartinki">
+								</div>
+							</div>
+							<div class="cem-item_text">	
+								<p><em>Ограниченно действующее, производятся подзахоронения близких родственников к ранее усопшим родственникам, а также по решению Мингорисполкома;</em></p>
+								<ul>
+									<li><em>Год открытия: <b>1952;</b></em></li>
+									<li><em>Количество захороненных: <b>28 000 человек;</b></em></li>
+									<li><em>Площадь: <b>23,1 га.;</b></em></li>
+									<li><em>Контакты:</em>
+										<div class="cem-item_info">
+											<div class="cem-item_phone">8 (017) 267 53 04</div>
+											<div class="cem-item_mail">kl_vostochnoe@tut.by</div>
+											<div class="cem-item_skype">l_vostochnoe</div>
+										</div>
+									</li>
+								</ul>								
+							</div>
+							<ul>
+								<li><em>Местоположение: в черте города Минска, пр. Независимости, 161 Б;</em></li>
+								<li><em>График работы администрации: пн.-пт. 8.00-17.00 обед 13.00-13.48 сб.-вс. 8.00-16.00 обед 13.00-13.48;</em></li>
+								<li><em>Режими посещения кладбища посетителями:</em>
+									<ul>
+										<li><em>в летний период <b>(с 01 апреля до 01 октября) 9.00-21.00</b> ежедневно</em></li>
+										<li><em>в зимний период <b>(с 01 октября до 01 апреля) 9.00-19.00</b> ежедневно;</em></li>
+									</ul>
+								</li>
+								<li><em>На территории расположен наш магазин, в котором вы можете заказать услуги по захоронению, и приобрести ритуальные товары.</em></li>
+								<li><em>Координаты: <b>53.940388, 27.660664</b></em></li>
+							</ul>
+							<div class="cem-item_map">
+								<div class="cem-item_head">Схема кладбища №1</div>
+								<div class="cem-item_mapinner"><img src="img/item/cem-map1.jpg"></div>
+							</div>
+							<div class="cem-item_map">
+								<div class="cem-item_head">Схема кладбища №2</div>
+								<div class="cem-item_mapinner"><img src="img/item/cem-map2.jpg"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="bslider">
+					<div class="slider_buttom">
+						<div class="slider__footer_prev"></div>
+			      <ul class="slider__footer">
+			        <li><a href="http://pravo.by" target="_blank"><img src="img/item/1.png" width="100" /></a></li>
+							<li><a href="#"><img src="img/item/2.png" width="100" /></a></li>
+							<li><a href="#"><img src="img/item/3.png" width="100" /></a></li>
+							<li><a href="#"><img src="img/item/1.png" width="100" /></a></li>
+							<li><a href="#"><img src="img/item/2.png" width="100" /></a></li>
+							<li><a href="#"><img src="img/item/3.png" width="100" /></a></li>
+							<li><a href="#"><img src="img/item/1.png" width="100" /></a></li>
+							<li><a href="#"><img src="img/item/2.png" width="100" /></a></li>
+							<li><a href="#"><img src="img/item/3.png" width="100" /></a></li>
+							<li><a href="#"><img src="img/item/1.png" width="100" /></a></li>
+							<li><a href="#"><img src="img/item/2.png" width="100" /></a></li>
+							<li><a href="#"><img src="img/item/3.png" width="100" /></a></li>
+			      </ul>
+			      <div class="slider__footer_next"></div>
+					</div>
+				</div>
+			</article>
 
-		<div class="wrapper content">
-			<div class="slider_buttom">
-				<div class="slider__footer_prev"></div>
-	            <ul class="slider__footer">
-	                <li><a href="http://pravo.by" target="_blank"><img src="img/item/1.png" width="100" /></a></li>
-					<li><a href="#"><img src="img/item/2.png" width="100" /></a></li>
-					<li><a href="#"><img src="img/item/3.png" width="100" /></a></li>
-					<li><a href="#"><img src="img/item/1.png" width="100" /></a></li>
-					<li><a href="#"><img src="img/item/2.png" width="100" /></a></li>
-					<li><a href="#"><img src="img/item/3.png" width="100" /></a></li>
-					<li><a href="#"><img src="img/item/1.png" width="100" /></a></li>
-					<li><a href="#"><img src="img/item/2.png" width="100" /></a></li>
-					<li><a href="#"><img src="img/item/3.png" width="100" /></a></li>
-					<li><a href="#"><img src="img/item/1.png" width="100" /></a></li>
-					<li><a href="#"><img src="img/item/2.png" width="100" /></a></li>
-					<li><a href="#"><img src="img/item/3.png" width="100" /></a></li>
-	            </ul>
-	            <div class="slider__footer_next"></div>
-			</div>
-		</div>
 
+
+
+		</main>
 		<footer>
 			<div class="zametka">
 				<div class="wrapper">
@@ -250,12 +256,6 @@
 				<p class="pl110 wrapper"><a class="webform" href="https://webformat.by/">- Разработка сайтов</a></p>
 			</div>
 		</footer>
-
-
-
-
-
-
 		<!-- Конец кода HTML -->
 
 		<!-- Для подключения скрытых файлов -->
@@ -271,9 +271,8 @@
 		<![endif]-->
 		
 		<!-- Подключаем скрипты -->
-		<!-- <script src="libs/jquery/jquery-1.11.2.min.js"></script> -->
+		<script src="libs/jquery/jquery-1.11.2.min.js"></script>
 		<!-- <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script> -->
-		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
 		<!-- <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script> -->
 		<script src="libs/modernizr/modernizr.js"></script>
 		<script src="libs/bootstrap/js/bootstrap.min.js"></script>
@@ -283,6 +282,8 @@
 		<script src="libs/mobilyslider/js/mobilyslider.js" type="text/javascript"></script>
 		<script src="libs/mobilyslider/js/init.js" type="text/javascript"></script>
 		<script src="js/slider-footer.js" ></script>
+		<script src="libs/jquery.bxslider.min.js" type="text/javascript"></script>
+
 
 		<script src="js/common.js"></script> <!-- Основной файл скриптов -->
 	</body>

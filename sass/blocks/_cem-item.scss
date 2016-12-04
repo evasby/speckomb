@@ -1,0 +1,132 @@
+.cem-item{
+	padding: 5px 0 0;
+	&_image{
+		float: left;
+		width: 256px;
+		margin: 8px 30px 0 0;
+		border: 2px solid #b2b2b2;
+		box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+		position:relative;
+		z-index: 1;
+		&:before,
+	  &:after {
+	    content: "";
+	    display: block;
+	    bottom: 15px;
+	    left: 10px;
+	    width: 50%;
+	    height: 20%;
+	    max-width: 300px;
+	    box-shadow:0 15px 20px rgba(0, 0, 0, 0.6);
+	    transform:rotate(-5deg);
+	    position: absolute;
+	    z-index: -1;
+		}
+		&:after{
+	  	right: 10px;
+	    left: auto;
+	    transform:rotate(5deg);
+	  }
+		img{
+			width: 100%;
+			height: auto;
+			
+		}
+	}
+	&_wrapimage{
+		position: relative;
+		&:after{
+			content: '';
+			display: block;
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			box-shadow: inset 0px 0px 21px 0px rgba(255,255,255,0.75);
+		}
+	}
+	&_text{
+		overflow: hidden;
+		padding-bottom: 35px;
+	}
+	&_info{
+		font-family: OpenSans-Semibold;
+	}
+	&_phone{
+		display: inline-block;
+		position: relative;
+		padding-left: 30px;
+		margin-right: 15px;
+		&:before{
+			content: '';
+			position: absolute;
+			width: 19px;
+			height: 19px;
+			top: 6px;
+			left: 0;
+			background: transparent url('../img/images/cem-phone.png') left top no-repeat;
+		}
+	}
+	&_mail{
+		display: inline-block;
+		position: relative;
+		padding-left: 30px;
+		margin-right: 15px;
+		&:before{
+			content: '';
+			position: absolute;
+			width: 20px;
+			height: 14px;
+			top: 8px;
+			left: 0;
+			background: transparent url('../img/images/cem-mail.png') left top no-repeat;
+		}
+	}
+	&_skype{
+		display: inline-block;
+		position: relative;
+		padding-left: 30px;
+		margin-right: 15px;
+		&:before{
+			content: '';
+			position: absolute;
+			width: 17px;
+			height: 17px;
+			top: 7px;
+			left: 0;
+			background: transparent url('../img/images/cem-skype.png') left top no-repeat;
+		}
+	}
+	&_map{
+		padding: 10px 0 0;
+	}
+	&_head{
+		font-size: 25px;
+		font-family: OpenSans-Semibold;
+		text-align: center;
+		margin-bottom: 30px;
+	}
+	&_mapinner{
+		margin-bottom: 40px;
+		position: relative;
+		&:before{
+			content: '';
+			position: absolute;
+			top: -17px;
+			left: 0;
+			width: 100%;
+			height: 17px;
+			background: transparent url('../img/images/cem-item-shadow-top.png') 50% top no-repeat;
+		}
+		&:after{
+			content: '';
+			position: absolute;
+			bottom: -17px;
+			left: 0;
+			width: 100%;
+			height: 17px;
+			background: transparent url('../img/images/cem-item-shadow-bottom.png') 50% top no-repeat;
+		}
+	}
+}

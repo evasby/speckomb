@@ -9,11 +9,7 @@
 		<meta charset="utf-8" />
 
 		<title>Магазин ул.Ольшевского,12</title>
-		<meta name="description" content="КУП “СПЕЦИАЛИЗИРОВАННЫЙ КОМБИНАТ КОММУНАЛЬНО-БЫТОВОГО ОБСЛУЖИВАНИЯ”">
-	    <meta name="author" content="Pavel Korchago">
-	    <meta name="tel" content="+375 29 303 23 22">
-	    <meta name="email" content="pavel.korchago@mail.ru">
-		
+		<meta name="description" content="КУП “СПЕЦИАЛИЗИРОВАННЫЙ КОМБИНАТ КОММУНАЛЬНО-БЫТОВОГО ОБСЛУЖИВАНИЯ”">		
 		<!-- Иконка сайта -->
 		<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon" />
 		<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png" />
@@ -40,6 +36,7 @@
 		<link href="libs/mobilyslider/css/default.css" rel="stylesheet" type="text/css" />
 		<link rel="stylesheet" href="css/main.css" />
 		<link rel="stylesheet" href="css/media.css" />
+		<link rel="stylesheet" href="css/all.css" />
 
 	</head>
 
@@ -50,18 +47,20 @@
 				<div class="bg_img">
 					<a href="#" class="dib"><img src="img/images/piples.png" alt="alt"></a>
 					<h1 class="zag dib">Куп “специализированный комбинат <br> коммунально-бытового обслуживания”</h1>
-					<img src="img/images/namber.png" alt="number" class="number">
+					<img src="img/images/namber.png" alt="number" class="number pulse">
 					<h3 class="discr dib"> “Мы поможем сохранить память!”</h3>
 					<div class="contact dib">
 						<p class="contact__text email">speckombinat@bk.ru</p>
 						<p class="contact__text adress">г.Минск, ул. Ольшевского, 12</p>
 					</div>
-					<form class="searc_block dib right" action="" method="get">
-							<input type="search" class="search" placeholder="Поиск...">
-							<button class="button"><img src="img/images/lupa.png" alt="lupa"></button>
-					</form>
+					<div class="searc_block dib right">
+						<form action="" method="get">
+								<input type="search" class="search" placeholder="Поиск...">
+								<button class="button"><img src="img/images/lupa.png" alt="lupa"></button>
+						</form>
+					</div>
 				</div>
-				<nav>
+				<nav class="tmenu">
 					<div class="bg_menu">
 						<div class="menu">
 							<img src="img/images/roza.png" alt="roza" class="roza">
@@ -69,7 +68,7 @@
 								<li class="menu__li dib"><a class="menu__a pl10" href="index.html">ГЛАВНАЯ</a></li>
 								<li class="menu__li dib"><a class="menu__a" href="o_predpriatii.html">О ПРЕДПРИЯТИИ</a></li>
 								<li class="menu__li dib"><a class="menu__a" href="vizov_agenta.html">ВЫЗОВ АГЕНТА</a></li>
-								<li class="menu__li dib"><a class="menu__a" href="news_perevozka.html">ДОСТАВКА</a></li>
+								<li class="menu__li dib"><a class="menu__a" href="dostavka.html">ДОСТАВКА</a></li>
 								<li class="menu__li dib"><a class="menu__a" href="ritual_tovari.html">ТОВАРЫ</a></li>
 								<li class="menu__li dib"><a class="menu__a" href="statie.html">СТАТЬИ</a></li>
 								<li class="menu__li dib"><a class="menu__a" href="kontakt.html">КОНТАКТЫ</a></li>
@@ -79,99 +78,102 @@
 				</nav>
 			</div>
 		</header>
-
-		<article class="wrapper">
-			<div class="spisok_menu">
-				<ul class="spisok_menu__ul">
-					<li class="spisok_menu__li dib"><a class="spisok_menu__pasiv" href="index.html">Главная</a></li>
-					<li class="spisok_menu__li dib"><a href="magazinu_i_filiali.html" class="spisok_menu__pasiv">/ Магазины и филиалы</a></li>
-					<li class="spisok_menu__li dib"><a href="magazinu_i_filiali__olshevskogo.html" class="spisok_menu__activ">/ Магазин ул.Ольшевского,12</a></li>
-				</ul>
-			</div>
-			<div class="left_menu_ssilki dib">
-				<nav class="left_menu">
-					<nav id="menuVertical">
-						<ul class="vipad_menu">
-							<li><a href="ritual_uslugi.html">Ритуальные услуги</a>
-								<ul>
-									<li><a href="#">Агенты, справки</a></li>
-									<li><a href="ritual_zal.html">Ритуальный зал</a></li>
-									<li><a href="#">Холодильная камера</a></li>
-									<li><a href="uslugi_zahoronenia.html">Услуги захоронения</a></li>
-									<li><a href="">Транспортные услуги</a></li>
-									<li><a href="#">Благоустройство захоронений</a></li>
-									<li><a href="#">Фото/видео услуги</a></li>
+		<main class="main">
+			<article class="innerpage">
+				<div class="spisok_menu">
+					<ul class="spisok_menu__ul">
+						<li class="spisok_menu__li dib"><a class="spisok_menu__pasiv" href="index.html">Главная</a></li>
+						<li class="spisok_menu__li dib"><a href="magazinu_i_filiali.html" class="spisok_menu__pasiv">/ Магазины и филиалы</a></li>
+						<li class="spisok_menu__li dib"><a href="magazinu_i_filiali__olshevskogo.html" class="spisok_menu__activ">/ Магазин ул.Ольшевского,12</a></li>
+					</ul>
+				</div>
+				<div class="clearfix">
+					<div class="innerpage_left">
+						<nav class="left_menu dib">
+							<nav id="menuVertical">
+								<ul class="vipad_menu">
+									<li class="left_menu_parent"><a href="ritual_uslugi.html">Ритуальные услуги</a>
+										<ul>
+											<li><a href="#">Агенты, справки</a></li>
+											<li><a href="ritual_zal.html">Ритуальный зал</a></li>
+											<li><a href="#">Холодильная камера</a></li>
+											<li><a href="uslugi_zahoronenia.html">Услуги захоронения</a></li>
+											<li><a href="">Транспортные услуги</a></li>
+											<li><a href="#">Благоустройство захоронений</a></li>
+											<li><a href="#">Фото/видео услуги</a></li>
+										</ul>
+									</li>
+									<li><a href="ritual_tovari.html">Ритуальные товары</a></li>
+									<li><a href="kladbiche.html">Кладбища</a>
+										<ul>
+											<li><a href="kladbiche_vostochnoe.html">Восточное</a></li>
+											<li><a href="#">Северное</a></li>
+											<li><a href="#">Западное</a></li>
+											<li><a href="#">Колодищи</a></li>
+											<li><a href="#">Михановичи</a></li>
+											<li><a href="#">Чижовское</a></li>
+										</ul>
+									</li>
+									<li><a href="magazinu_i_filiali.html">Магазины и филиалы</a></li>
+									<li><a href="krematori.html">Крематорий</a></li>
+									<li><a href="pravovie_voprosi.html">Правовые вопросы</a></li>
+									<li><a href="admin_proceduri.html">Админ. процедуры</a></li>
+									<li><a href="uborka.html">Уборка места захоронения</a></li>
+									<li><a href="oformlenie.html">Оформление похорон</a></li>
+									<li><a href="info_term.html">Инф. терминалы</a></li>
+									<li><a href="jurnal_nekropol.html">Журнал “Некрополь”</a></li>
+									<li><a href="vakansii.html">Вакансии</a></li>
+									<li><a href="elekt_obr.html">Электронное обращение</a></li>
 								</ul>
-							</li>
-							<li><a href="ritual_tovari.html">Ритуальные товары</a></li>
-							<li><a href="kladbiche.html">Кладбища</a>
-								<ul>
-									<li><a href="kladbiche_vostochnoe.html">Восточное</a></li>
-									<li><a href="#">Северное</a></li>
-									<li><a href="#">Западное</a></li>
-									<li><a href="#">Колодищи</a></li>
-									<li><a href="#">Михановичи</a></li>
-									<li><a href="#">Чижовское</a></li>
-								</ul>
-							</li>
-							<li><a href="magazinu_i_filiali.html">Магазины и филиалы</a></li>
-							<li><a href="krematori.html">Крематорий</a></li>
-							<li><a href="pravovie_voprosi.html">Правовые вопросы</a></li>
-							<li><a href="admin_proceduri.html">Админ. процедуры</a></li>
-							<li><a href="uborka.html">Уборка места захоронения</a></li>
-							<li><a href="oformlenie.html">Оформление похорон</a></li>
-							<li><a href="info_term.html">Инф. терминалы</a></li>
-							<li><a href="jurnal_nekropol.html">Журнал “Некрополь”</a></li>
-							<li><a href="vakansii.html">Вакансии</a></li>
-							<li><a href="elekt_obr.html">Электронное обращение</a></li>
-						</ul>
-					</nav><!--menuVertical-->
-				</nav>
-				<div class="ssilki_bloki dib">
-					<a class="ssilki_v_blokah" href="http://www.ritual-minsk.by/" target="_blank">http://www.ritual-minsk.by/</a>
+							</nav><!--menuVertical-->
+						</nav>
+						<div class="ssilki">
+							<div class="ssilki_bloki">
+								<a class="ssilki_v_blokah" href="http://www.ritual-minsk.by/" target="_blank">http://www.ritual-minsk.by/</a>
+							</div>
+							<div class="ssilki_bloki">
+								<a class="ssilki_v_blokah" href="http://www.ritual-minsk.by/" target="_blank">http://www.ritual-minsk.by/</a>
+							</div>
+						</div>
+					</div>
+					<div class="agent_block user-content">
+						<h2 class="agent__h2">Магазин ул.Ольшевского,12</h2>
+						<p>
+							<em>Наш магазин предлагает полный спектр ритуальных принадлежностей - все что может понадобиться для траурной церемонии. При заказе агента по телефону возможна доставка (уточняйте по телефону). Осуществляем продажу по безналичному расчету. При необходимости возможно выполнение спецзаказа. После согласования вашего заказа с начальником цеха, оформления документов, работа выполняется в</em>
+						</p>
+						<p><img src="img/item/shop.jpg"></p>
+						<p><em>График работы: <b>круглосуточно без выходных и без обеда </b></em></p>
+						<p><em>График работы: <b>пн.-пт. 8.00-19.00 без обеда</b></em></p>
+						<p><em>сек. памятников: <b>сб. 8.00-17.00 без обеда, вс. выходной</b></em></p>
+						<p><em>Адрес: <b>ул.Ольшевского,12</b></em></p>
+						<p><em>Телефон:</em></p>
+						<p><em>204-31-36 - <b>ритуальные товары,</b></em></p>
+						<p><em>204-30-32 - <b>секция памятников,</b></em></p>
+						<p><em>204-31-32 - <b>ритуальные услуги</b></em></p>
+					</div>
 				</div>
-				<div class="ssilki_bloki dib">
-					<a class="ssilki_v_blokah" href="http://www.ritual-minsk.by/" target="_blank">http://www.ritual-minsk.by/</a>
+				<div class="bslider">
+					<div class="slider_buttom">
+						<div class="slider__footer_prev"></div>
+			      <ul class="slider__footer">
+			        <li><a href="http://pravo.by" target="_blank"><img src="img/item/1.png" width="100" /></a></li>
+							<li><a href="#"><img src="img/item/2.png" width="100" /></a></li>
+							<li><a href="#"><img src="img/item/3.png" width="100" /></a></li>
+							<li><a href="#"><img src="img/item/1.png" width="100" /></a></li>
+							<li><a href="#"><img src="img/item/2.png" width="100" /></a></li>
+							<li><a href="#"><img src="img/item/3.png" width="100" /></a></li>
+							<li><a href="#"><img src="img/item/1.png" width="100" /></a></li>
+							<li><a href="#"><img src="img/item/2.png" width="100" /></a></li>
+							<li><a href="#"><img src="img/item/3.png" width="100" /></a></li>
+							<li><a href="#"><img src="img/item/1.png" width="100" /></a></li>
+							<li><a href="#"><img src="img/item/2.png" width="100" /></a></li>
+							<li><a href="#"><img src="img/item/3.png" width="100" /></a></li>
+			      </ul>
+			      <div class="slider__footer_next"></div>
+					</div>
 				</div>
-			</div>
-			<div class="agent_block dib" style="width: 850px;">
-				<h2 class="agent__h2 mt-7">Магазин ул.Ольшевского,12</h2>
-				<p class="light_italic__text" style="width: 850px;">
-					Наш магазин предлагает полный спектр ритуальных принадлежностей - все что может понадобиться для траурной церемонии. При заказе агента по телефону возможна доставка (уточняйте по телефону). Осуществляем продажу по безналичному расчету. При необходимости возможно выполнение спецзаказа. После согласования вашего заказа с начальником цеха, оформления документов, работа выполняется в 
-				</p>
-				<img class="ml-20" src="img/images/magazin_olshev.png" alt="olshevskogo">
-				<p class="light__text italic">График работы: <b class="ffbold">круглосуточно без выходных и без обеда</b></p>
-				<p class="light__text italic">График работы: <b class="ffbold">пн.-пт. 8.00-19.00 без обеда</b></p>
-				<p class="light__text italic">сек. памятников: <b class="ffbold">сб. 8.00-17.00 без обеда, вс. выходной</b></p>
-				<p class="light__text italic">Адрес: <b class="ffbold"> ул.Ольшевского,12</b></p>
-				<p class="light__text italic">Телефон:</p>
-				<p class="light__text italic">204-31-36 - <b class="ffbold">  ритуальные товары,</b></p>
-				<p class="light__text italic">204-30-32 - <b class="ffbold"> секция памятников,</b></p>
-				<p class="light__text italic">204-31-32 - <b class="ffbold">  ритуальные услуги</b></p>
-				
-			</div>
-			
-			<div class="wrapper content">
-				<div class="slider_buttom">
-					<div class="slider__footer_prev"></div>
-		            <ul class="slider__footer">
-		                <li><a href="http://pravo.by" target="_blank"><img src="img/item/1.png" width="100" /></a></li>
-						<li><a href="#"><img src="img/item/2.png" width="100" /></a></li>
-						<li><a href="#"><img src="img/item/3.png" width="100" /></a></li>
-						<li><a href="#"><img src="img/item/1.png" width="100" /></a></li>
-						<li><a href="#"><img src="img/item/2.png" width="100" /></a></li>
-						<li><a href="#"><img src="img/item/3.png" width="100" /></a></li>
-						<li><a href="#"><img src="img/item/1.png" width="100" /></a></li>
-						<li><a href="#"><img src="img/item/2.png" width="100" /></a></li>
-						<li><a href="#"><img src="img/item/3.png" width="100" /></a></li>
-						<li><a href="#"><img src="img/item/1.png" width="100" /></a></li>
-						<li><a href="#"><img src="img/item/2.png" width="100" /></a></li>
-						<li><a href="#"><img src="img/item/3.png" width="100" /></a></li>
-		            </ul>
-		            <div class="slider__footer_next"></div>
-				</div>
-			</div>
-		</article>
+			</article>
+		</main>
 
 		<footer>
 			<div class="zametka">
@@ -232,9 +234,8 @@
 		<![endif]-->
 		
 		<!-- Подключаем скрипты -->
-		<!-- <script src="libs/jquery/jquery-1.11.2.min.js"></script> -->
+		<script src="libs/jquery/jquery-1.11.2.min.js"></script>
 		<!-- <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script> -->
-		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
 		<!-- <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script> -->
 		<script src="libs/modernizr/modernizr.js"></script>
 		<script src="libs/bootstrap/js/bootstrap.min.js"></script>
@@ -244,6 +245,7 @@
 		<script src="libs/mobilyslider/js/mobilyslider.js" type="text/javascript"></script>
 		<script src="libs/mobilyslider/js/init.js" type="text/javascript"></script>
 		<script src="js/slider-footer.js" ></script>
+		<script src="libs/jquery.bxslider.min.js" type="text/javascript"></script>
 
 		<script src="js/common.js"></script> <!-- Основной файл скриптов -->
 	</body>
