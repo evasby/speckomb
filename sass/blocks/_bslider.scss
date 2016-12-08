@@ -4,6 +4,19 @@
 		margin: 23px 0 0;
 		li{
 			background-color: #fff;
+			width: 160px;
+			height: 97px;
+			a{
+				display: block;
+				width: 160px;
+				height: 97px;
+				margin: 0;
+				img{
+					display: block;
+					width: 100%;
+					height: auto;
+				}
+			}
 		}
 	}
 	.slider__footer_prev{

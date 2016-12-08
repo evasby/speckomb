@@ -586,7 +586,18 @@ footer {
   .bslider .slider__footer {
     margin: 23px 0 0; }
     .bslider .slider__footer li {
-      background-color: #fff; }
+      background-color: #fff;
+      width: 160px;
+      height: 97px; }
+      .bslider .slider__footer li a {
+        display: block;
+        width: 160px;
+        height: 97px;
+        margin: 0; }
+        .bslider .slider__footer li a img {
+          display: block;
+          width: 100%;
+          height: auto; }
   .bslider .slider__footer_prev {
     position: absolute;
     width: 32px;
@@ -716,6 +727,7 @@ footer {
     margin: 0; }
 
 .user-content {
+  text-align: left;
   font-family: OpenSans-Regular;
   font-size: 15px;
   line-height: 31px;
@@ -1881,3 +1893,9 @@ footer {
       width: 100%;
       height: 17px;
       background: transparent url("../img/images/cem-item-shadow-bottom.png") 50% top no-repeat; }
+
+.tabs ul li {
+  padding: 0;
+  margin: 0; }
+  .tabs ul li:before {
+    display: none; }
