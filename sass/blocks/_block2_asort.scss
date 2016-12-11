@@ -9,6 +9,7 @@
 	margin: 0 0 0 0;
 	&__block{
 		padding: 27px 0 0;
+		float: none;
 	}
 	&__4{
 		padding: 13px 0 0;
@@ -59,10 +60,13 @@
 			overflow: hidden;
 			background-color: #B6C4D0;
 			img{
-				display: block;
+				display: none;
 				width: 100%;
 				height: auto;
 				transition: transform 1s ease-out;
+			}
+			img.image-active{
+				display: block;
 			}
 
 		}

@@ -3,6 +3,9 @@
 	text-align: center;
 	margin-top: 3px;
 	position: relative;
+	&_hide{
+		display: none;
+	}
 	&_show{
 		display: block;
 		position: absolute;
@@ -45,7 +48,7 @@
 		ul{
 			list-style-type: none;
 			li{
-				padding: 0 15px;
+				padding: 0 15px!important;
 				color: #fff;
 				&:before{
 					display: none;
