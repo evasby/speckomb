@@ -734,7 +734,14 @@ footer {
   font-family: OpenSans-Regular;
   font-size: 15px;
   line-height: 31px;
-  color: #000; }
+  color: #000;
+  /*& > p img{
+		box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75);
+		border: 2px solid #878787;
+	}*/
+  /*& > p span[data-picture-align="left"] img {
+		margin: 10px 50px 10px 0;
+	}*/ }
   .user-content > a,
   .user-content > ul li a,
   .user-content > ol li a,
@@ -797,12 +804,11 @@ footer {
     font-family: OpenSans-Regular;
     font-size: 15px;
     line-height: 31px; }
-  .user-content > p img {
+  .user-content p.user-image img {
+    margin: 10px 50px 10px 0;
     -webkit-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.75);
     box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.75);
     border: 2px solid #878787; }
-  .user-content > p span[data-picture-align="left"] img {
-    margin: 10px 50px 10px 0; }
   .user-content i, .user-content em {
     font-family: OpenSans-Italic; }
   .user-content b, .user-content strong, .user-content h3 {
@@ -850,6 +856,8 @@ footer {
     -webkit-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.5);
     box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.5);
     border-collapse: collapse; }
+    .user-content table tbody {
+      border: none; }
     .user-content table td, .user-content table th {
       border: 1px solid black;
       padding: 16px;
