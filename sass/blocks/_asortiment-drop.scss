@@ -54,10 +54,16 @@
 					display: none;
 				}
 				&:hover{
-					background-color: #047dba;
+					//background-color: #047dba;
 				}
 			}
 		}	
+	}
+	&_replace{
+		transition: text-shadow 0.2s;
+		&:hover{
+			text-shadow: 4px 4px 3px rgba(0, 0, 0, 1);
+		}
 	}
 	&_active{
 		background-color: #047dba;

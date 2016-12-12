@@ -3,7 +3,7 @@
 		z-index: 1;
 	}
 	.bg_menu{
-		padding-left: 35px;
+		padding-left: 45px;
 	}
 	.menu__ul{
 		padding-top: 1px;
@@ -25,6 +25,7 @@
 	}
 	.menu__a{
 		@include link(#fff, #fff);
+		text-transform: uppercase;
 		&:hover{
 			text-decoration: none;
 		}

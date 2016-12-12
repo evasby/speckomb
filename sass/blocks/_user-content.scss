@@ -3,7 +3,9 @@
 	& > a,
 	& > ul li a,
 	& > ol li a,
-	& > p a{
+	& > p a,
+	& .field-name-body a,
+	& .field-name-field-cem-descr a{
 		@include link(#000, #000);
 		text-decoration: none;
 	  display: inline-block;
@@ -20,7 +22,9 @@
 	& > a:hover,
 	& > ul li a:hover,
 	& > ol li a:hover,
-	& > p a:hover{
+	& > p a:hover,
+	& .field-name-body a:hover,
+	& .field-name-field-cem-descr a:hover{
 		background-size: 100% 2px, 100% 2px; 
   	background-position: left bottom;
 	}

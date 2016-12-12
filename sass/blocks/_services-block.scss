@@ -9,6 +9,13 @@
 			&:before{
 				display: none;
 			}
+			a{
+				@include link(#1f90cd, #1f90cd);
+				text-decoration: underline;
+			}
+			a:hover{
+				text-decoration: none;
+			}
 		}
 	}
 	.img_text_block{
