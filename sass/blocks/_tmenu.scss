@@ -11,22 +11,57 @@
 	.menu__li{
 		position: relative;
 		transition: all 0.4s;
+		
+		
+		&:before{
+			content: '';
+			display: block;
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			opacity: 0;
+			background: linear-gradient(to right, #000000 0%, #444444 20%, #444444 80%, #000000 100%);
+			transition: opacity 0.4s;
+		}
 		&:hover{
 			//box-shadow: inset 0px 0px 20px 0px rgba(150,150,150,150.5);
-			opacity: 0.8;
-			background: linear-gradient(to right, #000000 0%, #444444 40%, #444444 60%, #000000 100%);
+			//opacity: 0.8;
+			//background: linear-gradient(to right, #000000 0%, #444444 40%, #444444 60%, #000000 100%);
+			//background: linear-gradient(to right, #000000 0%, #444444 20%, #444444 80%, #000000 100%);
+			&:before{
+				opacity: 1;
+			}
+		}
+		&:active{
+			a{
+				top: 2px;
+				opacity: 1;
+			}
 		}
 	}
 	.menu__li__active{
 		background: #000000;
 		//background: linear-gradient(to right, rgba(0,0,0,1) 0%, rgba(68,68,68,1) 26%, rgba(0,0,0,1) 100%);
-		background: linear-gradient(to right, #000000 0%, #444444 40%, #444444 60%, #000000 100%);
-		opacity: 0.8;
+		//background: linear-gradient(to right, #000000 0%, #444444 40%, #444444 60%, #000000 100%);
+		//background: linear-gradient(to right, #000000 0%, #444444 20%, #444444 80%, #000000 100%);
+		//opacity: 0.8;
+		&:before{
+			opacity: 1;
+		}
 	}
 	.menu__a{
 		@include link(#fff, #fff);
 		text-transform: uppercase;
+		position: relative;
+		top: 0;
+		opacity: 0.9;
+		transition: all 0.1s;
 		&:hover{
+			text-decoration: none;
+		}
+		&:focus{
 			text-decoration: none;
 		}
 	}

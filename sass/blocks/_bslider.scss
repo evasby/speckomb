@@ -1,11 +1,19 @@
 .bslider{
+	margin: 43px 0 0;
 	position: relative;
+	.slider_buttom{
+		overflow: visible;
+	}
 	.slider__footer{
-		margin: 23px 0 0;
+		
+		margin: 0;
 		li{
 			background-color: #fff;
 			width: 160px;
 			height: 97px;
+			//margin: 20px 17px;
+			display: block;
+			margin: auto;
 			a{
 				display: block;
 				width: 160px;
@@ -47,6 +55,45 @@
 		transition: opacity, 0.2s;
 		&:hover{
 			opacity: 0.8;
+		}
+	}
+	.bx-wrapper{
+		position: relative;
+		.bx-prev{
+			text-indent: 100%;
+			white-space: nowrap;
+			overflow: hidden;
+			position: absolute;
+			width: 32px;
+			height: 33px;
+			top: 50%;
+			left: -77px;
+			margin: -16px 0 0;
+			border-radius: 0; 
+			border: none;
+			background: transparent url('../img/images/bslider-left.png') left top no-repeat;
+			transition: opacity, 0.2s;
+			&:hover{
+				opacity: 0.8;
+			}
+		}
+		.bx-next{
+			text-indent: 100%;
+			white-space: nowrap;
+			overflow: hidden;
+			position: absolute;
+			width: 32px;
+			height: 33px;
+			top: 50%;
+			right: -77px;
+			margin: -16px 0 0;
+			border-radius: 0; 
+			border: none;
+			background: transparent url('../img/images/bslider-right.png') left top no-repeat;
+			transition: opacity, 0.2s;
+			&:hover{
+				opacity: 0.8;
+			}
 		}
 	}
 }

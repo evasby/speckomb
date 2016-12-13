@@ -12,8 +12,9 @@
 	  font-size: 15px;
 	  line-height: 18px;
 	  transition: .3s ease-in-out;
-	  background-image: linear-gradient(#000 50%, #000 50%), linear-gradient(silver 50%, silver 50%); 
-	  background-position: center bottom; 
+	  background-image: linear-gradient(darken(silver, 20%) 50%, darken(silver, 20%) 50%), linear-gradient(#333 50%, #333 50%); 
+	  //background-position: center bottom; 
+	  background-position: right bottom; 
 	  background-repeat: no-repeat; 
 	  background-size: 0 2px, 100% 2px; 
 	  color: #607584; 
