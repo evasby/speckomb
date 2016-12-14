@@ -1,0 +1,9 @@
+.node-webform{
+	padding-top: 5px;
+	a{
+		@include link(#047dba, #047dba);
+	}
+	.form-content > p{
+		line-height: 31px;
+	}
+}

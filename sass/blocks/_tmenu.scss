@@ -64,5 +64,8 @@
 		&:focus{
 			text-decoration: none;
 		}
+		&.active{
+			@include link(#ccc, #ccc);
+		}
 	}
 }
