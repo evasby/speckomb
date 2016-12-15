@@ -2567,3 +2567,31 @@ footer {
       color: #047dba; }
   .node-webform .form-content > p {
     line-height: 31px; }
+
+.blank-zakaz_text {
+  display: table;
+  width: 100%;
+  font-size: 15px;
+  line-height: 15px;
+  font-family: OpenSans-Italic;
+  margin-bottom: 18px; }
+  .blank-zakaz_text input {
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #000;
+    background-color: transparent;
+    padding: 0 5px 0 0;
+    text-indent: 5px; }
+  .blank-zakaz_text input:focus {
+    outline: none; }
+
+.blank-zakaz_label {
+  display: table-cell;
+  white-space: nowrap;
+  padding: 0 20px; }
+
+.blank-zakaz_input {
+  display: table-cell;
+  width: 100%; }
+  .blank-zakaz_text__multi .blank-zakaz_input {
+    width: auto; }
