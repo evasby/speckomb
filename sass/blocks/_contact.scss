@@ -1,6 +1,16 @@
 .contact{
 	.contact__text{
-		 text-shadow: 0 0 2px #232323,
+		p{
+			text-shadow: 0 0 2px #232323,
 		 							1px 2px 2px #000;
+		 	color: #f5f2f3;
+  		font-size: 20px;
+		}
+		a{
+			@include link(#f5f2f3, #f5f2f3);
+		}
+		a:hover{
+			text-decoration: none;
+		}
 	}
 }

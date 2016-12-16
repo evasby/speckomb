@@ -1,0 +1,13 @@
+.block2{
+	&__email{
+		a{
+			@include link(#f5f2f3, #f5f2f3);
+		}
+		a:hover{
+			text-decoration: none;
+		}
+	}
+	&__adress{
+
+	}
+}

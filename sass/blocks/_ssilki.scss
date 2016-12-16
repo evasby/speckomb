@@ -2,5 +2,40 @@
 	padding-top: 29px;
 	.ssilki_bloki{
 		margin: 0 0 23px;
+		position: relative;
+		text-align: center;
+		img{
+			position: absolute;
+			z-index: 1;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+		}
+		a{
+			position: relative;
+			z-index: 2;
+		}
+		.ssilki_v_blokah{
+			margin-left: 0;
+		}
+		&:after{
+			content: '';
+			display: block;
+			position: absolute;
+			z-index: 1;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			background-color: #000;
+			opacity: 0.5;
+			transition: opacity 0.2s;
+		}
+		&:hover{
+			&:after{
+				opacity: 0;
+			}
+		}
 	}
 }

@@ -301,9 +301,9 @@ footer {
   background: none;
   padding: 0; }
   .left_menu #menuVertical {
-    background: -webkit-gradient(linear, left top, left bottom, from(#6fbfe8), color-stop(100%, #5587e2), to(#7db9e8));
-    background: -webkit-linear-gradient(top, #6fbfe8 0%, #5587e2 100%, #7db9e8 100%);
-    background: linear-gradient(to bottom, #6fbfe8 0%, #5587e2 100%, #7db9e8 100%); }
+    background: -webkit-gradient(linear, left top, left bottom, from(#6fbfe8), to(#5a82d9));
+    background: -webkit-linear-gradient(top, #6fbfe8 0%, #5a82d9 100%);
+    background: linear-gradient(to bottom, #6fbfe8 0%, #5a82d9 100%); }
     .left_menu #menuVertical ul li a {
       font-family: ArialNarrowRegular;
       text-shadow: 0px 5px 7px rgba(0, 0, 0, 0.3);
@@ -321,10 +321,8 @@ footer {
       left: 0;
       width: 100%;
       height: 1px;
-      background: #6cbae7;
-      background: -webkit-gradient(linear, left top, right top, from(#6fbfe8), color-stop(60%, #b1dcf3), to(#6fbfe8));
-      background: -webkit-linear-gradient(left, #6fbfe8 0%, #b1dcf3 60%, #6fbfe8 100%);
-      background: linear-gradient(to right, #6fbfe8 0%, #b1dcf3 60%, #6fbfe8 100%); }
+      background: transparent url("../img/images/left_menu-line.png") left top no-repeat;
+      background-size: 100%; }
     .left_menu #menuVertical > ul > li > a:after {
       content: '';
       display: block;
@@ -334,10 +332,8 @@ footer {
       left: 0;
       width: 100%;
       height: 100%;
-      background: #6cbae7;
-      background: -webkit-gradient(linear, left top, right top, from(#6fbfe8), color-stop(60%, #b1dcf3), to(#6fbfe8));
-      background: -webkit-linear-gradient(left, #6fbfe8 0%, #b1dcf3 60%, #6fbfe8 100%);
-      background: linear-gradient(to right, #6fbfe8 0%, #b1dcf3 60%, #6fbfe8 100%);
+      background: transparent url("../img/images/left_menu-hover.png") left top no-repeat;
+      background-size: 100% 100%;
       opacity: 0;
       -webkit-transition: opacity 0.2s;
       transition: opacity 0.2s; }
@@ -349,13 +345,15 @@ footer {
     .left_menu #menuVertical > ul > li.active > a:after {
       opacity: 1; }
     .left_menu #menuVertical ul li ul {
+      min-width: 200px;
       background-color: #e1e1e1;
-      -webkit-box-shadow: 0px 0px 8px 1px rgba(0, 0, 0, 0.5);
-      box-shadow: 0px 0px 8px 1px rgba(0, 0, 0, 0.5);
+      -webkit-box-shadow: 0px 0px 8px 1px rgba(0, 0, 0, 0.5), inset 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+      box-shadow: 0px 0px 8px 1px rgba(0, 0, 0, 0.5), inset 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
       left: auto;
       left: 256px; }
     .left_menu #menuVertical ul li ul li a {
-      color: #000; }
+      color: #000;
+      padding: 16px 20px 14px 20px; }
       .left_menu #menuVertical ul li ul li a:link {
         color: #000; }
       .left_menu #menuVertical ul li ul li a:visited {
@@ -963,7 +961,36 @@ footer {
 .ssilki {
   padding-top: 29px; }
   .ssilki .ssilki_bloki {
-    margin: 0 0 23px; }
+    margin: 0 0 23px;
+    position: relative;
+    text-align: center; }
+    .ssilki .ssilki_bloki img {
+      position: absolute;
+      z-index: 1;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%; }
+    .ssilki .ssilki_bloki a {
+      position: relative;
+      z-index: 2; }
+    .ssilki .ssilki_bloki .ssilki_v_blokah {
+      margin-left: 0; }
+    .ssilki .ssilki_bloki:after {
+      content: '';
+      display: block;
+      position: absolute;
+      z-index: 1;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: #000;
+      opacity: 0.5;
+      -webkit-transition: opacity 0.2s;
+      transition: opacity 0.2s; }
+    .ssilki .ssilki_bloki:hover:after {
+      opacity: 0; }
 
 .spisok_menu {
   margin: -6px 0 19px; }
@@ -2169,8 +2196,24 @@ footer {
       height: 17px;
       background: transparent url("../img/images/cem-item-shadow-bottom.png") 50% top no-repeat; }
 
-.contact .contact__text {
-  text-shadow: 0 0 2px #232323, 1px 2px 2px #000; }
+.contact .contact__text p {
+  text-shadow: 0 0 2px #232323, 1px 2px 2px #000;
+  color: #f5f2f3;
+  font-size: 20px; }
+
+.contact .contact__text a {
+  color: #f5f2f3; }
+  .contact .contact__text a:link {
+    color: #f5f2f3; }
+  .contact .contact__text a:visited {
+    color: #f5f2f3; }
+  .contact .contact__text a:active {
+    color: #f5f2f3; }
+  .contact .contact__text a:hover {
+    color: #f5f2f3; }
+
+.contact .contact__text a:hover {
+  text-decoration: none; }
 
 .tabs ul li {
   padding: 0;
@@ -2569,6 +2612,8 @@ footer {
     text-indent: 5px; }
   .blank-zakaz_text input:focus {
     outline: none; }
+  .blank-zakaz_text input:required:valid {
+    color: #000; }
 
 .blank-zakaz_label {
   display: table-cell;
@@ -2580,3 +2625,133 @@ footer {
   width: 100%; }
   .blank-zakaz_text__multi .blank-zakaz_input {
     width: auto; }
+
+.blank-zakaz_bigtext {
+  font-size: 15px;
+  line-height: 38px;
+  font-family: OpenSans-Italic;
+  margin: -18px 0 18px;
+  padding-left: 36px;
+  position: relative; }
+  .blank-zakaz_bigtext textarea {
+    width: 100%;
+    height: 125px;
+    border: none;
+    background-color: transparent;
+    padding: 9px 0 0 0;
+    text-indent: 5px;
+    overflow: hidden; }
+  .blank-zakaz_bigtext textarea:focus {
+    outline: none; }
+  .blank-zakaz_bigtext textarea:required:valid {
+    color: #000; }
+  .blank-zakaz_bigtext__labled {
+    margin: -25px 0 18px; }
+    .blank-zakaz_bigtext__labled textarea {
+      text-indent: 240px; }
+
+.blank-zakaz_textarea {
+  position: relative; }
+  .blank-zakaz_textarea:before {
+    content: '';
+    position: absolute;
+    top: 38px;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: #000; }
+    .blank-zakaz_bigtext__labled .blank-zakaz_textarea:before {
+      width: 555px;
+      left: auto;
+      right: 0; }
+  .blank-zakaz_textarea:after {
+    content: '';
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    width: 100%;
+    height: 39px;
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000; }
+  .blank-zakaz_textarea div[role="status"] {
+    display: none; }
+
+.blank-zakaz_biglabel {
+  position: absolute;
+  left: 20px;
+  top: 9px; }
+
+.blank-zakaz_submit {
+  padding: 10px 0 0 20px; }
+  .blank-zakaz_submit input {
+    padding: 6px 20px;
+    -webkit-transition: color 0.2s;
+    transition: color 0.2s;
+    border-radius: 4px;
+    background: #eee;
+    background: -webkit-gradient(linear, left top, left bottom, from(#eee), to(#e2e2e2));
+    background: -webkit-linear-gradient(#eee, #e2e2e2);
+    background: linear-gradient(#eee, #e2e2e2);
+    border: solid 1px #d0d0d0;
+    border-bottom: solid 3px #b2b1b1;
+    -webkit-box-shadow: inset 0 0 0 1px #f5f5f5;
+    box-shadow: inset 0 0 0 1px #f5f5f5;
+    position: relative;
+    -webkit-transition: none;
+    transition: none; }
+    .blank-zakaz_submit input:hover {
+      background: #e4e4e4;
+      background: -webkit-gradient(linear, left top, left bottom, from(#ccc), to(#ededed));
+      background: -webkit-linear-gradient(#ccc, #ededed);
+      background: linear-gradient(#ccc, #ededed);
+      border: solid 1px #c2c2c2;
+      border-bottom: solid 3px #b2b1b1;
+      -webkit-box-shadow: inset 0 0 0 1px #efefef;
+      box-shadow: inset 0 0 0 1px #efefef; }
+    .blank-zakaz_submit input:active {
+      background: #dfdfdf;
+      background: -webkit-gradient(linear, left top, left bottom, from(#dfdfdf), to(#e3e3e3));
+      background: -webkit-linear-gradient(#dfdfdf, #e3e3e3);
+      background: linear-gradient(#dfdfdf, #e3e3e3);
+      border: solid 1px #959595;
+      -webkit-box-shadow: inset 0 10px 15px 0 #c4c4c4;
+      box-shadow: inset 0 10px 15px 0 #c4c4c4;
+      top: 2px;
+      margin-bottom: 2px; }
+    .blank-zakaz_submit input:focus {
+      outline: none; }
+
+.blank-zakaz_descr {
+  padding: 7px 0 0 20px; }
+
+.blank-zakaz .captcha {
+  margin-bottom: 40px; }
+
+.blank-zakaz .links a {
+  color: #047dba; }
+  .blank-zakaz .links a:link {
+    color: #047dba; }
+  .blank-zakaz .links a:visited {
+    color: #047dba; }
+  .blank-zakaz .links a:active {
+    color: #047dba; }
+  .blank-zakaz .links a:hover {
+    color: #047dba; }
+
+.block2__email a {
+  color: #f5f2f3; }
+  .block2__email a:link {
+    color: #f5f2f3; }
+  .block2__email a:visited {
+    color: #f5f2f3; }
+  .block2__email a:active {
+    color: #f5f2f3; }
+  .block2__email a:hover {
+    color: #f5f2f3; }
+
+.block2__email a:hover {
+  text-decoration: none; }
+
+.footer-phones p {
+  color: #f5f2f3;
+  font-size: 17px; }

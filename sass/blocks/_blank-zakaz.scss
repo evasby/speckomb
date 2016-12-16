@@ -17,6 +17,9 @@
 		input:focus{
 			outline: none;
 		}
+		input:required:valid{
+			color: #000;
+		}
 	}
 	&_label{
 		display: table-cell;
@@ -28,6 +31,114 @@
 		width: 100%;
 		.blank-zakaz_text__multi &{
 			width: auto;
+		}
+	}
+	&_bigtext{
+		font-size: 15px;
+		line-height: 38px;
+		font-family: OpenSans-Italic;
+		margin: -18px 0 18px;
+		padding-left: 36px;
+		position: relative;
+		textarea{
+			width: 100%;
+			height: 125px;
+			border: none;
+			background-color: transparent;
+			padding: 9px 0 0 0;
+			text-indent: 5px;
+			overflow: hidden;
+		}
+		textarea:focus{
+			outline: none;
+		}
+		textarea:required:valid{
+			color: #000;
+		}
+		&__labled{
+			margin: -25px 0 18px;
+			textarea{
+				text-indent: 240px;
+			}
+		}
+	}
+	&_textarea{
+		position: relative;
+		&:before{
+			content: '';
+			position: absolute;
+			top: 38px;
+			left: 0;
+			width: 100%;
+			height: 1px;
+			background-color: #000;
+			.blank-zakaz_bigtext__labled &{
+				width: 555px;
+				left: auto;
+				right: 0;
+			}
+		}
+		&:after{
+			content: '';
+			position: absolute;
+			bottom: 10px;
+			left: 0;
+			width: 100%;
+			height: 39px;
+			border-top: 1px solid #000;
+			border-bottom: 1px solid #000;
+		}
+		div[role="status"]{
+			display: none;
+		}
+	}
+	&_biglabel{
+		position: absolute;
+		left: 20px;
+		top: 9px;
+	}
+	&_submit{
+		padding: 10px 0 0 20px;
+		input{
+			padding: 6px 20px;
+			transition: color 0.2s;
+			border-radius: 4px;
+			background: #eee;
+			background: linear-gradient(#eee, #e2e2e2);
+			border: solid 1px #d0d0d0;
+			border-bottom: solid 3px #b2b1b1;
+			box-shadow: inset 0 0 0 1px #f5f5f5;
+			position: relative;
+			transition: none;
+			&:hover{
+				background: #e4e4e4;
+				background: linear-gradient(#ccc, #ededed);
+				border: solid 1px #c2c2c2;
+				border-bottom: solid 3px #b2b1b1;
+				box-shadow: inset 0 0 0 1px #efefef;
+			}
+			&:active{
+				background: #dfdfdf;
+				background: linear-gradient(#dfdfdf, #e3e3e3);
+				border: solid 1px #959595;
+				box-shadow: inset 0 10px 15px 0 #c4c4c4;
+				top: 2px;
+				margin-bottom: 2px;
+			}
+			&:focus{
+				outline: none;
+			}
+		}
+	}
+	&_descr{
+		padding: 7px 0 0 20px;
+	}
+	.captcha{
+		margin-bottom: 40px;
+	}
+	.links{
+		a{
+			@include link(#047dba, #047dba);
 		}
 	}
 }
