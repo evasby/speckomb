@@ -1,0 +1,19 @@
+.page-search{
+	.search-form{
+		input.form-text{
+			padding: 0 10px;
+			margin-left: 10px;
+		}
+	}
+	.search-advanced{
+		display: none;
+	}
+	.search-info{
+		display: none;
+	}
+	.search-results{
+		a{
+			@include link(#047dba, #047dba);
+		}
+	}
+}

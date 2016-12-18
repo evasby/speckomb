@@ -96,8 +96,10 @@
       opacity: 1;
     }
     li.left_menu_parent > a:after{
-      background: url('../img/images/left_menu-arrow.png') 95% 50% no-repeat,
-                  linear-gradient(to right, #6fbfe8 0%, lighten(#6fbfe8, 15%) 50%, #6fbfe8 100%);
+      //background: url('../img/images/left_menu-arrow.png') 95% 50% no-repeat,
+                  //linear-gradient(to right, #6fbfe8 0%, lighten(#6fbfe8, 15%) 50%, #6fbfe8 100%);
+      background: transparent url('../img/images/left_menu-hover2.png') left top no-repeat;
+      background-size: 100%;
     }
     li.left_menu_parent:hover{
       &:after{

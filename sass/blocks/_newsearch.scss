@@ -1,0 +1,76 @@
+.newsearch{
+	@include clearfix;
+	background-color: #ccc;
+	padding-top: 100px;
+	height: 300px;
+	.block-search{
+		position: relative;
+	}
+	&_input{
+		border: 1px solid #323232;
+		border-radius: 20px;
+		display: block;
+		box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.6);
+		height: 35px;
+		width: 253px;
+		padding: 0 30px 0 15px;
+		font-family: "OpenSans-Italic", sans-serif;
+		font-size: 14px;
+		line-height: 35;
+		&:focus,
+		&:active{
+			outline: none!important;
+		}
+	}
+	/*input:-webkit-autofill,
+	input:-webkit-autofill:hover, 
+	input:-webkit-autofill:focus
+	input:-webkit-autofill{
+	  border: 1px solid green;
+	  -webkit-text-fill-color: green;
+	  -webkit-box-shadow: 0 0 0px 1000px #000 inset;
+	  transition: background-color 5000s ease-in-out 0s;
+	}*/
+	&_submit{
+		position: absolute;	
+		border: none;
+		width: 35px;
+		height: 35px;
+		right: 5px;
+		top: 0;
+		background: none;
+		background: transparent url('../img/images/lupa.png') 50% 50% no-repeat;
+		text-indent: 100%;
+		white-space: nowrap;
+		overflow: hidden;
+		&:focus,
+		&:active{
+			outline: none!important;
+		}
+	}
+	::-webkit-input-placeholder {
+	  font-family: "OpenSans-Italic", sans-serif;
+	  font-size: 14px;
+	}
+	:-moz-placeholder {
+	  font-family: "OpenSans-Italic", sans-serif;
+	  font-size: 14px;
+	}
+	::-moz-placeholder {
+	  font-family: "OpenSans-Italic", sans-serif;
+	  font-size: 14px;
+	}
+	:-ms-input-placeholder {
+	  font-family: "OpenSans-Italic", sans-serif;
+	  font-size: 14px;
+	}
+	::-ms-input-placeholder {
+	  font-family: "OpenSans-Italic", sans-serif;
+	  color: #444444;
+	  font-size: 14px;
+	}
+	:placeholder-shown {
+	  font-family: "OpenSans-Italic", sans-serif;
+	  font-size: 14px;
+	}
+}
