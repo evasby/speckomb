@@ -1997,6 +1997,7 @@ footer {
     .services2 .img_text_box .img_block {
       margin: 0; }
   .services2_img {
+    display: block;
     margin-bottom: 25px;
     height: 192px;
     border: 2px solid #848586;
@@ -2009,7 +2010,7 @@ footer {
       transition: opacity 0.35s, -webkit-transform 0.35s;
       transition: transform 0.35s, opacity 0.35s;
       transition: transform 0.35s, opacity 0.35s, -webkit-transform 0.35s; }
-    .img_text_box:hover .services2_img img {
+    .services2_img:hover img {
       -webkit-transform: scale3d(0.95, 0.95, 1);
       transform: scale3d(0.95, 0.95, 1);
       opacity: 0.8; }
@@ -2982,3 +2983,38 @@ footer {
     color: #047dba; }
   .page-search .search-results a:hover {
     color: #047dba; }
+
+#colorbox #cboxClose {
+  bottom: auto;
+  top: 0; }
+
+#colorbox #cboxPrevious {
+  bottom: auto;
+  top: 50%;
+  margin-top: -12px;
+  opacity: 0;
+  -webkit-transition: opacity 0.2s;
+  transition: opacity 0.2s;
+  overflow: hidden;
+  border-radius: 50%; }
+
+#colorbox #cboxNext {
+  bottom: auto;
+  top: 50%;
+  margin-top: -12px;
+  left: auto;
+  right: 0;
+  opacity: 0;
+  -webkit-transition: opacity 0.2s;
+  transition: opacity 0.2s;
+  overflow: hidden;
+  border-radius: 50%; }
+
+#colorbox:hover #cboxPrevious {
+  opacity: 1; }
+
+#colorbox:hover #cboxNext {
+  opacity: 1; }
+
+#colorbox #cboxCurrent {
+  left: 0; }

@@ -1,0 +1,42 @@
+#colorbox{
+	#cboxContent{
+
+	}
+	#cboxClose{
+		bottom: auto;
+		top: 0;
+	}
+	#cboxPrevious{
+		bottom: auto;
+		top: 50%;
+		margin-top: -12px;
+		opacity: 0;
+		transition: opacity 0.2s;
+		//background: url('../img/images/controls.png') no-repeat -75px 0px;
+		overflow: hidden;
+		border-radius: 50%;
+	}
+	#cboxNext{
+		bottom: auto;
+		top: 50%;
+		margin-top: -12px;
+		left: auto;
+		right: 0;
+		opacity: 0;
+		transition: opacity 0.2s;
+		//background: url('../img/images/controls.png') no-repeat -50px 0px;
+		overflow: hidden;
+		border-radius: 50%;
+	}
+	&:hover{
+		#cboxPrevious{
+			opacity: 1;
+		}
+		#cboxNext{
+			opacity: 1;
+		}
+	}
+	#cboxCurrent{
+		left: 0;
+	}
+}
