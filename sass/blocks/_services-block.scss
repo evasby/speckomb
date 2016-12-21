@@ -28,6 +28,7 @@
 			box-shadow: 0px 3px 21px 0px rgba(0,0,0,0.75);
 			position: relative;
 			overflow: hidden;
+			background-color: #B6C4D0;
 			&:after{
 				content: '';
 				display: block;
@@ -41,10 +42,12 @@
 			img{
 				width: 100%;
 				height: auto;
-				transition: transform 1s ease-out;
+				transition: transform 0.35s,
+										opacity 0.35s;
 			}
 			&:hover img{
-				transform: scale(1.1);
+				transform: scale3d(0.95,0.95,1);
+				opacity: 0.8;
 			}
 		}
 		.img_text_block_text{
