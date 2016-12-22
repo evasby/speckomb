@@ -66,6 +66,7 @@
 		& > li > a{
 			position: relative;
 			z-index: 2;
+			border-bottom: 1px solid #7C9EE1;
 		}
 		& > li > a:after{
 			content: '';

@@ -11,7 +11,7 @@
     width: 540px;
     margin: 0 0 37px;
   }
-  &:before,
+  /*&:before,
   &:after {
     content: "";
     display: block;
@@ -29,7 +29,54 @@
   	right: 10px;
     left: auto;
     transform:rotate(5deg);
+  }*/
+  &:before{
+    content: "";
+    display: block;
+    position: absolute;
+    top: -41px;
+    left: -40px;
+    z-index: -1;
+    width: 896px;
+    height: 225px;
+    background: transparent url('../img/images/map-shadow-top2.png') left top no-repeat;
   }
+  &:after{
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: -41px;
+    left: -40px;
+    z-index: -1;
+    width: 896px;
+    height: 225px;
+    background: transparent url('../img/images/map-shadow-bottom.png') left top no-repeat;
+  }
+  /*&_shadow{
+    width: 821px;
+    height: 394px;
+    position: relative;
+    z-index: 9;
+    &:before,
+    &:after {
+      content: "";
+      display: block;
+      top: 15px;
+      left: 10px;
+      width: 50%;
+      height: 20%;
+      max-width: 300px;
+      box-shadow:0 -15px 20px rgba(0, 0, 0, 0.5);
+      transform:rotate(5deg);
+      position: absolute;
+      z-index: -1;
+    }
+    &:after{
+      right: 10px;
+      left: auto;
+      transform:rotate(-5deg);
+    }
+  }*/
   &_inner{
   	overflow: hidden;
   	background-color: #ccc;
