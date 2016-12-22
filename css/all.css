@@ -79,9 +79,6 @@
       transform:rotate(-5deg);
     }
   }*/ }
-  .map__block {
-    width: 540px;
-    margin: 0 0 37px; }
   .map:before {
     content: "";
     display: block;
@@ -102,6 +99,15 @@
     width: 896px;
     height: 225px;
     background: transparent url("../img/images/map-shadow-bottom.png") left top no-repeat; }
+  .map__block {
+    width: 540px;
+    margin: 0 0 37px;
+    -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.6); }
+    .map__block:after {
+      display: none; }
+    .map__block:before {
+      display: none; }
   .map_inner {
     overflow: hidden;
     background-color: #ccc;

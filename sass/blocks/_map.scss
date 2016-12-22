@@ -7,10 +7,7 @@
 	border: 2px solid #b2b2b2;
 	position:relative;
 	z-index: 10;
-  &__block{
-    width: 540px;
-    margin: 0 0 37px;
-  }
+  
   /*&:before,
   &:after {
     content: "";
@@ -51,6 +48,17 @@
     width: 896px;
     height: 225px;
     background: transparent url('../img/images/map-shadow-bottom.png') left top no-repeat;
+  }
+  &__block{
+    width: 540px;
+    margin: 0 0 37px;
+    box-shadow:0 0 20px rgba(0, 0, 0, 0.6);
+    &:after{
+      display: none;
+    }
+    &:before{
+      display: none;
+    }
   }
   /*&_shadow{
     width: 821px;
