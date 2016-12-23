@@ -1,0 +1,36 @@
+.newshop{
+	padding-top: 15px;
+	button:active, a:active,
+	button:focus, a:focus{
+		outline: none;
+	}
+	&_top{
+		@include clearfix;
+	}
+	&_item{
+		position: relative;
+		float: left;
+		margin: 0 30px 30px 0;
+		box-shadow: 0px 0px 21px 0px rgba(0,0,0,0.75);
+		&:nth-child(3n){
+			margin-right: 0;
+		}
+		img{
+			display: block;
+			width: 100%;
+			height: auto;
+			transition: transform 0.35s,
+											opacity 0.35s;
+		}
+		&:hover img{
+			transform: scale3d(0.95,0.95,1);
+			opacity: 0.8;
+		}
+	}
+}
+#colorbox{
+	button:active, a:active,
+	button:focus, a:focus{
+		outline: none;
+	}
+}

@@ -3093,3 +3093,42 @@ footer {
 
 #colorbox #cboxCurrent {
   left: 0; }
+
+.newshop {
+  padding-top: 15px; }
+  .newshop button:active, .newshop a:active,
+  .newshop button:focus, .newshop a:focus {
+    outline: none; }
+  .newshop_top {
+    *zoom: 1; }
+    .newshop_top:before, .newshop_top:after {
+      content: ".";
+      display: block;
+      height: 0;
+      overflow: hidden; }
+    .newshop_top:after {
+      clear: both; }
+  .newshop_item {
+    position: relative;
+    float: left;
+    margin: 0 30px 30px 0;
+    -webkit-box-shadow: 0px 0px 21px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 0px 21px 0px rgba(0, 0, 0, 0.75); }
+    .newshop_item:nth-child(3n) {
+      margin-right: 0; }
+    .newshop_item img {
+      display: block;
+      width: 100%;
+      height: auto;
+      -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+      transition: opacity 0.35s, -webkit-transform 0.35s;
+      transition: transform 0.35s, opacity 0.35s;
+      transition: transform 0.35s, opacity 0.35s, -webkit-transform 0.35s; }
+    .newshop_item:hover img {
+      -webkit-transform: scale3d(0.95, 0.95, 1);
+      transform: scale3d(0.95, 0.95, 1);
+      opacity: 0.8; }
+
+#colorbox button:active, #colorbox a:active,
+#colorbox button:focus, #colorbox a:focus {
+  outline: none; }
