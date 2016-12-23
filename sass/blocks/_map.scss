@@ -52,12 +52,19 @@
   &__block{
     width: 540px;
     margin: 0 0 37px;
-    box-shadow:0 0 20px rgba(0, 0, 0, 0.6);
     &:after{
-      display: none;
+      width: 591px;
+      height: 151px;   
+      background: transparent url('../img/images/map2-shadow-bottom2.png') left top no-repeat;
+      bottom: -28px;
+      left: -28px;
     }
     &:before{
-      display: none;
+      width: 591px;
+      height: 151px;
+      background: transparent url('../img/images/map2-shadow-top.png') left top no-repeat;
+      top: -28px;
+      left: -28px;
     }
   }
   /*&_shadow{

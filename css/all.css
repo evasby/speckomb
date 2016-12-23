@@ -19,6 +19,8 @@
   width: 1170px;
   margin: 0 auto;
   padding: 30px 30px 27px; }
+  .page-magazine .innerpage {
+    background: none; }
   .innerpage_left {
     margin: 8px 30px 0 0;
     width: 255px;
@@ -101,13 +103,19 @@
     background: transparent url("../img/images/map-shadow-bottom.png") left top no-repeat; }
   .map__block {
     width: 540px;
-    margin: 0 0 37px;
-    -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.6); }
+    margin: 0 0 37px; }
     .map__block:after {
-      display: none; }
+      width: 591px;
+      height: 151px;
+      background: transparent url("../img/images/map2-shadow-bottom2.png") left top no-repeat;
+      bottom: -28px;
+      left: -28px; }
     .map__block:before {
-      display: none; }
+      width: 591px;
+      height: 151px;
+      background: transparent url("../img/images/map2-shadow-top.png") left top no-repeat;
+      top: -28px;
+      left: -28px; }
   .map_inner {
     overflow: hidden;
     background-color: #ccc;
