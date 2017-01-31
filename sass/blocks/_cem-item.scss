@@ -33,6 +33,9 @@
 			
 		}
 	}
+	&_wrap{
+		@include clearfix;
+	}
 	&_wrapimage{
 		position: relative;
 		&:after{
@@ -127,6 +130,10 @@
 			width: 100%;
 			height: 17px;
 			background: transparent url('../img/images/cem-item-shadow-bottom.png') 50% top no-repeat;
+		}
+		img{
+			width: 100%;
+			height: auto;
 		}
 	}
 }

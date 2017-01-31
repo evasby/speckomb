@@ -77,10 +77,14 @@
       left: 0;
       width: 100%;
       height: 100%;
-      background: transparent url('../img/images/left_menu-hover3.png') left top no-repeat;
-      background-size: 100% 100%;
+      background: transparent url('../img/images/left_menu-hover3.png') left -5px no-repeat;
+      background-size: 100%;
       opacity: 0;
       transition: opacity 0.2s;
+		}
+		.front & > li > a:after{
+			background: transparent url('../img/images/left_menu-hover3.png') left top no-repeat;
+      background-size: 100% 100%;
 		}
 		& > li > a:hover{
 			background: #5d8cdb none repeat scroll 0 0;

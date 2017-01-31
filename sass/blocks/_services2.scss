@@ -36,11 +36,14 @@
 	&_title{
 		font-size: 16px;
 		font-family: OpenSans-Bold;
+		a{
+			@include link(#000, #000);
+		}
 	}
 	&_text{			
 		p{
 			font-size: 15px;
-			line-height: 25px;
+			line-height: 20px;
 			font-family: OpenSans-Italic;
 		}
 	}

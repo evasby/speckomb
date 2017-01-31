@@ -1,6 +1,11 @@
 .newshop{
 	.field-name-body{
 		margin-bottom: 15px;
+		p{
+			img{
+				margin-bottom: 30px;
+			}
+		}
 	}
 	button:active, a:active,
 	button:focus, a:focus{
@@ -12,9 +17,10 @@
 	&_item{
 		position: relative;
 		float: left;
-		margin: 0 22px 30px 0;
+		width: 401px;
+		margin: 0 23px 30px 0;
 		box-shadow: 0px 0px 21px 0px rgba(0,0,0,0.75);
-		&:nth-child(3n){
+		&:nth-child(2n){
 			margin-right: 0;
 		}
 		img{

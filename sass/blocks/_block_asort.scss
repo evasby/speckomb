@@ -14,6 +14,7 @@
 		padding: 13px 0 0;
 	}
 	.asortiment{
+		overflow: hidden;
 		position: relative;
 		//z-index: 1;
 		text-decoration: none;
@@ -36,17 +37,28 @@
 		&:nth-child(3n){
 			margin-right: 0;
 		}
+		.asort_wrap{
+			display: table-cell;
+			vertical-align: middle;
+			
+			width: 100%;
+		}
 		.asort_text{
 			height: 48px;
-			padding-top: 5px;
+			padding: 0 5px;
 			text-shadow: 2px 2px 3px rgba(0, 0, 0, 1);
-			overflow: hidden;
+			//overflow: hidden;
+			display: table;
+			
+			
+			width: 100%;
 			p{
 				color: #fff;
 				font-size: 15px;
-				line-height: 20px;
+				line-height: 15px;
 				margin-bottom: 0;
 				text-shadow: 2px 2px 3px rgba(0, 0, 0, 1);
+				word-wrap: break-word;
 			}
 		}
 		.asort_image{
@@ -63,6 +75,9 @@
 		.asort_zag{
 			margin: 0;
 			padding: 0;
+			font-size: 17px;
+			height: 40px;
+			overflow: hidden;
 		}
 		&:hover .asort_image img{
 			transform: scale(1.1);
