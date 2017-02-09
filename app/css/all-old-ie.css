@@ -1306,7 +1306,6 @@ footer {
       border: none; }
     .user-content table td, .user-content table th {
       border: 1px solid black;
-      padding: 16px;
       vertical-align: top; }
     .user-content table th {
       background-color: #6fbee8;
