@@ -4,26 +4,35 @@
 	}
 	&_item{
 		float: left;
+		height: 150px;
 		width: 33%;
-		padding-left: 30px;
+		padding-left: 0;
+		@include clearfix;
 		&:before{
-			//margin-left: 0;
-			transform: translateZ(0);
+			display: none;
 		}
 		.premi__discr{
-			padding-left: 40px;
+			padding-left: 90px;
 		}
 		.premi__zag{
-			padding-left: 40px;
+			padding-left: 90px;
+		}	
+	}
+	&_image{
+		float: left;
+		width: 90px;
+		min-height: 1px;
+		padding: 8px 0 0;
+		text-align: center;
+		img{
+			transform: translateZ(0);
 		}
-		&:hover{
-			&:before{
-				animation-name: pulse;
-				animation-delay: 0s;
-				animation-duration: 4000ms;
-				animation-timing-function: ease-in-out;
-				animation-iteration-count: infinite;
-			}
+		.block_preim_item:hover & img{
+			animation-name: pulse;
+			animation-delay: 0s;
+			animation-duration: 4000ms;
+			animation-timing-function: ease-in-out;
+			animation-iteration-count: infinite;
 		}
 	}
 }

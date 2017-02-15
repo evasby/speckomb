@@ -15,6 +15,7 @@
 		padding: 13px 0 0;
 	}
 	.asortiment{
+		height: 280px;
 		position: relative;
 		//z-index: 1;
 		text-decoration: none;
@@ -70,9 +71,18 @@
 			}
 
 		}
+		.asort_zag-wrap{
+			display: table;
+			width: 100%;
+		}
 		.asort_zag{
 			margin: 0;
 			padding: 0;
+			height: 65px;
+			width: 100%;
+			line-height: 20px;
+			display: table-cell;
+			vertical-align: middle;
 		}
 		&:hover .asort_image img{
 			transform: scale(1.1);

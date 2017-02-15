@@ -107,13 +107,14 @@
 		font-size: 14px;
 		line-height: 22px;
 		width: 100%;
-		box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.5);
+		//box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.5);
 		border-collapse: collapse;
 		tbody{
 			border: none;
 		}
 		td, th {
-	    border: 1px solid black;
+	    border: 1px solid transparent;
+	    //border: 0;
 	    //padding: 1px;
 	    vertical-align: top;
    	}
@@ -143,7 +144,7 @@
 		}	
 	}
 	.field-name-field-cem-descr table{
-		margin: 0 auto;
-		width: 95%;
+		margin: 29px auto 20px;
+		width: 95%!important;
 	}
 }
