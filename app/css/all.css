@@ -509,6 +509,9 @@ footer {
       display: table-cell;
       vertical-align: middle;
       width: 100%; }
+      .block_asort .asortiment .asort_wrap p {
+        word-wrap: break-word;
+        width: 245px; }
     .block_asort .asortiment .asort_text {
       height: 48px;
       padding: 0 5px;
@@ -603,28 +606,40 @@ footer {
     float: none; }
   .block2_asort__4 {
     padding: 13px 0 0; }
+  .block2_asort_row {
+    margin: 0 0 100px; }
+    .block2_asort_row:before, .block2_asort_row:after {
+      content: ".";
+      display: block;
+      height: 0;
+      overflow: hidden; }
+    .block2_asort_row:after {
+      clear: both; }
   .block2_asort .asortiment {
-    height: 274px;
+    height: auto;
     position: relative;
     text-decoration: none;
     float: left;
     background: none;
-    margin: 0 30px 100px 0;
+    margin: 0 30px 0 0;
     -webkit-box-shadow: 0px 0px 21px 0px rgba(0, 0, 0, 0.75);
     box-shadow: 0px 0px 21px 0px rgba(0, 0, 0, 0.75); }
     .block2_asort .asortiment:nth-child(3n) {
       margin-right: 0; }
     .block2_asort .asortiment .asort_text {
-      height: 48px;
-      padding-top: 9px;
+      min-height: 48px;
       text-shadow: 2px 2px 3px black;
-      margin-bottom: 22px; }
+      display: table;
+      width: 100%; }
       .block2_asort .asortiment .asort_text p {
         color: #fff;
         font-size: 15px;
         line-height: 20px;
         margin-bottom: 0;
         text-shadow: 2px 2px 3px black; }
+    .block2_asort .asortiment .asortiment-drop {
+      display: table-cell;
+      vertical-align: middle; }
     .block2_asort .asortiment .asort_text__drop {
       cursor: pointer;
       position: relative; }
@@ -652,15 +667,15 @@ footer {
       .block2_asort .asortiment .asort_image img.image-active {
         display: block; }
     .block2_asort .asortiment .asort_zag-inner {
-      height: 59px;
       overflow: hidden; }
     .block2_asort .asortiment .asort_zag-wrap {
+      min-height: 44px;
       display: table;
       width: 100%; }
     .block2_asort .asortiment .asort_zag {
       margin: 0;
       padding: 0;
-      height: 59px;
+      height: 100%;
       width: 100%;
       line-height: 20px;
       display: table-cell;
@@ -709,7 +724,10 @@ footer {
       border-bottom: solid 3px #b2b1b1;
       -webkit-box-shadow: inset 0 0 0 1px #f5f5f5;
       box-shadow: inset 0 0 0 1px #f5f5f5;
-      position: relative;
+      position: absolute;
+      bottom: -60px;
+      left: 50%;
+      margin-left: -80px;
       -webkit-transition: none;
       transition: none;
       text-align: center;

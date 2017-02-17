@@ -40,8 +40,12 @@
 		.asort_wrap{
 			display: table-cell;
 			vertical-align: middle;
-			
 			width: 100%;
+			p{
+				word-wrap: break-word;
+				width: 245px;
+				//padding: 0 10px;
+			}
 		}
 		.asort_text{
 			height: 48px;
