@@ -89,7 +89,9 @@
 		& > li > a:hover{
 			background: #5d8cdb none repeat scroll 0 0;
 		}
-		& > li:hover > a:after{
+		& > li:hover > a:after,
+		.dropdown_goto__active > a:after,
+		{
 			opacity: 1;
 		}
 	}

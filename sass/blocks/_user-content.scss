@@ -1,5 +1,9 @@
 .user-content{
 	text-align: left;
+	.img_text_block{
+		@include clearfix;
+		margin: 0 0 37px;
+	}
 	& > a,
 	& > ul li a,
 	& > ol li a,
@@ -97,7 +101,8 @@
 		li{
 			font-family: OpenSans-Regular;
 			font-size: 15px;
-			line-height: 31px;
+			line-height: 20px;
+			margin: 0 0 10px;
 		}
 	}
 	table{

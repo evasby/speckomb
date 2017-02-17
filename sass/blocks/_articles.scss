@@ -3,17 +3,38 @@
 		@include clearfix;
 		margin: 0 0 37px;
 	}
+	&_texttop{
+		min-height: 67px;
+		.page-articles &{
+			min-height: 45px;
+		}
+	}
 	.text_block__h4{
+		display: block;
 		font-family: OpenSans-Semibold;
-		font-size: 16px;
-		color: #000;
-		margin: 0 0 20px;
+		font-size: 18px;
+		margin: 0 0 5px;
+		a{
+			@include link(#000, #000);
+			text-decoration: none;
+		}
+		a:hover{
+			text-decoration: underline;
+		}
+	}
+	&_date{
+		font-family: OpenSans-Italic;
+		color: #047dba;
+		font-size: 15px;
 	}
 	.img_text_block_text{
 		font-family: OpenSans-Regular;
 		font-size: 15px;
 		line-height: 20px;
-		height: 142px;
+		height: 112px;
+		.page-articles &{
+			height: 132px;
+		}
 	}
 	.img_block{
 		margin: 0;

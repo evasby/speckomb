@@ -15,7 +15,7 @@
 		padding: 13px 0 0;
 	}
 	.asortiment{
-		height: 280px;
+		height: 274px;
 		position: relative;
 		//z-index: 1;
 		text-decoration: none;
@@ -71,6 +71,10 @@
 			}
 
 		}
+		.asort_zag-inner{
+			height: 59px;
+			overflow: hidden;
+		}
 		.asort_zag-wrap{
 			display: table;
 			width: 100%;
@@ -78,7 +82,7 @@
 		.asort_zag{
 			margin: 0;
 			padding: 0;
-			height: 65px;
+			height: 59px;
 			width: 100%;
 			line-height: 20px;
 			display: table-cell;
