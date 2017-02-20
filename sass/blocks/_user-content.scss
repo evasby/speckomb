@@ -127,7 +127,8 @@
    		background-color: #6fbee8;
    		text-align: center;
    	}
-   	tr:first-child th {
+   	tr:first-child th,
+   	tr:first-child td {
 		  border-top: 0;
 		}
 		tr:last-child td {

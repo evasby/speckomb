@@ -19,6 +19,7 @@
 		}
 	}
 	.img_text_block{
+		margin: 0;
 		@include clearfix;
 		.img_text_block_image{
 			float: left;

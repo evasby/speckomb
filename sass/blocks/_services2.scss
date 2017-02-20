@@ -1,8 +1,12 @@
 .services2{
 	padding-top: 22px;
 	@include clearfix;
+	&_row{
+		@include clearfix;
+	}
 	.img_text_box{
-		height: 400px;
+		height: auto;
+		padding: 0 0 10px;
 		@include link(#000000, #000000);
 		text-decoration: none;
 		float: left;
