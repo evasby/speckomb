@@ -947,9 +947,20 @@ footer {
 .block_preim h2 {
   margin-bottom: 22px; }
 
+.block_preim_row {
+  *zoom: 1; }
+  .block_preim_row:before, .block_preim_row:after {
+    content: ".";
+    display: block;
+    height: 0;
+    overflow: hidden; }
+  .block_preim_row:after {
+    clear: both; }
+
 .block_preim_item {
   float: left;
-  height: 150px;
+  height: auto;
+  min-height: 150px;
   width: 33%;
   padding-left: 0;
   *zoom: 1; }
