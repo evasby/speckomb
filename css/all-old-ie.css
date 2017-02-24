@@ -484,6 +484,8 @@ footer {
     clear: both; }
   .block_asort__block {
     padding: 27px 0 0; }
+    .front .block_asort__block {
+      padding: 0; }
   .block_asort__4 {
     padding: 13px 0 0; }
   .block_asort .asortiment {
@@ -625,6 +627,7 @@ footer {
     text-decoration: none;
     float: left;
     background: none;
+    background-color: #5c87da;
     margin: 0 30px 0 0;
     -webkit-box-shadow: 0px 0px 21px 0px rgba(0, 0, 0, 0.75);
     box-shadow: 0px 0px 21px 0px rgba(0, 0, 0, 0.75); }
@@ -673,7 +676,8 @@ footer {
         display: block; }
     .block2_asort .asortiment .asort_zag-inner {
       overflow: hidden;
-      min-height: 44px; }
+      min-height: 44px;
+      background-color: #b6c4d0; }
     .block2_asort .asortiment .asort_zag-wrap {
       min-height: 44px;
       display: table;
@@ -809,11 +813,12 @@ footer {
   position: relative;
   z-index: 2; }
   .dropdown_menu ::-webkit-scrollbar {
-    height: 17px;
     width: 17px;
     background: #f1f1f1; }
   .dropdown_menu ::-webkit-scrollbar-thumb {
-    background: #c1c1c1; }
+    background: #c1c1c1;
+    border-left: 2px solid #f1f1f1;
+    border-right: 2px solid #f1f1f1; }
   .dropdown_menu:before, .dropdown_menu:after {
     content: "";
     display: block;
@@ -960,7 +965,7 @@ footer {
 .block_preim_item {
   float: left;
   height: auto;
-  min-height: 150px;
+  min-height: 133px;
   width: 33%;
   padding-left: 0;
   *zoom: 1; }
@@ -1930,7 +1935,7 @@ footer {
   .asortiment-drop_descr {
     color: #010101;
     text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5); }
-  .asortiment-drop_name {
+  .asortiment-drop_name, .asortiment-drop_curr {
     color: #ffffff; }
   .asortiment-drop_orange {
     color: #ff950c;
@@ -3322,3 +3327,127 @@ footer {
 
 .search-form .form-submit {
   width: 60px; }
+
+.site-map-menus,
+.site-map-taxonomys {
+  text-align: left;
+  font-family: OpenSans-Regular;
+  font-size: 15px;
+  line-height: 20px;
+  color: #000; }
+  .site-map-menus li.leaf,
+  .site-map-menus li.expanded,
+  .site-map-menus li,
+  .site-map-taxonomys li.leaf,
+  .site-map-taxonomys li.expanded,
+  .site-map-taxonomys li {
+    list-style-type: none;
+    list-style-image: none;
+    color: #000;
+    text-align: left; }
+  .site-map-menus a,
+  .site-map-menus ul li a,
+  .site-map-menus ol li a,
+  .site-map-menus p a,
+  .site-map-menus .field-name-body a,
+  .site-map-menus .field-name-field-cem-descr a,
+  .site-map-taxonomys a,
+  .site-map-taxonomys ul li a,
+  .site-map-taxonomys ol li a,
+  .site-map-taxonomys p a,
+  .site-map-taxonomys .field-name-body a,
+  .site-map-taxonomys .field-name-field-cem-descr a {
+    color: #000;
+    text-decoration: none;
+    font-size: 15px;
+    line-height: 18px;
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(50%, #8d8d8d), color-stop(50%, #8d8d8d)), -webkit-gradient(linear, left top, left bottom, color-stop(50%, #333), color-stop(50%, #333));
+    background-image: -webkit-linear-gradient(#8d8d8d 50%, #8d8d8d 50%), -webkit-linear-gradient(#333 50%, #333 50%);
+    background-image: linear-gradient(#8d8d8d 50%, #8d8d8d 50%), linear-gradient(#333 50%, #333 50%);
+    background-position: right bottom;
+    background-repeat: no-repeat;
+    background-size: 0 2px, 100% 2px;
+    color: #607584;
+    -webkit-transition: background-size .5s;
+    transition: background-size .5s; }
+    .site-map-menus a:link,
+    .site-map-menus ul li a:link,
+    .site-map-menus ol li a:link,
+    .site-map-menus p a:link,
+    .site-map-menus .field-name-body a:link,
+    .site-map-menus .field-name-field-cem-descr a:link,
+    .site-map-taxonomys a:link,
+    .site-map-taxonomys ul li a:link,
+    .site-map-taxonomys ol li a:link,
+    .site-map-taxonomys p a:link,
+    .site-map-taxonomys .field-name-body a:link,
+    .site-map-taxonomys .field-name-field-cem-descr a:link {
+      color: #000; }
+    .site-map-menus a:visited,
+    .site-map-menus ul li a:visited,
+    .site-map-menus ol li a:visited,
+    .site-map-menus p a:visited,
+    .site-map-menus .field-name-body a:visited,
+    .site-map-menus .field-name-field-cem-descr a:visited,
+    .site-map-taxonomys a:visited,
+    .site-map-taxonomys ul li a:visited,
+    .site-map-taxonomys ol li a:visited,
+    .site-map-taxonomys p a:visited,
+    .site-map-taxonomys .field-name-body a:visited,
+    .site-map-taxonomys .field-name-field-cem-descr a:visited {
+      color: #000; }
+    .site-map-menus a:active,
+    .site-map-menus ul li a:active,
+    .site-map-menus ol li a:active,
+    .site-map-menus p a:active,
+    .site-map-menus .field-name-body a:active,
+    .site-map-menus .field-name-field-cem-descr a:active,
+    .site-map-taxonomys a:active,
+    .site-map-taxonomys ul li a:active,
+    .site-map-taxonomys ol li a:active,
+    .site-map-taxonomys p a:active,
+    .site-map-taxonomys .field-name-body a:active,
+    .site-map-taxonomys .field-name-field-cem-descr a:active {
+      color: #000; }
+    .site-map-menus a:hover,
+    .site-map-menus ul li a:hover,
+    .site-map-menus ol li a:hover,
+    .site-map-menus p a:hover,
+    .site-map-menus .field-name-body a:hover,
+    .site-map-menus .field-name-field-cem-descr a:hover,
+    .site-map-taxonomys a:hover,
+    .site-map-taxonomys ul li a:hover,
+    .site-map-taxonomys ol li a:hover,
+    .site-map-taxonomys p a:hover,
+    .site-map-taxonomys .field-name-body a:hover,
+    .site-map-taxonomys .field-name-field-cem-descr a:hover {
+      color: #000; }
+  .site-map-menus a:hover,
+  .site-map-menus ul li a:hover,
+  .site-map-menus ol li a:hover,
+  .site-map-menus p a:hover,
+  .site-map-menus .field-name-body a:hover,
+  .site-map-menus .field-name-field-cem-descr a:hover,
+  .site-map-taxonomys a:hover,
+  .site-map-taxonomys ul li a:hover,
+  .site-map-taxonomys ol li a:hover,
+  .site-map-taxonomys p a:hover,
+  .site-map-taxonomys .field-name-body a:hover,
+  .site-map-taxonomys .field-name-field-cem-descr a:hover {
+    background-size: 100% 2px, 100% 2px;
+    background-position: left bottom; }
+  .site-map-menus p,
+  .site-map-taxonomys p {
+    font-family: OpenSans-Regular;
+    font-size: 15px;
+    line-height: 20px;
+    word-wrap: break-word; }
+
+.search-results .search-result {
+  border-bottom: 1px solid #ccc;
+  padding: 0 0 10px; }
+
+.search-results_category {
+  font-size: 12px; }

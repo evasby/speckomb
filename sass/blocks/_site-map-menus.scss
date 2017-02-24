@@ -1,0 +1,51 @@
+.site-map-menus,
+.site-map-taxonomys{
+	text-align: left;
+	li.leaf,
+	li.expanded,
+	li{
+		list-style-type: none;
+		list-style-image: none;
+		color: #000;
+		text-align: left;
+	}
+	& a,
+	& ul li a,
+	& ol li a,
+	& p a,
+	& .field-name-body a,
+	& .field-name-field-cem-descr a{
+		@include link(#000, #000);
+		text-decoration: none;
+	  //display: inline-block;
+	  font-size: 15px;
+	  line-height: 18px;
+	  transition: .3s ease-in-out;
+	  background-image: linear-gradient(darken(silver, 20%) 50%, darken(silver, 20%) 50%), linear-gradient(#333 50%, #333 50%); 
+	  //background-position: center bottom; 
+	  background-position: right bottom; 
+	  background-repeat: no-repeat; 
+	  background-size: 0 2px, 100% 2px; 
+	  color: #607584; 
+	  transition: background-size .5s;
+	}
+	& a:hover,
+	& ul li a:hover,
+	& ol li a:hover,
+	& p a:hover,
+	& .field-name-body a:hover,
+	& .field-name-field-cem-descr a:hover{
+		background-size: 100% 2px, 100% 2px; 
+  	background-position: left bottom;
+	}
+	font-family: OpenSans-Regular;
+	font-size: 15px;
+	line-height: 20px;
+	color: #000;
+	p{
+		font-family: OpenSans-Regular;
+		font-size: 15px;
+		line-height: 20px;
+		word-wrap: break-word;
+	}
+}

@@ -9,6 +9,9 @@
 	margin: 0 0 0 0;
 	&__block{
 		padding: 27px 0 0;
+		.front &{
+			padding: 0;
+		}
 	}
 	&__4{
 		padding: 13px 0 0;
