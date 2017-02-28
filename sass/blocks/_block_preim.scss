@@ -4,11 +4,12 @@
 	}
 	&_row{
 		@include clearfix;
+		padding: 0 0 10px;
 	}
 	&_item{
 		float: left;
 		height: auto;
-		min-height: 133px;
+		//min-height: 133px;
 		width: 33%;
 		padding-left: 0;
 		@include clearfix;
@@ -17,6 +18,9 @@
 		}
 		.premi__discr{
 			padding-left: 90px;
+			p{
+				margin: 0;
+			}
 		}
 		.premi__zag{
 			padding-left: 90px;
