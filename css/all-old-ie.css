@@ -2518,7 +2518,8 @@ footer {
       box-shadow: inset 0px 0px 21px 0px rgba(255, 255, 255, 0.75); }
   .cem-item_text {
     overflow: hidden;
-    padding-bottom: 35px; }
+    padding-bottom: 35px;
+    text-indent: 2px; }
   .cem-item_info {
     font-family: OpenSans-Semibold; }
   .cem-item_phone {
