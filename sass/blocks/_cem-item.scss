@@ -3,7 +3,7 @@
 	&_image{
 		float: left;
 		width: 256px;
-		margin: 8px 30px 0 0;
+		margin: 8px 30px 21px 0;
 		border: 2px solid #b2b2b2;
 		box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
 		position:relative;
@@ -51,8 +51,11 @@
 	}
 	&_text{
 		overflow: hidden;
-		padding-bottom: 35px;
+		//padding-bottom: 35px;
 		text-indent: 2px;
+		p:last-child{
+			margin: 0;
+		}
 	}
 	&_info{
 		font-family: OpenSans-Semibold;
@@ -67,7 +70,7 @@
 			position: absolute;
 			width: 19px;
 			height: 19px;
-			top: 6px;
+			top: 1px;
 			left: 0;
 			background: transparent url('../img/images/cem-phone.png') left top no-repeat;
 		}
@@ -82,7 +85,7 @@
 			position: absolute;
 			width: 20px;
 			height: 14px;
-			top: 8px;
+			top: 4px;
 			left: 0;
 			background: transparent url('../img/images/cem-mail.png') left top no-repeat;
 		}
@@ -97,7 +100,7 @@
 			position: absolute;
 			width: 17px;
 			height: 17px;
-			top: 7px;
+			top: 3px;
 			left: 0;
 			background: transparent url('../img/images/cem-skype.png') left top no-repeat;
 		}

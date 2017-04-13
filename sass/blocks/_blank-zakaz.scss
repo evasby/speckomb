@@ -25,12 +25,19 @@
 		display: table-cell;
 		white-space: nowrap;
 		padding: 0 20px;
+		.blank-zakaz_text__multi &{
+			padding: 0;
+		}
+		.blank-zakaz_text__multi &:first-child{
+			padding: 0 0 0 20px;
+		}
 	}
 	&_input{
 		display: table-cell;
 		width: 100%;
 		.blank-zakaz_text__multi &{
 			width: auto;
+			min-width: 55px;
 		}
 	}
 	&_bigtext{
