@@ -1400,7 +1400,7 @@ footer {
       line-height: 20px;
       margin: 0 0 10px; }
   .user-content table {
-    margin-top: 29px;
+    margin-top: 10px;
     margin-bottom: 20px;
     font-family: OpenSans-Regular;
     font-size: 14px;
@@ -1411,12 +1411,7 @@ footer {
       border: none; }
     .user-content table td, .user-content table th {
       border: 1px solid transparent;
-      vertical-align: top;
-      padding-top: 0;
-      padding-bottom: 0; }
-      .user-content table td h1, .user-content table td h2, .user-content table td h3, .user-content table td h4, .user-content table th h1, .user-content table th h2, .user-content table th h3, .user-content table th h4 {
-        margin: 0;
-        line-height: 20px; }
+      vertical-align: top; }
     .user-content table th {
       background-color: #6fbee8;
       text-align: center; }
@@ -3030,10 +3025,6 @@ footer {
   display: table-cell;
   white-space: nowrap;
   padding: 0 20px; }
-  .blank-zakaz_text__multi .blank-zakaz_label {
-    padding: 0; }
-  .blank-zakaz_text__multi .blank-zakaz_label:first-child {
-    padding: 0 0 0 20px; }
 
 .blank-zakaz_input {
   display: table-cell;
